@@ -48,14 +48,6 @@ const NavMenu = () => {
                     Open Projects
                   </NavigationMenu.Link>
                 </li>
-                <li className="ListItem">
-                  <NavigationMenu.Link
-                    className="NavigationMenuLink"
-                    href="/jc"
-                  >
-                    Journal Club
-                  </NavigationMenu.Link>
-                </li>
               </ul>
             </NavigationMenu.Content>
           </NavigationMenu.Item>

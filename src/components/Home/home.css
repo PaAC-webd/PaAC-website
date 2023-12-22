@@ -301,9 +301,9 @@
   border-radius: 5px;
 }
 
-/* .home-events-photo-container {
+.home-events-photo-container {
   height: 160px;
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -313,9 +313,10 @@
   object-fit: cover;
   max-height: 100%;
   max-width: 100%;
-  border-radius: 12px;
+  position: center;
+  /* border-radius: 12px; */
   border-radius: 24px;
-} */
+}
 
 @media screen and (max-width: 770px) {
   .home-event-card {

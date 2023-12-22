@@ -27,7 +27,6 @@ export default function Topbar() {
           <img src={Logo} className="small-screen-logo" alt=""></img>
         </NavLink>
       </div>
-
       {windowWidth > 768 ? <NavMenu /> : <DropMenu />}
     </div>
   );
