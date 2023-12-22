@@ -230,8 +230,6 @@
   font-size: 40px;
   text-align: center;
   transition: color 0.2s ease-in-out;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
 }
 
 .home-events-heading-container {
@@ -242,52 +240,55 @@
 }
 
 .home-event-card {
-  background-color: #2c2b6c9d;
-  border-radius: 20px;
-  padding: 2rem;
-  width: 500px;
-  color: white;
-  font-family: "Arial", sans-serif;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
+  padding: 1rem;
+  width: 22rem;
+  height: 90%;
+  margin: 1.5rem;
+  /* border: 0.4vw solid #e4b6a5; */
+  border-radius: 24px;
+  background-color: #2c2b6c;
 }
 
-.home-event-time,
 .home-event-title {
-  margin-bottom: 1rem;
-  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
   color: white;
-  margin: 0;
-  margin-bottom: 1vh;
-  font-weight: 300;
-  text-align: center;
+  font-weight: 600;
+  line-height: 1.6rem;
+  color: #f6ca97;
 }
 
 .home-event-time,
 .home-event-location {
   font-size: max(1.1vw, 12px);
   margin: 0;
-  margin-bottom: 1vh;
+  margin-bottom: 0.5rem;
   font-weight: 450;
 }
 
 .home-event-description {
-  font-size: 16px;
+  line-height: 1.1rem;
   text-align: center;
-  letter-spacing: 0.2px;
 }
 
 .divide {
   border: 0;
-  height: 1px;
+  height: 2px;
   background-image: linear-gradient(
     to right,
     rgba(255, 255, 255, 0.2),
     rgba(255, 255, 255, 0.75),
     rgba(255, 255, 255, 0.2)
   );
-  size: 30px;
+  /* size: 30px; */
+  width: 100%;
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .home-event-share-button {
@@ -309,32 +310,32 @@
   border-radius: 5px;
 }
 
-.home-events-photo-container {
-  height: 160px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 24px;
-}
 .home-events-photo {
-  object-fit: cover;
+  /* object-fit: cover;
   max-height: 100%;
   max-width: 100%;
   position: center;
-  /* border-radius: 12px; */
-  border-radius: 24px;
+  /* border-radius: 12px; 
+  border-radius: 24px; */
+  display: block;
+  margin: auto;
+  margin-bottom: 0.5rem;
+  height: 10rem;
+  width: 16rem;
+  border-radius: 1.5rem;
+  /* object-fit: cover; */
 }
 
 @media screen and (max-width: 770px) {
   .home-event-card {
-    width: 300px;
+    width: 20rem;
     margin: 0px;
+    height: 97%;
   }
 
   img.home-events-photo {
-    width: 250px;
-    height: 250px;
+    width: 15rem;
+    height: 10rem;
   }
 
   .splide__slide {

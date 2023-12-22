@@ -33,7 +33,9 @@
   padding: 2vw;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: center;
 }
 .members-btn-year {
   transition: all 0.3s ease-in-out;
@@ -41,12 +43,13 @@
   border: none;
   color: #050528;
   border-radius: 10px;
-  padding: 1vw;
+  padding: max(1vw, 1rem);
+  margin: 0.5rem;
   /* padding-left: max(1.75vw,4px); */
   /* padding-right: max(1.75vw,4px); */
   font-weight: 500;
   /* font-size: max(1.25vw,10px); */
-  font-size: 1.5rem;
+  font-size: max(1.5vw, 1rem);
 }
 .active-year {
   background-color: white;
@@ -128,12 +131,20 @@
 }
 .card-contacts {
   display: flex;
-  width: 6vw;
+  width: min(9vw, 4rem);
+  align-items: center;
   justify-content: space-evenly;
 }
 a {
   text-decoration: none;
   color: white;
+}
+
+a > svg {
+  height: 1.2rem;
+  width: 1.2rem;
+  margin: 0.1rem;
+  color: #eca674;
 }
 .line-container {
   display: flex;
