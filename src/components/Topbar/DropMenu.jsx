@@ -29,9 +29,6 @@ const DropMenu = () => {
             <NavLink to="/open-projects" className="dropDownMenuLink">
                 <p className="menuItems">Open Projects</p>
             </NavLink>
-            <NavLink to="/jc" className="dropDownMenuLink">
-                <p className="menuItems">Journal Club</p>
-            </NavLink>
             <NavLink to="/gallery" className="dropDownMenuLink">
                 <p className="menuItems">Gallery</p>
             </NavLink>
