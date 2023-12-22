@@ -1,6 +1,7 @@
 import {useState, useEffect} from "react";
 import "./Achievement.css";
 import Data from "./Data.js";
+import { ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
 export default function Achievement() {
     const [state, setState] = useState(0);
     const len = Data.length;
@@ -12,11 +13,11 @@ export default function Achievement() {
     },[len]);
     return(
         <div className="achi-container">
-            <button className="achi-btn" onClick={() => setState((state-1+len)%len)}>left</button>
+            <button className="achi-btn" onClick={() => setState((state-1+len)%len)}><ChevronLeftIcon></ChevronLeftIcon></button>
             <p className="achi-desc">
                 {Data[state].desc}
             </p>
-            <button className="achi-btn" onClick={() => setState((state+1)%len)}>right</button>
+            <button className="achi-btn" onClick={() => setState((state+1)%len)}><ChevronRightIcon></ChevronRightIcon></button>
         </div>
     )
 }

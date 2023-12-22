@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import Home from "./components/Home/home";
 import Events from "./components/Events/Events";
 import Member from "./components/People/People";

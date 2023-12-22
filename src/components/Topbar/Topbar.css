@@ -1,8 +1,9 @@
 * {
   box-sizing: border-box;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif !important;
   font-display: swap;
 }
+
 .topbar-container {
   display: flex;
   justify-content: space-between;
@@ -12,59 +13,10 @@
   width: 98%;
   z-index: 100;
 }
+
 .small-screen-logo {
   width: 5vw;
   height: 5vw;
-}
-.responsiveMenuLinks {
-  display: none;
-}
-.expandedNavLinks {
-  /* font-size: larger; */
-  margin: .5rem auto !important;
-}
-.nav-btns{
-  position: relative;
-}
-.nav-btn:hover::before {
-  content: "";
-  position: absolute;
-  left: 30%;
-  bottom: -3px;
-  width: 40%;
-  height: 3px;
-  border-radius: 5px;
-  background-color: #eca674;
-  transition: all .5s ease-out;
-  transform-origin: bottom right;
-}
-.nav-btn.active::before{
-  content: "";
-  position: absolute;
-  left: min(20%, 1rem);
-  bottom: -5px;
-  border-radius: 5px;
-  width: 55%;
-  height: 3px;
-  background-color: #eca674;
-  transition: width .5s ease;
-  transform-origin: bottom right;
-}
-.moreMenu:hover{
-  cursor: pointer;
-}
-.expandedMenu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* position: absolute; */
-  /* right: 21rem; */
-  /* top: max(1rem, 1.4vw); */
-  background-color: #050528;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  pointer-events: auto;
-
 }
 @media screen and (min-width: 760px) {
   .small-screen-logo {
@@ -76,75 +28,15 @@
     display: block !important;
   }
 }
-.topbar-top a.active {
-  background-color: transparent;
-}
+
 .topbar-navs {
   padding: 1vw;
   font-size: 1rem;
-  /* background-color: #07072f; */
-  /* From https://css.glass */
   background: #050528;
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(6.4px);
-  -webkit-backdrop-filter: blur(6.4px);
   border-radius: 10px;
   display: flex;
   align-items: center;
   position: relative;
-}
-.nav-btn {
-  color: #eca674;
-  /* text-decoration: none; */
-  margin: 0rem 1.5rem;
-  letter-spacing: normal;
-  font-size: 1rem;
-  position: relative;
-  /* font-weight: 400; */
-}
-/* .nav-btns a.active {
-  color: #faf9f1; 
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  text-decoration-thickness: 3px; 
-} */
-/* .nav-btns :hover {
-  color: #faf9f1; 
-  transition: all 0.7s ease-out;
-} */
-
-.nav-toggle {
-  position: relative;
-}
-.toggle-btn {
-  margin-top: 4px;
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding-right: 2rem;
-  z-index: 101;
-  font-size: 8vw;
-  background-color: transparent;
-  border: none;
-  color: black;
-}
-.toggle-btn:hover {
-  color: #eca674;
-}
-.closed {
-  color: #eca674;
-}
-.closed:hover {
-  color: white;
-}
-.moreMenu {
-  color: #eca674;
-  background-color: transparent;
-  border: none;
-  position: relative;
-  /* font-weight: 600; */
 }
 
 @media screen and (max-width: 700px) {
@@ -164,89 +56,284 @@
     height: 6vw;
     margin: 0;
   }
-  .nav-btn.active::before{
+}
+
+.NavigationMenuRoot {
+  display: flex;
+  justify-content: center;
+}
+
+.NavigationMenuList {
+  display: flex;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 6px;
+  list-style: none;
+  color: #eca674;
+  margin: 0;
+}
+
+.NavigationMenuTrigger {
+  all: unset;
+}
+
+.NavigationMenuTrigger,
+.NavigationMenuLink {
+  padding: 8px 12px;
+  outline: none;
+  user-select: none;
+  font-weight: 500;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: #eca674;
+  letter-spacing: normal;
+}
+
+.NavigationMenuLink {
+  display: block;
+  font-size: 1rem;
+  position: relative;
+  margin: 0 0.3rem;
+}
+
+.NavigationMenuLink::after {
   content: "";
   position: absolute;
-  left: 40%;
-  bottom: -3px;
-    /* text-align: center; */
-  width: 2rem;
+  width: 0;
   height: 3px;
-  background-color: #07072f;
-  transition: width .5s ease;
+  border-radius: 5px;
+  bottom: 0.3rem;
+  left: 50%;
+  background-color: #eca674;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+.NavigationMenuLink:hover::after {
+  width: 27%;
+  left: 38%;
+}
+
+.NavigationMenuLink.active::after {
+  content: "";
+  position: absolute;
+  left: min(20%, 1rem);
+  bottom: -5px;
+  border-radius: 5px;
+  width: 55%;
+  height: 3px;
+  background-color: #eca674;
+  transition: width 0.5s ease;
   transform-origin: bottom right;
 }
-  .nav-btn:hover::before {
-  content: "";
+.NavigationMenuTrigger {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin: 0 0.3rem;
+  justify-content: space-between;
+  gap: 2px;
+}
+
+.NavigationMenuContent {
   position: absolute;
-  left: 50%;
-  bottom: -3px;
-  width: 1rem;
-  height: 3px;
-  background-color: #07072f;
-  transition: width .5s ease;
-  transform-origin: bottom right;
+  top: 0;
+  left: 0;
+  background-color: #050528;
+  width: auto;
+  animation-duration: 250ms;
+  animation-timing-function: ease;
+}
+.NavigationMenuContent[data-motion="from-start"] {
+  animation-name: enterFromLeft;
+}
+.NavigationMenuContent[data-motion="from-end"] {
+  animation-name: enterFromRight;
+}
+.NavigationMenuContent[data-motion="to-start"] {
+  animation-name: exitToLeft;
+}
+.NavigationMenuContent[data-motion="to-end"] {
+  animation-name: exitToRight;
+}
+@media only screen and (min-width: 600px) {
+  .NavigationMenuContent {
+    width: auto;
   }
-  
-  .topbar-navs {
-    width: 25%;
-    min-width: 150px;
-    /* background-color: #050528; */
-    margin-right: 0;
-    padding: 0;
-    transition: all 0.75s ease-in-out;
-    display: flex;
-    position: relative;
-    top: 6vh;
-    right: 0.5rem;
-    flex-direction: column;
-    align-items: center;
-    /* font-weight: 450; */
-    border-radius: 2rem;
+}
+
+.NavigationMenuIndicator {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 10px;
+  top: 100%;
+  overflow: hidden;
+  z-index: 1;
+  transition: width, transform 250ms ease;
+}
+.NavigationMenuIndicator[data-state="visible"] {
+  animation: fadeIn 200ms ease;
+}
+.NavigationMenuIndicator[data-state="hidden"] {
+  animation: fadeOut 200ms ease;
+}
+
+.NavigationMenuViewport {
+  position: relative;
+  transform-origin: top center;
+  margin-top: 10px;
+  width: 100%;
+  background-color: yellow;
+  border-radius: 6px;
+  overflow: hidden;
+  height: var(--radix-navigation-menu-viewport-height);
+  transition: width, height, 300ms ease;
+}
+.NavigationMenuViewport[data-state="open"] {
+  animation: scaleIn 200ms ease;
+}
+.NavigationMenuViewport[data-state="closed"] {
+  animation: scaleOut 200ms ease;
+}
+@media only screen and (min-width: 600px) {
+  .NavigationMenuViewport {
+    width: var(--radix-navigation-menu-viewport-width);
   }
-  .nav-toggle {
-    height: 5rem;
+}
+
+.List {
+  display: grid;
+  padding: 22px;
+  margin: 0;
+  list-style: none;
+}
+@media only screen and (min-width: 600px) {
+  .List.two {
+    width: auto;
+    grid-auto-flow: rows;
+    /* grid-template-rows: repeat(4, 1fr); */
   }
-  .nav-btns {
-    width: 100%;
-    border: 0.2rem solid #eca674;
-    border-radius: 1rem;
-    background-color: #ebc5b7f5;
-    display: flex;
-    /* top: 6vh; */
-    /* position: relative; */
-    right: 1vw;
-    flex-direction: column;
-    padding-left: 0;
-    /* height: ; */
-    padding-top: 0;
-    justify-content: space-evenly;
+}
+
+.ListItemLink {
+  display: block;
+  outline: none;
+  text-decoration: none;
+  user-select: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.ViewportPosition {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: auto;
+  top: 100%;
+  /* perspective: 2000px; */
+}
+
+.CaretDown {
+  position: relative;
+  color: var(--violet-10);
+  top: 1px;
+  transition: transform 250ms ease;
+}
+[data-state="open"] > .CaretDown {
+  transform: rotate(-180deg);
+}
+
+.Arrow {
+  position: relative;
+  top: 70%;
+  background-color: #eca674;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  border-top-left-radius: 2px;
+}
+
+@keyframes enterFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
   }
-  .nav-btn {
-    color: #07072f;
-    font-size: 1rem;
-    text-align: center;
-    margin: .2rem;
-    position: relative;
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
-  .toggle-btn {
-    display: flex;
-    height: 6vw;
-    width: 6vw;
+}
+
+@keyframes enterFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
   }
-  .hide {
-    display: none;
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
-  .moreMenu {
-    display: none;
+}
+
+@keyframes exitToRight {
+  from {
+    opacity: 1;
+    transform: translateX(0);
   }
-  .expandedMenu {
-    display: none;
+  to {
+    opacity: 0;
+    transform: translateX(200px);
   }
-  .responsiveMenuLinks {
-    display: block;
+}
+
+@keyframes exitToLeft {
+  from {
+    opacity: 1;
+    transform: translateX(0);
   }
-  .expandedMenu {
-    display: none;
+  to {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-30deg) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg) scale(1);
+  }
+}
+
+@keyframes scaleOut {
+  from {
+    opacity: 1;
+    transform: rotateX(0deg) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: rotateX(-10deg) scale(0.95);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }

@@ -1,5 +1,5 @@
 import "./Footer.css";
-
+import { InstagramLogoIcon, TwitterLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 export default function Footer(){
     return(
         <div className="footer-container">
@@ -22,10 +22,10 @@ export default function Footer(){
                     <h2 className="footer-body"><a href="mailto:paac@iitr.ac.in">paac@iitr.ac.in</a></h2>
                 </div>
                 <div className="footer-div social">
-                    {/* <div className="footer-socials"><a href="https://www.instagram.com/astro_iitr/?hl=en" target="m_blank"><i class="fa-solid fa-user"></i>Instagram</a></div> */}
-                    {/* <div className="footer-socials"><a href="https://www.facebook.com/physastroclubiitr/" target="m_blank"><FontAwesomeIcon icon={faFacebook} className="socials-icon" fontSize="2vw"></FontAwesomeIcon>Facebook</a></div> */}
-                    {/* <div className="footer-socials"><a href="https://twitter.com/paaciitr?lang=en" target="m_blank"><FontAwesomeIcon icon={faTwitter} className="socials-icon" fontSize="2vw"></FontAwesomeIcon>Twitter</a></div> */}
-                    {/* <div className="footer-socials"><a href="https://www.linkedin.com/company/paac-iitr/" target="m_blank"><FontAwesomeIcon icon={faLinkedin} className="socials-icon" fontSize="2vw"></FontAwesomeIcon>Linkedin</a></div> */}
+                    <div className="footer-socials"><a href="https://www.instagram.com/astro_iitr/?hl=en" target="m_blank"><InstagramLogoIcon/>Instagram</a></div>
+                    <div className="footer-socials"><a href="https://www.facebook.com/physastroclubiitr/" target="m_blank"><i className="fa-solid fa-facebook"></i>Facebook</a></div>
+                    <div className="footer-socials"><a href="https://twitter.com/paaciitr?lang=en" target="m_blank"><TwitterLogoIcon/>Twitter</a></div>
+                    <div className="footer-socials"><a href="https://www.linkedin.com/company/paac-iitr/" target="m_blank"><LinkedInLogoIcon/>Linkedin</a></div>
                 </div>
                 </div>
             </div>

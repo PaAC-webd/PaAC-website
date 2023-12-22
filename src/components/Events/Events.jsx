@@ -15,6 +15,7 @@ export default function Events(){
                 <Topbar />
             </div>
             <h1 className="events-heading-title">Upcoming Events</h1>
+            <div  className="upcoming-card">
             <UpcomingEventCard/>
                 {/* <EventCard 
                 key={Upcoming.id}
@@ -23,6 +24,7 @@ export default function Events(){
                 location = {Upcoming.location}
                 details = {Upcoming.details}
                 />  */}
+            </div>
             <h1 className="events-heading-title">Previous Events</h1>
             <div className="events-recent" >
                 {Recent.map((data) => (
