@@ -2,11 +2,10 @@ import { useState } from "react";
 import "./People.css";
 import Topbar from "../Topbar/Topbar";
 import Footer from "../Footer/Footer";
-import { Secy, Head, Member} from "./Data.js";
+import { Secy, Head, Member } from "./Data.js";
 import Card from "./Card";
 
 export default function People() {
-
   const [year, setYear] = useState(2);
   return (
     <div className="about-container">
@@ -15,9 +14,7 @@ export default function People() {
       </div>
 
       <div className="members">
-        <div
-          className="members-secys"
-        >
+        <div className="members-secys">
           {Secy.map((value) => (
             <Card
               id={value.name}
@@ -30,14 +27,10 @@ export default function People() {
             />
           ))}
         </div>
-        <div
-          className="line-container"
-        >
+        <div className="line-container">
           <div className="horizontal-line"></div>
         </div>
-        <div
-          className="members-heads"
-        >
+        <div className="members-heads">
           {Head.map((value) => (
             <Card
               id={value.name}
@@ -50,14 +43,10 @@ export default function People() {
             />
           ))}
         </div>
-        <div
-          className="line-container"
-        >
+        <div className="line-container">
           <div className="horizontal-line"></div>
         </div>
-        <div
-          className="members-btn"
-        >
+        <div className="members-btn">
           <button
             className={"members-btn-year " + (year === 2 ? "active-year" : "")}
             onClick={() => setYear(2)}
@@ -83,9 +72,7 @@ export default function People() {
             5th Y
           </button>
         </div>
-        <div
-          className="members-members"
-        >
+        <div className="members-members">
           {Member.map((value) => {
             if (value.year === year) {
               return (
@@ -103,9 +90,7 @@ export default function People() {
             return null;
           })}
         </div>
-        <div
-          className="line-container"
-        >
+        <div className="line-container">
           <div className="horizontal-line"></div>
         </div>
       </div>

@@ -10,12 +10,10 @@ import HomeEvents from "./HomeEvents";
 // import Logo from "./Logo";
 import Newsletter from "./Newsletter";
 
-
 export default function Home() {
-
   return (
     <div>
-    {/* //   <div className="logo-div">
+      {/* //   <div className="logo-div">
     //     <Logo></Logo>
     //   </div> */}
       <div className="home-container">
@@ -23,32 +21,19 @@ export default function Home() {
           <Topbar />
         </div>
         <div className="home-info">
-          <img
-            src={Ellipse}
-            className="ellipse"
-            alt=""
-          ></img>
-          <div
-            className="home-title"
-          >
-           <h1 className="club">Physics and Astronomy Club</h1>
+          <img src={Ellipse} className="ellipse" alt=""></img>
+          <div className="home-title">
+            <h1 className="club">Physics and Astronomy Club</h1>
             <h3 className="iitr">Indian Institute of Technology Roorkee </h3>
           </div>
-          <img
-            src={Planet}
-            className="planet"
-            alt=""
-            height="50vw"
-          ></img>
+          <img src={Planet} className="planet" alt="" height="50vw"></img>
         </div>
         <div className="home-body">
           <div className="newsletter-container">
-            <Newsletter/>
+            <Newsletter />
           </div>
           <div className="know-paac-container">
-            <div
-              className="paac-desc"
-            >
+            <div className="paac-desc">
               <NavLink to="/about-us">
                 <h1 className="know-header">What do we do at PaAC?</h1>
               </NavLink>
@@ -67,21 +52,14 @@ export default function Home() {
               physical science topics.
             </p> */}
             </div>
-            <div
-              className="paac-gp"
-            >
-            </div>
+            <div className="paac-gp"></div>
           </div>
-          <div
-            className="home-achievement"
-          >
+          <div className="home-achievement">
             <Achievement />
           </div>
 
           {/* ---------Home Events------------ */}
-          <div
-            className="home-events-section"
-          >
+          <div className="home-events-section">
             <div className="home-events-heading-container">
               <NavLink to="/events" className="home-events-link">
                 <h1 className="home-events-heading">
@@ -98,7 +76,6 @@ export default function Home() {
           <Footer />
         </div>
       </div>
-      
     </div>
   );
 }
