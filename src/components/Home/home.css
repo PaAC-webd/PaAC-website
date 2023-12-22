@@ -92,7 +92,7 @@
   align-items: center;
   border-radius: 1rem;
 }
-.newsletter-right{
+.newsletter-right {
   width: 15%;
   position: relative;
   /* justify-content: right; */
@@ -100,7 +100,7 @@
   flex-direction: column; */
   margin: 0 2rem;
 }
-.newsletter-left > p:first-child{
+.newsletter-left > p:first-child {
   margin-bottom: 0px;
 }
 .newsletter-left > p:nth-child(2) {
@@ -108,32 +108,33 @@
 }
 .newsletter-left > p {
   font-size: 2rem;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   color: #050528;
 }
 .newsletter-left h1 {
   color: #050528;
   font-size: 2.5rem;
   font-weight: 600;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }
-.newsletter-img > img {
+.newsletter-img {
   position: relative;
-  right: 2rem;
-  bottom: 1rem;
-  object-fit: contain;
-  z-index: 2;
+  height: 100%;
+  width: 100%;
+  top: -15px;
+  left: -15px;
+  background-image: url("../assets/newsletter.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.newsletter-img-border{
+.newsletter-img-border {
   height: 14rem;
   width: 10rem;
+  border: #050528 solid 2px;
   position: relative;
-  bottom: -.5rem;
-  right: rem;
   z-index: 1;
-  border: 2px solid #050528;
 }
-.newsletter-ellipse{
+.newsletter-ellipse {
   height: 7rem;
   background-color: #eca674;
   position: absolute;
@@ -144,14 +145,21 @@
   border-radius: 60% / 50%;
   rotate: -17deg;
 }
-.read-here{
-  color: white;
-  background-color:#eca674;
+.read-here {
+  color: #050528;
+  background-color: #eca674;
   border: none;
-  border-radius:.51rem;
+  border-radius: 0.51rem;
   font-weight: bold;
-  padding: .8rem;
-  box-shadow: #050528 ;
+  padding: 0.8rem;
+  transition: all 0.4s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.read-here:hover {
+  background-color: #050528;
+  color: #eca674;
 }
 /* ----------Newsletter styling fineshes here-------------- */
 .know-paac-container {
@@ -439,13 +447,13 @@
     padding: 1rem 1rem 1rem 0rem;
     /* height: 18rem; */
   }
-  .newsletter-left > p{
+  .newsletter-left > p {
     font-size: 3.5vw;
   }
   .newsletter-left > h1 {
     font-size: 5vw;
   }
-  .newsletter-left{
+  .newsletter-left {
     max-width: 50%;
   }
   .newsletter-img > img {
@@ -457,9 +465,9 @@
   .newsletter-img-border {
     height: 8rem;
     width: 5.5rem;
-    bottom: -.5rem;
+    bottom: -0.5rem;
   }
-  .newsletter-ellipse{
+  .newsletter-ellipse {
     border-radius: 50% / 50%;
     bottom: -5rem;
     right: -5rem;
@@ -468,6 +476,4 @@
     color: #050528;
   }
   /* --------------Newsletter styling finishes here */
-
 }
-
