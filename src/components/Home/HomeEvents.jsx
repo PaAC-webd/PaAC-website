@@ -12,22 +12,16 @@ const HomeEvents = () => {
         options={{
           type: "loop",
           width: "100vw",
-          perPage: 3.5,
+          perPage: 3,
           breakpoints: {
-            1314: {
-              perPage: 3,
-            },
             1060: {
-              perPage: 2.5,
-            },
-            890: {
               perPage: 2,
             },
             768: {
               perPage: 1,
             },
           },
-          gap: "5rem",
+          gap: "3rem",
           autoScroll: {
             speed: 2,
             pauseOnFocus: false,
