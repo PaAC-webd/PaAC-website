@@ -51,6 +51,11 @@
 .footer-socials a{
     display: flex;
     align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.footer-socials a:hover{
+    color: #eca674;
 }
 .social{
     display: flex;

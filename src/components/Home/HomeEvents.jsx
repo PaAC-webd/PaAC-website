@@ -45,7 +45,7 @@ const HomeEvents = () => {
               </div>
               <hr className="divide" />
               <p className="home-event-description">{home_event.desc}</p>
-              <button className="home-event-share-button">Share</button>
+              <button className="home-event-share-button">Learn more</button>
             </div>
             
           </SplideSlide>

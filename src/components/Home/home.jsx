@@ -49,7 +49,7 @@ export default function Home() {
             <div
               className="paac-desc"
             >
-              <NavLink to="/about-us">
+              <NavLink to="/people">
                 <h1 className="know-header">What do we do at PaAC?</h1>
               </NavLink>
               {/* <p className="know-body">

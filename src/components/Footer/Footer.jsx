@@ -23,7 +23,6 @@ export default function Footer(){
                 </div>
                 <div className="footer-div social">
                     <div className="footer-socials"><a href="https://www.instagram.com/astro_iitr/?hl=en" target="m_blank"><InstagramLogoIcon/>Instagram</a></div>
-                    <div className="footer-socials"><a href="https://www.facebook.com/physastroclubiitr/" target="m_blank"><i className="fa-solid fa-facebook"></i>Facebook</a></div>
                     <div className="footer-socials"><a href="https://twitter.com/paaciitr?lang=en" target="m_blank"><TwitterLogoIcon/>Twitter</a></div>
                     <div className="footer-socials"><a href="https://www.linkedin.com/company/paac-iitr/" target="m_blank"><LinkedInLogoIcon/>Linkedin</a></div>
                 </div>

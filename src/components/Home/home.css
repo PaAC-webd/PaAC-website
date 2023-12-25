@@ -123,9 +123,10 @@
   width: 100%;
   top: -15px;
   left: -15px;
-  background-image: url("../assets/newsletter.png");
+  background-image: url("../assets/newsletter_cover.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .newsletter-img-border {
   height: 14rem;
@@ -146,7 +147,6 @@
   rotate: -17deg;
 }
 .read-here {
-  color: #050528;
   background-color: #eca674;
   border: none;
   border-radius: 0.51rem;
@@ -156,10 +156,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Josefin Sans";
 }
 .read-here:hover {
   background-color: #050528;
-  color: #eca674;
 }
 /* ----------Newsletter styling fineshes here-------------- */
 .know-paac-container {
@@ -233,6 +233,9 @@
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+.home-events-heading:hover {
+  color: #faf9f1;
+}
 
 .home-events-heading-container {
   max-width: 80%;
@@ -299,6 +302,7 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   display: block;
+  font-family: "Josefin Sans", sans-serif;
   margin: 0 auto;
 }
 
