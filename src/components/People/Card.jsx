@@ -32,7 +32,7 @@ export default function Card(props) {
       <h2 className="card-position">({props.position})</h2>
       <div className="card-contacts">
         <a href={props.linkedIn}>
-          <LinkedInLogoIcon/>
+          <LinkedInLogoIcon />
         </a>
         <a href={props.email}>
           <EnvelopeClosedIcon />
