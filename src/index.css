@@ -19,7 +19,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+button {
   font-family: "Josefin Sans", sans-serif;
   font-display: swap;
 }

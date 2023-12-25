@@ -34,23 +34,19 @@ export default function Home() {
           </div>
           <div className="know-paac-container">
             <div className="paac-desc">
-              <NavLink to="/about-us">
+              <NavLink to="/people">
                 <h1 className="know-header">What do we do at PaAC?</h1>
               </NavLink>
-              {/* <p className="know-body">
-              Formerly known as the Star-gazing section, our group directly
-              operates under the Student Technical Council of IITR and Office of
-              Dean-sponsored research and industrial consultancy. The group is a
-              student club that has a core executive team. However volunteering
-              and even membership is open to all UG, PG, and Ph.D. students.
-              Every year, we engage in several physics and astronomy outreach
-              events and short and long-term technical projects. The club as its
-              normal functioning engages in various activities, A Physics and
-              Astronomy Journal Club is also a subset of our group. This Journal
-              club frequently engages in research paper discussions and also in
-              open informal group discussions on various mathematical and
-              physical science topics.
-            </p> */}
+              <p className="know-body">
+                Formerly known as the Star-gazing section, our group directly
+                operates under STC-IITR and the office of Dean-SRIC. The group
+                has a core executive team but volunteering and membership is
+                open to all students. While we primarily focus on the topics of
+                Physics, Mathematics and Astronomy through discussions,
+                lectures, open projects and competitions, our primary goal
+                remains to be at the forefront of all scientific pursuits on
+                campus!
+              </p>
             </div>
             <div className="paac-gp"></div>
           </div>
