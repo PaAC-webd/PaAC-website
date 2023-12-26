@@ -1,0 +1,88 @@
+*{
+    font-family: "Josefin Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.projects-container{
+    background-image: url('/Frame_96.png');
+}
+.open-projects{
+    padding: 5rem 3rem;
+}
+
+.open-projects > h1 {
+    font-size: 2.5rem;
+    color: #eca674;
+    padding: 2rem 0;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.project-card {
+    background-color: #2c2b6c;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 16rem;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.project-image{
+    width: 12rem;
+    height: 13rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project-title{
+    color: #f6ca97;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-details {
+    margin-bottom: 1rem;
+}
+
+.project-date{
+    margin-bottom: 1rem;
+}
+
+.button {
+    background-color: #eca674;
+    color: #2c2b6c;
+    border-radius: .5rem;
+    padding: .5rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: 2px solid;
+}
+
+.button:hover {
+    color: #eca674;
+    background-color: #2c2b6c;
+    cursor: pointer;
+    border: 2px solid #eca674;
+}
+
+/* @media only screen and (max-width: 800px){
+    .project-card {
+        width: 20vw;
+        padding: 1rem .5rem;
+    }
+    .project-image {
+        width: 90%;
+        height: 40%;
+    }
+    .project-title {
+        font-size: 2.2vw;
+    }
+} */

@@ -1,4 +1,5 @@
 
+
 const BookCard = ({ bookName, authorName, bookImage, bookEdition, bookAvailable }) => {
   return (
     <div className={`book-card ${bookAvailable ? '' : 'not-available'}`}>
