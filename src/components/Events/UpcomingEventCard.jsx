@@ -6,11 +6,12 @@ import {Upcoming} from "./EventsData.js"
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+// import 'swiper/css/effect-coverflow';
+// import 'swiper/css/pagination';
+// import 'swiper/css/navigation';
 
 import { Keyboard, EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+import { CalendarIcon, GlobeIcon } from "@radix-ui/react-icons";
 
 
 export default function UpcomingEventCard(){
@@ -21,7 +22,7 @@ effect={'coverflow'}
 grabCursor={true}
 centeredSlides={true}
 loop={true}
-slidesPerView={Upcoming.length}
+slidesPerView={4}
 Keyboard={{enabled: true}}
 coverflowEffect={{
   rotate: 0,
@@ -43,7 +44,8 @@ navigation={{
   prevEl: '.swiper-button-prev',
   clickable: true,
 }}
-modules={[Keyboard, EffectCoverflow, Pagination, Navigation]}
+// modules={[Keyboard, EffectCoverflow, Pagination, Navigation]}
+modules={[EffectCoverflow, Pagination, Navigation]}
 className="swiper_container"
 > 
  {Upcoming.map((up) => ( 
@@ -52,8 +54,8 @@ className="swiper_container"
         <div className="EventCard-container">
             <h1 className="event-title">{up.title} {up.id}</h1>
             <div className="event-info">
-            <h2 className="event-time">  <i className="icon-clock"></i> {up.date}</h2>
-            <h2 className="event-location">  <i className="icon-location"></i> {up.location}</h2>
+            <h2 className="event-time">  <CalendarIcon/> {up.date}</h2>
+            <h2 className="event-location">  <GlobeIcon/> {up.location}</h2>
             <hr className="divider" />
             <p className="event-details">{up.details}</p>
         </div>
