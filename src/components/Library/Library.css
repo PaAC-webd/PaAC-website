@@ -12,10 +12,17 @@
     padding: 7rem 3rem 1rem 3rem;
 }
 
+.library-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 .library-top > h1{
     color: #eca674;
     font-size: 2.5rem;
     padding: .5rem 0 .5rem 0;
+    text-align: center;
 }
 .library-top > p {
     line-height: 1.2rem;
@@ -50,7 +57,7 @@
 }
 
 .book-card{
-    background-color: #2c2b6c;
+    background-color: #2c2b6c88;
     margin: 1rem;
     position: relative;
     border-radius: 1rem;
