@@ -1,5 +1,3 @@
-import "./Gallery.css";
-
 const BookCard = ({ name, author, image, edition, available }) => {
   return (
     <div className={`book-card ${available ? '' : 'not-available'}`}>

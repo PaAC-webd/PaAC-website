@@ -3,7 +3,7 @@ import "./Library.css";
 import Footer from "../Footer/Footer";
 import {books as allBooks} from "./Data";
 import { useState } from "react";
-import BookCard from "../Gallery/Card";
+import BookCard from "./Card";
 
 
 const Library = () => {
