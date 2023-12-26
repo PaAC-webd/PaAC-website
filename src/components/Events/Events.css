@@ -43,7 +43,7 @@
   /* margin: auto; */
 }
 .EventCard-container {
-  background-color: #2c2b6cb8;
+  background-color: #2c2b6c72;
   border-radius: 20px;
   padding: 1rem;
   width: 500px;
@@ -111,6 +111,7 @@
   transition: background-color 0.3s ease;
   display: block;
   margin: 0 auto;
+  font-family: "Josefin Sans";
 }
 
 /* .upcoming-card {
