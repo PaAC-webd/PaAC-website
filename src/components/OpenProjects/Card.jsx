@@ -6,7 +6,7 @@ const ProjectCard = ({title, date, image, details}) => {
         <img src={image} alt="" className="project-image"/>
         <h2 className="project-title">{title}</h2>
         <p className="project-details">{details}</p>
-        <p className="data"><CalendarIcon/>{date}</p>
+        <p className="project-date"><CalendarIcon/> {date}</p>
         <button className="button">Details</button>
     </div>
   )
