@@ -1,10 +1,51 @@
 import "./OpenProjects.css";
 import Topbar from "../Topbar/Topbar";
 import Footer from "../Footer/Footer";
-import { openProjects } from "./OpenData";
 import ProjectCard from "./Card";
+const spaceId = import.meta.env.VITE_SPACE_ID;
+const accessToken = import.meta.env.VITE_ACCESS_TOKEN;
+import { useState, useEffect } from "react";
 
 export default function Events() {
+  const [projects, setProjects] = useState(null);
+
+  useEffect(() => {
+    window
+      .fetch(`https://graphql.contentful.com/content/v1/spaces/${spaceId}/`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${accessToken}`,
+        },
+        body: JSON.stringify({
+          query: `query {
+            projectsCollection {
+              items {
+                title
+                description
+                date
+                compressedLink
+                duration
+                image {
+                  url
+                }
+              }
+            }
+          }`,
+        }),
+      })
+      .then((response) => response.json())
+      .then(({ data, errors }) => {
+        if (errors) {
+          console.error(errors);
+        }
+        setProjects(data.projectsCollection.items);
+      });
+  }, []);
+
+  if (!projects) {
+    return "Loading...";
+  }
   return (
     <div className="projects-container">
       <div className="projects-topbar">
@@ -22,8 +63,8 @@ export default function Events() {
           architecto quasi ad facilis beatae.
         </p>
         <div className="projects">
-          {openProjects.map((project) => {
-            return <ProjectCard {...project} key={project.id} />;
+          {projects.map((project) => {
+            return <ProjectCard {...project} key={project.title} />;
           })}
         </div>
       </section>
