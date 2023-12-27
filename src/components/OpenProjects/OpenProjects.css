@@ -48,8 +48,8 @@
 
 .project-title {
   color: #f6ca97;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
+  /* text-decoration: underline; */
+  /* text-underline-offset: 1rem; */
   margin-bottom: 1.5rem;
 }
 
