@@ -16,14 +16,6 @@ const Library = () => {
   const [subject, setSubject] = useState("All");
   const [page, setPage] = useState(null);
 
-  const filteredBooks = page.filter((book) => {
-    if (subject === "All") {
-      return true;
-    } else {
-      return book.bookSubject === subject;
-    }
-  });
-
   useEffect(() => {
     window
       .fetch(`https://graphql.contentful.com/content/v1/spaces/${spaceId}/`, {
@@ -61,6 +53,14 @@ const Library = () => {
   if (!page) {
     return "Loading...";
   }
+  
+  const filteredBooks = page.filter((book) => {
+    if (subject === "All") {
+      return true;
+    } else {
+      return book.bookSubject === subject;
+    }
+  });
 
   return (
     <>
