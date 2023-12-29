@@ -182,7 +182,7 @@
   transform-origin: top center;
   margin-top: 10px;
   width: 100%;
-  background-color: yellow;
+  background-color: #050528;
   border-radius: 6px;
   overflow: hidden;
   height: var(--radix-navigation-menu-viewport-height);
