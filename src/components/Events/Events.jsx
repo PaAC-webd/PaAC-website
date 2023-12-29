@@ -15,13 +15,6 @@ export default function Events(){
             <h1 className="events-heading-title">Upcoming Events</h1>
             <div  className="upcoming-events">
             <UpcomingEvents/>
-                {/* <EventCard 
-                key={Upcoming.id}
-                title = {Upcoming.title}
-                date = {Upcoming.date}
-                location = {Upcoming.location}
-                details = {Upcoming.details}
-            />  */}
             </div>
             </div>
             <h1 className="events-heading-title">Previous Events</h1>
