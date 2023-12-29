@@ -87,6 +87,7 @@ export default function Contact() {
           method="POST"
           className="contact-form"
           data-netlify="true"
+          data-netlify-recaptcha="true"
         >
           <input type="hidden" name="form-name" value="contact" />
           <label>Name </label>
@@ -95,6 +96,7 @@ export default function Contact() {
           <input required name="email" type="email" />
           <label>Message</label>
           <textarea required rows={5} name="message" />
+          <div data-netlify-recaptcha="true"></div>
           <div className="form-submit">
             <button className="form-submit-btn" type="submit">
               Send
