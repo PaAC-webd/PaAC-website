@@ -94,6 +94,8 @@ export default function Contact() {
           <input required name="name" type="text" />
           <label>Email</label>
           <input required name="email" type="email" />
+          <label>Subject</label>
+          <input required name="subject" type="subject" />
           <label>Message</label>
           <textarea required rows={5} name="message" />
           <div data-netlify-recaptcha="true"></div>
