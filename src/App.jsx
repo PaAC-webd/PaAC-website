@@ -7,6 +7,7 @@ import Contact from "./components/Contact/Contact";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Library from "./components/Library/Library";
 import OpenProjects from "./components/OpenProjects/OpenProjects";
+import EventD from "./components/Events/EventD";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
     { path: "/contact-us", element: <Contact /> },
     { path: "/library", element: <Library /> },
     { path: "/open-projects", element: <OpenProjects /> },
+    { path: "/event/:eventName", element: <EventD /> },
   ]);
   return (
     <React.StrictMode>
