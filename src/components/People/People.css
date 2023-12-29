@@ -6,6 +6,9 @@
   background-image: url("/Frame_96.png");
   background-position: center;
 }
+h1{
+  text-align: center;
+}
 .about-topbar {
   width: 100%;
 }
@@ -136,6 +139,7 @@
   height: 14vw !important;
   border-radius: 50%;
   object-fit: cover;
+  margin-bottom: .7rem;
 }
 .blur-image > canvas {
   border-radius: 50%;
@@ -220,11 +224,16 @@ a > svg {
   .card-image {
     width: 20vw;
     height: 20vw;
+    margin-bottom: .3rem;
+  }
+  h1{
+    font-size: 2rem;
   }
   .blur-image {
     display: block;
     width: 20vw !important;
     height: 20vw !important;
+    margin-bottom: .3rem;
   }
   .card-name {
     margin-bottom: 0;
