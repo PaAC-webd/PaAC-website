@@ -1,0 +1,82 @@
+.detailed-event {
+    padding-top: 6rem;
+}
+
+.event-top{
+    padding: .5rem 4vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.image-1{
+    height: 20vw;
+    /* padding: 0 .5rem; */
+    /* width: 20rem; */
+}
+
+.event-info{
+    /* padding: 0 5rem; */
+}
+
+.event-schedule{
+    font-size: 3vw;
+    text-align: center;
+}
+
+.calender-icon > svg {
+    height: 3vw;
+    width: 3vw;
+    /* margin: auto; */
+    position: relative;
+    top: .2rem;
+    margin-right: 2vw;
+}
+.event-heading{
+    font-size: 4vw;
+    color: #eca674;
+    margin-bottom: 1rem;
+}
+
+.event-details{
+    padding: 1rem 5rem;
+    width: 100%;
+}
+
+.desc-para{
+    /* margin: auto; */
+    margin-bottom: 1rem;
+}
+
+.desc-2>div {
+    margin-right: 2rem;
+}
+
+.desc-2{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-2{
+    height: 15vw;
+}
+
+@media only screen and (max-width: 750px){
+    .event-details{
+        padding: 1rem 2rem;
+    }
+    .desc-2{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .desc-2 > div {
+        margin: auto;
+    }
+    .image-2 {
+        height: 40vw;
+        margin-bottom: 2rem;
+    }
+}   
