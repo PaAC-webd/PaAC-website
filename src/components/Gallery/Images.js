@@ -11,13 +11,13 @@ import eclipse_3 from "../assets/gallery/eclipse-3.jpg";
 export const data = [
     {
       image: comet,
-      caption: "San Francisco",
-      description: "kya matlab ham sote nhi"
+      caption: "C/2022 E3(ZTF)",
+      description: "A once in 50,000 years wonder"
     },
     {
       image: moon,
-      caption: "Scotland",
-      description: "kya matlab ham sote nhi"
+      caption: "The Moon",
+      description: "Clicked by "
     },
     {
       image: nebula,

@@ -76,134 +76,66 @@
   height: 40vw;
 }
 
-/* ----------Newsletter styling--------------- */
-.newsletter-container {
-  z-index: 1;
-  margin-top: min(120vh, 88vw);
-}
-.newsletter {
-  overflow: hidden;
-  width: 90vw;
-  /* height: 15rem; */
-  padding: 1rem 5rem 1rem 2.5rem;
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 1rem;
-}
-.newsletter-right {
-  width: 15%;
-  position: relative;
-  /* justify-content: right; */
-  /* display: flex;
-  flex-direction: column; */
-  margin: 0 2rem;
-}
-.newsletter-left > p:first-child {
-  margin-bottom: 0px;
-}
-.newsletter-left > p:nth-child(2) {
-  margin-top: 0;
-}
-.newsletter-left > p {
-  font-size: 2rem;
-  margin: 0.5rem 0;
-  color: #050528;
-}
-.newsletter-left h1 {
-  color: #050528;
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin: 0.5rem 0;
-}
-.newsletter-img {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  top: -15px;
-  left: -15px;
-  background-image: url("../assets/newsletter_cover.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.newsletter-img-border {
-  height: 14rem;
-  width: 10rem;
-  border: #050528 solid 2px;
-  position: relative;
-  z-index: 1;
-}
-.newsletter-ellipse {
-  height: 7rem;
-  background-color: #eca674;
-  position: absolute;
-  right: -9rem;
-  width: max(40vw, 20rem);
-  bottom: -4rem;
-  shape-outside: ellipse(50% 3.5rem);
-  border-radius: 60% / 50%;
-  rotate: -17deg;
-}
-.read-here {
-  background-color: #eca674;
-  border: none;
-  border-radius: 0.51rem;
-  font-weight: bold;
-  padding: 0.8rem;
-  transition: all 0.4s ease-in-out;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Josefin Sans";
-}
-.read-here:hover {
-  background-color: #050528;
-}
 /* ----------Newsletter styling fineshes here-------------- */
+/* know paac begins */
 .know-paac-container {
-  width: 90%;
   position: relative;
-  margin-left: 0;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 5vw;
-  color: white;
-}
-.paac-desc {
   width: 100%;
-  line-height: 1.25;
-  font-size: max(1.5vw, 12px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: calc(8px + 1.5625vw);
 }
-@media screen and (min-width: 1024px) {
-  .paac-desc {
-    width: 45%;
-  }
-  .paac-gp {
-    font-size: 2vw;
-    width: 45%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .paac-gp img {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 25px;
-  }
+.know-paac-body {
+  padding: calc(8px + 1.5625vw);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
 }
-
+.know-paac-header {
+  padding: calc(8px + 1.5625vw);
+}
 .know-header {
   color: #eca674;
-  transition: all 0.7s ease-in-out;
-}
-.know-.home-container {
-  font-weight: 300;
+  transition: all 0.4s ease-in-out;
 }
 .know-header:hover {
   color: #faf9f1;
+}
+.paac-desc {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(15px + 0.390625vw);
+  padding: calc(8px + 1.5625vw);
+  line-height: 1.25;
+}
+.paac-gp {
+  width: 45%;
+}
+.paac-gp > img {
+  object-fit: contain;
+  height: 100%;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .know-paac-body {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .paac-desc {
+    width: 100%;
+  }
+  .paac-gp {
+    width: 100%;
+  }
+}
+/* know paac ends */
+.know-.home-container {
+  font-weight: 300;
 }
 
 .home-.home-container {
@@ -397,26 +329,10 @@
     font-size: 3vw;
     font-weight: 450;
   }
-  .know-paac-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2vw;
-  }
-  .know-header {
-    font-size: 4vw;
-  }
-  .know-.home-container {
+  know-.home-container {
     font-size: 3vw;
   }
-  .paac-desc,
-  .paac-gp {
-    width: 90%;
-  }
-  .paac-gp {
-    height: 30vh;
-  }
+
   .home-achievement {
     margin: 5vh;
     height: 20vh;
@@ -451,7 +367,6 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     padding: 1rem 1rem 1rem 0rem;
-    /* height: 18rem; */
   }
   .newsletter-left > p {
     font-size: 3.5vw;
@@ -481,5 +396,86 @@
   .read-here {
     color: #050528;
   }
-  /* --------------Newsletter styling finishes here */
+}
+/* ----------Newsletter styling--------------- */
+.newsletter-container {
+  z-index: 1;
+  margin-top: min(120vh, 88vw);
+}
+.newsletter {
+  overflow: hidden;
+  width: 90vw;
+  /* height: 15rem; */
+  padding: 1rem 5rem 1rem 2.5rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+}
+.newsletter-right {
+  width: 15%;
+  position: relative;
+  margin: 0 2rem;
+}
+.newsletter-left > p:first-child {
+  margin-bottom: 0px;
+}
+.newsletter-left > p:nth-child(2) {
+  margin-top: 0;
+}
+.newsletter-left > p {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+  color: #050528;
+}
+.newsletter-left > h1 {
+  color: #050528;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+.newsletter-img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: -15px;
+  left: -15px;
+  background-image: url("../assets/newsletter_cover.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.newsletter-img-border {
+  height: 14rem;
+  width: 11rem;
+  border: #050528 solid 2px;
+  position: relative;
+  z-index: 1;
+}
+.newsletter-ellipse {
+  height: 7rem;
+  background-color: #eca674;
+  position: absolute;
+  right: -9rem;
+  width: max(40vw, 20rem);
+  bottom: -4rem;
+  shape-outside: ellipse(50% 3.5rem);
+  border-radius: 60% / 50%;
+  rotate: -17deg;
+}
+.read-here {
+  background-color: #eca674;
+  border: none;
+  border-radius: 0.51rem;
+  font-weight: bold;
+  padding: 0.8rem;
+  transition: all 0.4s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans";
+}
+.read-here:hover {
+  background-color: #050528;
 }

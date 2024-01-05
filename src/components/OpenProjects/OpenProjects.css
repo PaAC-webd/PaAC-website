@@ -28,29 +28,43 @@
   justify-content: center;
 }
 .project-card {
-  background-color: #2c2b6c;
-  /* opacity: 1; */
-  border-radius: 1rem;
+  /* background-color: #2c2b6c; */
+  /* border-radius: 1rem; */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   width: 16rem;
   margin: 1rem;
   padding: 1rem;
-  text-align: center;
-  height: fit-content
+  /* text-align: center; */
+  height: fit-content;
+}
+.project-card:hover > .button {
+  background-size: 20px 2px, 0 2px, 100% 2px;
+  background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
 }
 
 .project-image {
   width: 12rem;
   height: 13rem;
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
   margin-bottom: 1rem;
+}
+.button {
+  color: #eca674;
+  text-decoration: none;
+  background-image: linear-gradient(#050528, #050528),
+    linear-gradient(rgba(238, 204, 170, 0.738), rgba(238, 204, 170, 0.738)),
+    linear-gradient(#eca674, #eca674);
+  background-size: 20px 2px, 100% 2px, 0 2px;
+  background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size .5s linear, background-position .5s linear;
 }
 
 .project-title {
-  color: #f6ca97;
+  color: #eca674;
   margin-bottom: 1.5rem;
 }
 
@@ -61,34 +75,3 @@
 .project-date {
   margin-bottom: 1rem;
 }
-
-.button {
-  background-color: #eca674;
-  color: #2c2b6c;
-  border-radius: 0.5rem;
-  padding: 0.5rem;
-  font-weight: bold;
-  font-size: 1.1rem;
-  border: 2px solid;
-}
-
-.button:hover {
-  color: #eca674;
-  background-color: #2c2b6c;
-  cursor: pointer;
-  border: 2px solid #eca674;
-}
-
-/* @media only screen and (max-width: 800px){
-    .project-card {
-        width: 20vw;
-        padding: 1rem .5rem;
-    }
-    .project-image {
-        width: 90%;
-        height: 40%;
-    }
-    .project-title {
-        font-size: 2.2vw;
-    }
-} */
