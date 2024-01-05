@@ -6,7 +6,7 @@
   background-image: url("/Frame_96.png");
   background-position: center;
 }
-h1{
+.about-container > h1{
   text-align: center;
 }
 .about-topbar {

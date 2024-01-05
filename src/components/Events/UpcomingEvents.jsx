@@ -1,6 +1,6 @@
 import "./Events.css";
 
-import { Upcoming } from "./EventsData.js";
+// import { Upcoming } from "./EventsData.js";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
