@@ -160,16 +160,15 @@ span.swiper-pagination-bullet-active {
   font-size: 1.5rem;
   color: #f6ca97;
   font-weight: 100;
-  text-align: center;
 }
 
 .recent-event {
   width: 18rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
-  background-color: #2c2b6c;
+  /* background-color: #2c2b6c; */
   border-radius: 1rem;
   padding: calc(8px + 1.5625vw);
 }
@@ -178,13 +177,13 @@ span.swiper-pagination-bullet-active {
   width: 100%;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 .recent-bottom {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 
 .recent-event-time {
@@ -192,40 +191,37 @@ span.swiper-pagination-bullet-active {
   margin-bottom: 0.5rem;
 }
 
-
 .recent-event-image {
   height: 12rem;
-  width: 12rem;
-  margin: auto;
-  margin-bottom: 1rem;
-  border-radius: 1rem;
+  width: inherit;
+  /* margin: auto; */
+  /* margin-bottom: 1rem; */
+  /* border-radius: 1rem; */
   display: block;
+  object-fit: cover;
 }
 
 .recent-event-details {
-  text-align: center;
   padding: calc(8px + 1.5625vw) 0;
 }
 
-.recent-event-share-button {
-  background-color: #eca674;
-  border: 1px solid #eca674;
-  border-radius: 5px;
-  color: #2c2b6c;
-  padding: 0.5rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.recent-event-share-button:hover {
-  background-color: #2c2b6c;
+.learn-button {
   color: #eca674;
-  border: 1px solid #eca674;
-  border-radius: 5px;
+  text-decoration: none;
+  background-image: linear-gradient(#050528, #050528),
+    linear-gradient(rgba(238, 204, 170, 0.738), rgba(238, 204, 170, 0.738)),
+    linear-gradient(#eca674, #eca674);
+  background-size: 20px 2px, 100% 2px, 0 2px;
+  background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s linear, background-position 0.5s linear;
 }
-
+.recent-event:hover > .learn-button {
+  background-size: 20px 2px, 0 2px, 100% 2px;
+  background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
+}
 .recent-divider {
-  width: 50%;
+  width: 75%;
   height: 3px;
   background: #f6ca97;
   border: none;
