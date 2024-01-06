@@ -160,6 +160,7 @@ span.swiper-pagination-bullet-active {
   font-size: 1.5rem;
   color: #f6ca97;
   font-weight: 100;
+  padding: 0.5rem 0;
 }
 
 .recent-event {

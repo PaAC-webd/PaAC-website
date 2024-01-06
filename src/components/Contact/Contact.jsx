@@ -1,55 +1,10 @@
-import { useReducer, useRef } from "react";
-import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 import "./Contact.css";
 import Topbar from "../Topbar/Topbar";
 import Footer from "../Footer/Footer";
 
 export default function Contact() {
   const form = useRef();
-  // const resetForm = () => {
-  //   dispatch({ type: "Reset" });
-  // };
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-
-  //   emailjs
-  //     .sendForm(
-  //       "YOUR_SERVICE_ID",
-  //       "YOUR_TEMPLATE_ID",
-  //       form.current,
-  //       "YOUR_PUBLIC_KEY"
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //         alert("Email has been sent successfully");
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //         alert("Email could not be sent. Please enter the details carefully");
-  //       }
-  //     );
-  //   resetForm();
-  // };
-  // const [formState, dispatch] = useReducer(reducer, {
-  //   name: "",
-  //   email: "",
-  //   message: "",
-  // });
-  // function reducer(state, action) {
-  //   switch (action.type) {
-  //     case "Name":
-  //       return { ...state, name: action.payload };
-  //     case "Email":
-  //       return { ...state, email: action.payload };
-  //     case "Message":
-  //       return { ...state, message: action.payload };
-  //     case "Reset":
-  //       return { name: "", email: "", message: "" };
-  //     default:
-  //       return state;
-  //   }
-  // }
   return (
     <div className="contact-container">
       <div className="contact-topbar">
