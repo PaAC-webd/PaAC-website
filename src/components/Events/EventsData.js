@@ -1,4 +1,10 @@
-import img from "../assets/newsletter_cover.webp";
+import cosmic_voyage from "../assets/Events/cosmic_voyage.webp";
+import stargazing from "../assets/Events/stargazing.webp";
+import gl from "../assets/Events/gl.webp";
+import student_lec from "../assets/Events/student_lec.webp";
+import int_bee from "../assets/Events/int_bee.webp";
+import jc from "../assets/Events/jc.webp";
+import astro from "../assets/Events/astro.webp";
 
 const Recent = [
   {
@@ -8,7 +14,7 @@ const Recent = [
     location: "LHC, IIT Roorkee",
     details:
       "PaAC brings you IITR’s own Integration Bee this year! Deriving inspiration from MIT’s Integration Bee, the tournament will be conducted by integrating the same spirit with our fun and quirky elements.",
-    image: img,
+    image: int_bee,
   },
   {
     id: 2,
@@ -16,7 +22,7 @@ const Recent = [
     date: "September 6, 2023",
     location: "PaAC Room, SAC",
     details: "Journal Club is a platform for students to discuss and analyze recent scientific papers in the field of physics. It provides an opportunity to delve deeper into various research topics and gain insights from peers.",
-    image: img,
+    image: jc,
   },
   {
     id: 3,
@@ -24,7 +30,7 @@ const Recent = [
     date: "March 21 2023",
     location: "Football Ground, IIT Roorkee",
     details: "These lectures cover a wide range of topics and aim to inspire and educate students. They offer an opportunity to learn from experienced professionals and gain a deeper understanding of various subjects.",
-    image: img,
+    image: gl,
   },
   {
     id: 4,
@@ -33,7 +39,7 @@ const Recent = [
     location: "PaAC Room, SAC",
     details:
       "These lectures are conducted by students intended for fellow students. The topics are fundamental that are commonly challenging or difficult to understand.",
-    image: img,
+    image: student_lec,
   },
   {
     id: 5,
@@ -41,7 +47,7 @@ const Recent = [
     date: "March 15 2023",
     location: "LHC, IIT Roorkee",
     details: "An artistic approach to photographing the night sky. You’ll get to learn how to capture fancy images like these and process them, here!",
-    image: img,
+    image: astro,
   },
   {
     id: 6,
@@ -50,7 +56,7 @@ const Recent = [
     location: "Football Ground, IIT Roorkee",
     details:
       "We host stargazing sessions where we observe the night sky through our telescopes. We also provide a brief introduction to the night sky and the constellations visible that night.",
-    image: img,
+    image: stargazing,
   },
   {
     id: 7,
@@ -59,7 +65,7 @@ const Recent = [
     location: "LHC, IIT Roorkee",
     details:
       "Our flagship event! It is a week long fest featuring a variety of activities and competitions. Many sub events like guest lectures, astrophotography and telescope handling workshops, movie screenings and the main highlight of the event- Nerdigram are conducted. ",
-    image: img,
+    image: cosmic_voyage,
   },
 ];
 export { Recent };
