@@ -51,7 +51,7 @@ const HomeEvents = () => {
       className="swiper_container"
     >
       {home_events.map((event) => (
-        <SwiperSlide>
+        <SwiperSlide className="home-section-swiper-slide">
           <div className="home-event-card">
             <h1 className="home-event-title">{event.title}</h1>
             <img src={event.image} alt="" className="home-event-image"/>

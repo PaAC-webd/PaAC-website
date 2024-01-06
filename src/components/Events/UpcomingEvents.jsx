@@ -63,9 +63,9 @@ const UpcomingEvent = () => {
       loop={true}
       spaceBetween={90}
       slidesPerView={2.5}
-      autoplay={{
-        delay: 3000,
-      }}
+      // autoplay={{
+      //   delay: 3000,
+      // }}
       breakpoints={{
         830: {
           spaceBetween: 90,
