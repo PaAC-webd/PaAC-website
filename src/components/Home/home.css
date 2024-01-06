@@ -198,6 +198,8 @@
 .know-header {
   color: #eca674;
   transition: all 0.7s ease-in-out;
+  font-size: 2.5vw;
+  margin-bottom: 1rem;
 }
 .know-.home-container {
   font-weight: 300;

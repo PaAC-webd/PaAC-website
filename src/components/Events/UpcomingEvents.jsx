@@ -47,9 +47,9 @@ const UpcomingEvent = () => {
       });
   }, []);
 
-    useEffect(() => {
-      console.log(events);
-    }, [events]);
+    // useEffect(() => {
+    //   console.log(events);
+    // }, [events]);
 
   if (!events) {
     return "Loading...."

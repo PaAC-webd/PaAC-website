@@ -38,6 +38,7 @@
 .swiper-wrapper{
   width: 125% !important;
   margin-bottom: 2rem;
+  align-items: center;
 }
 
 .event-time,

@@ -35,11 +35,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 16rem;
+  width: 22rem;
   margin: 1rem;
   padding: 1rem;
   text-align: center;
-  height: fit-content
+  /* height: fit-content; */
 }
 
 .project-image {
@@ -92,3 +92,25 @@
         font-size: 2.2vw;
     }
 } */
+
+@media only screen and (max-width: 400px){
+  .project-card {
+    width: 90vw;
+  }
+  .project-image{
+    width: 80vw;
+    height: 80vw;
+  }
+  .project-title{
+    font-size: 8vw;
+  }
+  .project-date{
+    font-size: 5vw;
+  }
+  .button {
+    padding: 1vw 4vw;
+  }
+  button > a{
+    font-size: 5vw;
+  }
+}
