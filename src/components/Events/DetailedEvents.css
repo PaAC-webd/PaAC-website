@@ -3,24 +3,34 @@
   background-image: url("/Frame_96.png");
   display: flex;
   align-items: space-around;
-  background-color: blueviolet;
 }
 
 .event-info {
-  background-color: aqua;
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: calc(8px + 1.5626vw);
 }
+.lg-react-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.lg-react-element > a > img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
 .event-details-d {
   padding: calc(8px + 1.5626vw);
+  width: 70%;
 }
 .event-gallery {
-  background-color: rosybrown;
-  width: 50%;
+  width: 100%;
   display: flex;
   padding: calc(8px + 1.5626vw);
 }

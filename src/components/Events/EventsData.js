@@ -6,6 +6,14 @@ import int_bee from "../assets/Events/int_bee.webp";
 import jc from "../assets/Events/jc.webp";
 import astro from "../assets/Events/astro.webp";
 
+import int_bee_1 from "../assets/Events/int_bee_1.jpg";
+import int_bee_2 from "../assets/Events/int_bee_2.jpg";
+import int_bee_3 from "../assets/Events/int_bee_3.jpg";
+import int_bee_4 from "../assets/Events/int_bee_4.jpg";
+import int_bee_5 from "../assets/Events/int_bee_5.jpg";
+import int_bee_6 from "../assets/Events/int_bee_6.jpg";
+import int_bee_7 from "../assets/Events/int_bee_7.jpg";
+import int_bee_8 from "../assets/Events/int_bee_8.jpg";
 const Recent = [
   {
     id: 1,
@@ -68,4 +76,14 @@ const Recent = [
     image: cosmic_voyage,
   },
 ];
-export { Recent };
+
+const detailed = [
+  {
+    id: 1,
+    title: "Integration Bee",
+    date: "October 20-22, 2023",
+    description: "It is one of our two flagship events which is organised in autumn semester where minds sharper than a double derivaive clash over integrals. It is inspired by the integration bee conducted at MIT, but this comes with an IITR twist. It is a team event with multiple quirky rounds that make it a complete experience! Testing your ability to integrate with speed and accuracy, it can be a really fun thing with friends and teammates!",
+    images: [int_bee_1, int_bee_2, int_bee_3, int_bee_4, int_bee_5, int_bee_6, int_bee_7, int_bee_8],
+  }
+]
+export { Recent, detailed };
