@@ -9,6 +9,7 @@ import sudharsan from "../assets/members/sudharsan.png";
 import bondge from "../assets/members/Anand Bondge.jpeg";
 import gjeevika from "../assets/members/Jeevika_s photo - G JEEVIKA.png";
 import suraj from "../assets/members/SURAJ.jpg";
+import vansh from "../assets/members/VANSH_UPPAL.jpg";
 // 5Y
 import sumit from "../assets/members/sumit.png";
 import kriti from "../assets/members/kriti.png";
@@ -17,6 +18,10 @@ import agrima from "../assets/members/agrima.png";
 import uddipt from "../assets/members/UDDIPT GUPTA.jpeg";
 import sisir from "../assets/members/sisir.png";
 import abhijeet from "../assets/members/abhijeet.png";
+import harshvardhan from "../assets/members/HARSHAVARDHAN_REDDY.jpg";
+import kumar from "../assets/members/KUMAR.jpg";
+import sparsh from "../assets/members/SPARSH.jpg";
+import garg from "../assets/members/GARG.jpg";
 import AASTHA from "../assets/members//WhatsApp Image 2023-10-10 at 03.05.35 - AASTHA KAPOOR.png";
 // 3Y
 import kothadia from "../assets/members/WhatsApp Image 2023-10-05 at 15.53.23_5f1352a4 - KOTHADIYA JEELBEN BALKRUSHNA 21324013.png";
@@ -35,14 +40,15 @@ import khushii from "../assets/members/Jee_photo - Khushi A..png";
 import SHAUN from "../assets/members/PXL_20231004_164919368.PORTRAIT - SHAUN BUDARPUR 23615027.png";
 import TSEWANG from "../assets/members/my pic pAac - TSEWANG KHASPHEL 22324024.png";
 import pranav from "../assets/members/pranav.png";
-import sumedh from "../assets/members/SUMEDH.jpg";
+import sumedh from "../assets/members/sumedh.jpeg";
 import raghav from "../assets/members/RAGHAV.jpeg";
 import aryan from "../assets/members/ARYAN SINGH CHAUDHRY.jpg";
 import prajwal from "../assets/members/PRAJWAL SASTRY.jpg";
 import vikrant from "../assets/members/VIKRANT SINGH.jpg";
 import sireesha from "../assets/members/SIREESHA.jpg";
 import mudit from "../assets/members/Mudit Tuteja.JPG";
-
+import sankar from "../assets/members/Sankar.jpeg";
+import keerthi from "../assets/members/KEERTHI.jpg";
 const Secys = [
   {
     name: "Shivam Singh Aswal",
@@ -97,6 +103,15 @@ const Secys = [
     linkedIn: "https://www.linkedin.com/in/roopa-pramodan-117862229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     email: "mailto:r_pramodan@ph.iitr.ac.in",
     year: 3,
+  },
+  {
+    name: "Priyanshu Pansari",
+    blurhash: "LPHUtU?cLHxDGw-=voNF?btSk8M{",
+    image: "",
+    position: "Joint Secretary",
+    linkedIn: "https://www.linkedin.com/in/priyanshu-pansari-a12081231/",
+    email: "",
+    year: 3,
   }
 ];
 
@@ -130,11 +145,11 @@ const Heads = [
   },
   {
     name: "Vansh Uppal",
-    blurhash: "L7C?v28{_N01?F8_-n9G_ND%?vIU",
-    image: "",
+    blurhash: "LuIYUyWCkWX7%%oes:s;-=kBRjM{",
+    image: vansh,
     position: "Marketing Head",
-    linkedIn: "",
-    email: "",
+    linkedIn: "https://www.linkedin.com/in/vansh-uppal-38b9b11b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    email: "mailto:v_uppal@ma.iitr.ac.in",
     year: 3,
   },
 ];
@@ -400,8 +415,61 @@ const Members = [
     linkedIn: "https://www.linkedin.com/in/mudit-tuteja-25054b253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     email: "mailto:mudit_t@ece.iitr.ac.in",
     year: 2,
-  }
-
+  },
+  {
+    name: "Keerthi",
+    blurhash: "LKK9G9^4~8-BOFS_%1%11iM|M|Fx",
+    image: keerthi,
+    position: "Member",
+    linkedIn: "https://www.linkedin.com/in/keerthi-gurram/",
+    email: "mailto:g_keerthi@ce.iitr.ac.in",
+    year: 3,
+  },
+  {
+    name: "Harshavardhan",
+    blurhash: "LUBzg-t6oubF^-jJRRaf?vofWUoe",
+    image: harshvardhan,
+    position: "Member",
+    linkedIn: "https://www.linkedin.com/in/harshavardhan-pinnapu-reddy-b89b0a1b9",
+    email: "mailto:pinnapu_rhr@cs.iitr.ac.in",
+    year: 4,
+  },
+  {
+    name: "Thadavarthi Vishnu Sri Sai Sankar",
+    blurhash: "L*F$@oo}oei^%%kDkDV?t7jFoLW=",
+    image: sankar,
+    position: "Member",
+    linkedIn: "https://www.linkedin.com/in/thadavarthi-vishnu-sri-sai-sankar-269648247",
+    email: "mailto:t_vishnu@cs.iitr.ac.in",
+    year: 4,
+  },
+  {
+    name: "Sparsh Gupta",
+    blurhash: "LbKd6j-p-.ay~TRkNHWCNHayafs:",
+    image: sparsh,
+    position: "Member",
+    linkedIn: "https://www.linkedin.com/in/sparsh-gupta-46bb93281/",
+    email: "mailto:sparsh_g@ma.iitr.ac.in",
+    year: 4,
+  },
+  {
+    name: "Lakshya Garg",
+    blurhash: "LcKT_Hi_.Sof~WoLt8fk9akCr=af",
+    image: garg,
+    position: "Member",
+    linkedIn: "https://in.linkedin.com/in/lakshya-garg-b9779525b",
+    email: "mailto:lakshya_g@ece.iitr.ac.in",
+    year: 2,
+  },
+  {
+    name: "Abhishek Kumar",
+    blurhash: "LgON5soL~paz_3fk9Gf6RiayjEoe",
+    image: kumar,
+    position: "Member",
+    linkedIn: "www.linkedin.com/in/abhishek-kumar-3550a4201",
+    email: "mailto:abhishek_k@ma.iitr.ac.in",
+    year: 4,
+  },
 ];
 
 

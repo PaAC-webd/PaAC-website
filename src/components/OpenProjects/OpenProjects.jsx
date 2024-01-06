@@ -5,7 +5,7 @@ import ProjectCard from "./Card";
 const spaceId = import.meta.env.VITE_SPACE_ID;
 const accessToken = import.meta.env.VITE_ACCESS_TOKEN;
 import { useState, useEffect } from "react";
-
+import Faq from "./Faq";
 export default function Events() {
   const [projects, setProjects] = useState(null);
 
@@ -67,6 +67,10 @@ export default function Events() {
             return <ProjectCard {...project} key={project.title} />;
           })}
         </div>
+      </section>
+      <section className="faq">
+        <h1>FAQ</h1>
+        <Faq />
       </section>
       <div className="footer">
         <Footer />

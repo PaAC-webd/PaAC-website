@@ -1,6 +1,6 @@
 import "./Events.css";
 
-import { Upcoming } from "./EventsData.js";
+// import { Upcoming } from "./EventsData.js";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -97,14 +97,14 @@ const UpcomingEvent = () => {
               {up.titleOfEvent}
             </h1>
             <div className="event-time">
-              <CalendarIcon /> {up.dateAndTimeOfEvent}
+              <CalendarIcon /> {`${up.dateAndTimeOfEvent.substring(0,10)} ${up.dateAndTimeOfEvent.substring(11,19)}`}
             </div>
             <div className="event-location">
               <GlobeIcon /> {up.venueOfEvent}
             </div>
             <hr className="divider" />
-            <p className="event-details">{up.descriptionOfEvent}</p>
-            <button className="event-share-button">Share</button>
+            <p className="upcoming-event-details">{up.descriptionOfEvent}</p>
+            {/* <button className="event-share-button">Share</button> */}
           </div>
         </SwiperSlide>
       ))}

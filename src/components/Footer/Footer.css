@@ -32,6 +32,7 @@
 }
 .footer-headings {
   font-size: max(2vw, 13px);
+  padding: .2rem;
   color: #eca674;
   font-weight: 500;
 }
@@ -40,6 +41,7 @@
   font-weight: 400;
   letter-spacing: 1px;
   color: white;
+  padding: .2rem;
 }
 .footer-socials {
   margin: 1vw;
