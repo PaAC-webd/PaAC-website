@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* justify-content: center; */
 }
 
 .open-projects > h1 {
@@ -24,8 +25,10 @@
 }
 .projects {
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
   justify-content: center;
+  /* align-items: center; */
 }
 .project-card {
   /* background-color: #2c2b6c; */
@@ -58,7 +61,7 @@
   background-size: 20px 2px, 100% 2px, 0 2px;
   background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
   background-repeat: no-repeat;
-  transition: background-size .5s linear, background-position .5s linear;
+  transition: background-size 0.5s linear, background-position 0.5s linear;
 }
 
 .project-title {
@@ -76,13 +79,10 @@
 
 .faq {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: calc(8px + 1.5625vw);
 }
 
-.faq > h1{
+.faq > h1 {
   color: #eca674;
   font-size: 2.5rem;
   margin-bottom: calc(8px + 1.5625vw);
@@ -90,7 +90,7 @@
 
 .AccordionRoot {
   border-radius: 6px;
-  width: 45%;
+  width: 100%;
   background-color: transparent;
   box-shadow: 0 0 0 2px #eca674;
 }
@@ -140,10 +140,10 @@
   font-size: 16px;
   color: white;
 }
-.AccordionContent[data-state='open'] {
+.AccordionContent[data-state="open"] {
   animation: slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1);
 }
-.AccordionContent[data-state='closed'] {
+.AccordionContent[data-state="closed"] {
   animation: slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1);
 }
 
@@ -155,7 +155,7 @@
   color: #eca674;
   transition: transform 300ms cubic-bezier(0.87, 0, 0.13, 1);
 }
-.AccordionTrigger[data-state='open'] > .AccordionChevron {
+.AccordionTrigger[data-state="open"] > .AccordionChevron {
   transform: rotate(180deg);
 }
 
