@@ -1,17 +1,14 @@
 import { home_events } from "./HomeEventsData";
 import "./home.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { useEffect, useState } from "react";
 
 import { CalendarIcon } from "@radix-ui/react-icons";
-// add a better ease function for the hover effect
-// and the movement animation
+
 const HomeEvents = () => {
   return (
     <Swiper
@@ -22,29 +19,29 @@ const HomeEvents = () => {
       slidesPerView={2.5}
       autoplay={{
         delay: 3000,
+        pauseOnMouseEnter: true,
       }}
       breakpoints={{
         1240: {
           spaceBetween: 250,
         },
         900: {
-          spaceBetween: 150
+          spaceBetween: 150,
         },
         769: {
           spaceBetween: 80,
-          // slidesPerView: 2.5,
         },
         0: {
           spaceBetween: 40,
-          slidesPerView: .8,
+          slidesPerView: 0.8,
         },
       }}
       coverflowEffect={{
-        rotate: 10,
+        rotate: 0,
         stretch: 0,
         depth: 100,
         modifier: 1,
-        slideShadows: true,
+        slideShadows: false
       }}
       pagination={{ dynamicBullets: true }}
       modules={[Pagination, EffectCoverflow, Autoplay]}
@@ -53,11 +50,11 @@ const HomeEvents = () => {
       {home_events.map((event) => (
         <SwiperSlide className="home-section-swiper-slide">
           <div className="home-event-card">
-            <h1 className="home-event-title">{event.title}</h1>
-            <img src={event.image} alt="" className="home-event-image"/>
+            <img src={event.image} alt="" className="home-event-image" />
+            {/* <h1 className="home-event-title">{event.title}</h1> */}
+
             <div className="home-event-time">
-              <CalendarIcon />{" "}
-              {event.date}
+              <CalendarIcon /> {event.date}
             </div>
             {/* <div className="event-location">
               <GlobeIcon /> {up.venueOfEvent}

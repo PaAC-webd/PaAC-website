@@ -1,9 +1,5 @@
 import "./Events.css";
-
-// import { Upcoming } from "./EventsData.js";
-
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css/effect-coverflow";
@@ -47,10 +43,6 @@ const UpcomingEvent = () => {
       });
   }, []);
 
-    // useEffect(() => {
-    //   console.log(events);
-    // }, [events]);
-
   if (!events) {
     return "Loading...."
   }
@@ -59,13 +51,12 @@ const UpcomingEvent = () => {
     <Swiper
       effect={"coverflow"}
       grabCursor={true}
-      // centeredSlides={true}
       loop={true}
       spaceBetween={90}
       slidesPerView={2.5}
-      // autoplay={{
-      //   delay: 3000,
-      // }}
+      autoplay={{
+        delay: 3000,
+      }}
       breakpoints={{
         830: {
           spaceBetween: 90,
@@ -81,10 +72,11 @@ const UpcomingEvent = () => {
       }}
       coverflowEffect={{
         rotate: 10,
-        stretch: 0,
+        stretch: 10,
         depth: 100,
         modifier: 1,
-        slideShadows: true,
+        slideShadows: false,
+        pauseOnMouseEnter: true,
       }}
       pagination={{ dynamicBullets: true }}
       modules={[Pagination, EffectCoverflow, Autoplay]}
@@ -97,7 +89,7 @@ const UpcomingEvent = () => {
               {up.titleOfEvent}
             </h1>
             <div className="event-time">
-              <CalendarIcon /> {`${up.dateAndTimeOfEvent.substring(0,10)} ${up.dateAndTimeOfEvent.substring(11,19)}`}
+              <CalendarIcon /> {`${up.dateAndTimeOfEvent.substring(0,10)}`}
             </div>
             <div className="event-location">
               <GlobeIcon /> {up.venueOfEvent}
