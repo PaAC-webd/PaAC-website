@@ -39,6 +39,7 @@
 .swiper-wrapper {
   width: 125% !important;
   margin-bottom: 2rem;
+  align-items: center;
 }
 
 .event-time,
@@ -64,9 +65,10 @@
   margin: 1rem 0;
 }
 
-.event-details {
-  margin-bottom: 1rem;
+.upcoming-event-details {
+  margin-bottom: .5rem;
   color: #c5cae9;
+  padding: 1rem .5rem;
 }
 
 .event-share-button {
@@ -228,4 +230,30 @@ span.swiper-pagination-bullet-active {
   border: none;
   border-radius: 3px;
 }
+
+@media screen and (max-width: 400px) {
+  .recent-event-image{
+    height: 40vw;
+  }
+  h1.recent-event-title{
+    font-size: 6vw;
+  }
+  .recent-event-details{
+    font-size: 4vw;
+    padding: 3vw 0;
+  }
+  .recent-event-time{
+    font-size: 3vw;
+  }
+  .recent-event-time > svg {
+    height: 3vw;
+    width: 3vw;
+  }
+  .recent-event{
+    width: 70vw;
+  }
+  .learn-button{
+    font-size: 4vw;
+  }
+} 
 /* -------------------Recent events styling finishes here------------------ */

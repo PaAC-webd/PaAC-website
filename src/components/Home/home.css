@@ -59,7 +59,7 @@
   color: #eca674;
 }
 .club {
-  margin-bottom: 0.5vh;
+  margin-bottom: .5rem;
   font-size: 4vw;
   font-weight: 500;
   color: #eca674;
@@ -249,6 +249,7 @@
 .home-events-heading {
   color: #eca674;
   font-size: 40px;
+  margin-bottom: 1rem;
   text-align: center;
   transition: color 0.2s ease-in-out;
 }
@@ -262,6 +263,25 @@
   justify-content: center;
   align-items: center;
 }
+.swiper {
+  width: 100vw;
+  display: flex !important;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.swiper-wrapper {
+  width: 125% !important;
+  /* width: 100vw; */
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.home-section-swiper-slide{
+  display: flex !important;
+  justify-content: center;
+}
 
 .home-event-card {
   display: flex;
@@ -270,16 +290,21 @@
   justify-content: center;
   text-align: center;
   padding: 1rem;
-  width: 22rem;
+  /* width: 22rem; */
   height: 90%;
-  margin: 1.5rem;
+  /* margin: 1.5rem; */
   /* border: 0.4vw solid #e4b6a5; */
   border-radius: 24px;
   background-color: #2c2b6c;
 }
-
+.home-event-image{
+  width: 70%;
+  /* height: 30%; */
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
 .home-event-title {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   font-size: 1.4rem;
   color: white;
   font-weight: 600;
@@ -291,7 +316,7 @@
 .home-event-location {
   font-size: max(1.1vw, 12px);
   margin: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
   font-weight: 450;
 }
 
@@ -345,7 +370,7 @@
   border-radius: 1.5rem;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 771px) {
   .home-event-card {
     width: 20rem;
     margin: 0px;
@@ -363,6 +388,18 @@
   }
 }
 
+@media screen and (max-width: 400px){
+  .home-event-title{
+    font-size: 7vw;
+  }
+  .home-event-card{
+    width: 60%;
+    padding: 1rem .5rem;
+  }
+  p.upcoming-event-details{
+    padding: .5rem 0;
+  }
+}
 /* ------------Home Events Styling Finishes Here---------*/
 
 .home-gallery {
@@ -406,6 +443,7 @@
   .club {
     font-size: 5.5vw;
     font-weight: 450;
+    margin-bottom: 1vh;
   }
   .iitr {
     font-size: 3vw;
