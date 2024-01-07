@@ -28,7 +28,7 @@ export default function Footer() {
         <div className="footer-div-right">
           <div className="footer-div email">
             <h1 className="footer-headings">Email</h1>
-            <h2 className="footer-body">
+            <h2 className="footer-body paac-email">
               <a href="mailto:paac@iitr.ac.in">paac@iitr.ac.in</a>
             </h2>
           </div>
