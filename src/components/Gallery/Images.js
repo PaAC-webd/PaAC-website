@@ -17,46 +17,46 @@ export const data = [
     {
       image: moon,
       caption: "The Moon",
-      description: "Clicked by "
+      description: "Clicked by Abhijeet Anand"
     },
     {
       image: nebula,
-      caption: "Darjeeling",
-      description: "kya matlab ham sote nhi"
+      caption: "Cloudy Skies",
+      description: "By Abhijeet Anand"
     },
     {
       image: nebula_2,
-      caption: "San Francisco",
-      description: "kya matlab ham sote nhi"
+      caption: "The Milky Way",
+      description: "By Kaustav Bhattacharjee. from Spiti Valley, Google Pixel Astrophotography mode"
     },
     {
       image: orion,
-      caption: "Scotland",
-      description: "kya matlab ham sote nhi"
+      caption: "The Milky Way",
+      description: "By Kaustav Bhattacharjee. from Spiti Valley, Google Pixel Astrophotography mode"
     },
     {
       image: paac,
-      caption: "Darjeeling",
-      description: "kya matlab ham sote nhi"
+      caption: "'PaAC' Light Painting",
+      description: "Dhyan Chand Stadium, IIT Roorkee, using light painting mode on mobile camera"
     },
     {
       image: trail,
-      caption: "San Francisco",
-      description: "kya matlab ham sote nhi"
+      caption: "Star Trails",
+      description: "Trails of Stars showing the apparent revolution of earth around "
     },
     {
       image: eclipse_1,
-      caption: "Scotland",
-      description: "kya matlab ham sote nhi"
+      caption: "Solar Eclipse Group Photo",
+      description: "Solar Eclipse of 10th Nov 2022, IIT Roorkee"
     },
     {
       image: eclipse_2,
-      caption: "Darjeeling",
-      description: "kya matlab ham sote nhi"
+      caption: "Solar Eclipse",
+      description: "Solar Eclipse of 10th Nov 2022, using a 7x Zoom Binoculars"
     },
     {
       image: eclipse_3,
-      caption: "Darjeeling",
-      description: "kya matlab ham sote nhi"
+      caption: "Solar Eclipse",
+      description: "Solar Eclipse of 10th Nov, 2022"
     }
   ];
