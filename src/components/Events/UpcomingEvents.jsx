@@ -47,9 +47,9 @@ const UpcomingEvent = () => {
       });
   }, []);
 
-    useEffect(() => {
-      console.log(events);
-    }, [events]);
+    // useEffect(() => {
+    //   console.log(events);
+    // }, [events]);
 
   if (!events) {
     return "Loading...."
@@ -63,9 +63,9 @@ const UpcomingEvent = () => {
       loop={true}
       spaceBetween={90}
       slidesPerView={2.5}
-      autoplay={{
-        delay: 3000,
-      }}
+      // autoplay={{
+      //   delay: 3000,
+      // }}
       breakpoints={{
         830: {
           spaceBetween: 90,
@@ -97,14 +97,14 @@ const UpcomingEvent = () => {
               {up.titleOfEvent}
             </h1>
             <div className="event-time">
-              <CalendarIcon /> {up.dateAndTimeOfEvent}
+              <CalendarIcon /> {`${up.dateAndTimeOfEvent.substring(0,10)} ${up.dateAndTimeOfEvent.substring(11,19)}`}
             </div>
             <div className="event-location">
               <GlobeIcon /> {up.venueOfEvent}
             </div>
             <hr className="divider" />
-            <p className="event-details">{up.descriptionOfEvent}</p>
-            <button className="event-share-button">Share</button>
+            <p className="upcoming-event-details">{up.descriptionOfEvent}</p>
+            {/* <button className="event-share-button">Share</button> */}
           </div>
         </SwiperSlide>
       ))}
