@@ -53,25 +53,17 @@ export default function Events() {
       </div>
       <section className="open-projects">
         <h1>Open Projects</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, ea
-          reprehenderit, iste facere veniam expedita alias vero autem dolor
-          asperiores assumenda tempora odit blanditiis quae architecto quasi ad
-          facilis beatae. Lorem ipsum dolor sit amet, consectetur adipisicing
-          elit. Illum, ea reprehenderit, iste facere veniam expedita alias vero
-          autem dolor asperiores assumenda tempora odit blanditiis quae
-          architecto quasi ad facilis beatae.
-        </p>
+        <section className="faq">
+          {/* <h1>FAQ</h1> */}
+          <Faq />
+        </section>
         <div className="projects">
           {projects.map((project) => {
             return <ProjectCard {...project} key={project.title} />;
           })}
         </div>
       </section>
-      <section className="faq">
-        <h1>FAQ</h1>
-        <Faq />
-      </section>
+
       <div className="footer">
         <Footer />
       </div>
