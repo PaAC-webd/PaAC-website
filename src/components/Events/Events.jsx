@@ -11,13 +11,13 @@ export default function Events() {
         <Topbar />
       </div>
       <div className="upcoming-events-container">
-        <h1 className="events-heading-title">Upcoming Events</h1>
+        <h1 className="events-heading-title">Upcoming</h1>
         <div className="upcoming-events">
           <UpcomingEvents />
         </div>
       </div>
       <div className="recent-events-container">
-        <h1 className="events-heading-title">Previous Events</h1>
+        <h1 className="events-heading-title">Recent</h1>
         <div className="events-recent">
           {Recent.map((data) => (
             <EventCard

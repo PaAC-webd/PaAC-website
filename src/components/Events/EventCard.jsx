@@ -2,10 +2,9 @@ import { CalendarIcon } from "@radix-ui/react-icons";
 import "./Events.css";
 
 export default function EventCard(props) {
-  const encodedTitle = encodeURIComponent(props.title);
   return (
     <a
-      href={`/event/${encodedTitle}`}
+      href=""
       target="_blank"
       rel="noreferrer"
     >
@@ -21,7 +20,7 @@ export default function EventCard(props) {
         <div className="recent-bottom">
           <p className="recent-event-details">{props.details}</p>
         </div>
-        <a href={`/event/${encodedTitle}`} className="learn-button">
+        <a href="" className="learn-button">
           Learn more
         </a>
       </div>

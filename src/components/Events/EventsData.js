@@ -68,4 +68,5 @@ const Recent = [
     image: cosmic_voyage,
   },
 ];
+
 export { Recent };
