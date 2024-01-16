@@ -43,7 +43,7 @@ const HomeEvents = () => {
         modifier: 1,
         slideShadows: false
       }}
-      pagination={{ dynamicBullets: true }}
+      pagination={{ dynamicBullets: true, clickable: true }}
       modules={[Pagination, EffectCoverflow, Autoplay]}
       className="swiper_container"
     >

@@ -46,6 +46,8 @@
   position: absolute;
   margin-left: 0;
   width: 38vw;
+  /* width: 30vw;
+  height: 30vw; */
 }
 .home-title {
   display: flex;
