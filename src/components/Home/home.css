@@ -45,7 +45,7 @@
 .ellipse {
   position: absolute;
   margin-left: 0;
-  width: 38vw;
+  width: 40vw;
   /* width: 30vw;
   height: 30vw; */
 }
@@ -75,10 +75,9 @@
   position: absolute;
   top: 40vh;
   right: 0;
-  height: 40vw;
+  height: 42vw;
 }
 
-/* ----------Newsletter styling fineshes here-------------- */
 /* know paac begins */
 .know-paac-container {
   position: relative;
@@ -158,6 +157,7 @@
   margin-bottom: 20vh;
   margin-top: 15vh;
 }
+/* ----------Newsletter styling starts here-------------- */
 
 .newsletter-container {
   z-index: 1;
@@ -200,8 +200,8 @@
   position: relative;
   height: 100%;
   width: 100%;
-  top: -15px;
-  left: -15px;
+  top: -10px;
+  left: -10px;
   background-image: url("../assets/newsletter_cover.webp");
   background-repeat: no-repeat;
   background-size: cover;
@@ -225,6 +225,8 @@
   border-radius: 60% / 50%;
   rotate: -17deg;
 }
+/* ----------Newsletter styling fineshes here-------------- */
+
 .read-here {
   background-color: #eca674;
   border: none;
@@ -427,11 +429,14 @@
   .home-gallery {
     width: 100%;
   }
-  .ellipse {
-    width: 35vw;
+  /* .ellipse {
+    width: 40vw;
     height: 35vw;
-  }
+  } */
 
+  .planet{
+    top: 40vw;
+  }
   /* ----------- Newsletter styling---------- */
 
   .newsletter {
