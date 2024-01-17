@@ -78,7 +78,7 @@ const UpcomingEvent = () => {
         slideShadows: false,
         pauseOnMouseEnter: true,
       }}
-      pagination={{ dynamicBullets: true }}
+      pagination={{ dynamicBullets: true, clickable: true }}
       modules={[Pagination, EffectCoverflow, Autoplay]}
       className="swiper_container"
     >
