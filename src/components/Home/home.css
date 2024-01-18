@@ -204,12 +204,12 @@
   left: -10px;
   background-image: url("../assets/newsletter_cover.webp");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
 }
 .newsletter-img-border {
-  height: 14rem;
-  width: 10rem;
+  height: 12rem;
+  width: 9rem;
   border: #050528 solid 2px;
   position: relative;
   z-index: 1;
@@ -453,15 +453,19 @@
   .newsletter-left {
     max-width: 50%;
   }
-  .newsletter-img > img {
+  /* .newsletter-img > img {
     height: 10rem;
     width: 7rem;
     bottom: 1.5rem;
     right: 1.5rem;
+  } */
+  .newsletter-img{
+    top: -8px;
+    left: -8px;
   }
   .newsletter-img-border {
-    height: 8rem;
-    width: 5.5rem;
+    height: 6.5rem;
+    width: 5rem;
     bottom: -0.5rem;
   }
   .newsletter-ellipse {
