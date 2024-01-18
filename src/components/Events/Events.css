@@ -198,7 +198,7 @@ span.swiper-pagination-bullet-active {
   width: inherit;
   /* margin: auto; */
   /* margin-bottom: 1rem; */
-  /* border-radius: 1rem; */
+  border-radius: 0 10px 10px 0;
   display: block;
   object-fit: cover;
 }

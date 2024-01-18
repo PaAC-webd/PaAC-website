@@ -53,6 +53,7 @@
   height: 13rem;
   margin: auto;
   margin-bottom: 1rem;
+  border-radius: 10px;
 }
 .button {
   color: #eca674;
