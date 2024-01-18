@@ -18,8 +18,7 @@ const HomeEvents = () => {
       spaceBetween={90}
       slidesPerView={2.5}
       autoplay={{
-        delay: 3000,
-        pauseOnMouseEnter: true,
+        delay: 3000
       }}
       breakpoints={{
         1240: {
@@ -46,6 +45,13 @@ const HomeEvents = () => {
       pagination={{ dynamicBullets: true, clickable: true }}
       modules={[Pagination, EffectCoverflow, Autoplay]}
       className="swiper_container"
+      style={{
+        "--swiper-pagination-color": "#FFBA08",
+        "--swiper-pagination-bullet-inactive-color": "#999999",
+        "--swiper-pagination-bullet-inactive-opacity": "1",
+        "--swiper-pagination-bullet-size": "16px",
+        "--swiper-pagination-bullet-horizontal-gap": "6px",
+      }}
     >
       {home_events.map((event) => (
         <SwiperSlide className="home-section-swiper-slide">
