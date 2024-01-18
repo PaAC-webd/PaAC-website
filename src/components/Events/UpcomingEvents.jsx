@@ -11,7 +11,7 @@ import { useEffect, useState } from "react";
 const spaceId = import.meta.env.VITE_SPACE_ID;
 const accessToken = import.meta.env.VITE_ACCESS_TOKEN;
 const UpcomingEvent = () => {
-  const [events, setEvents] = useState(null)
+  const [events, setEvents] = useState(null);
 
   useEffect(() => {
     window
@@ -44,7 +44,7 @@ const UpcomingEvent = () => {
   }, []);
 
   if (!events) {
-    return "Loading...."
+    return "Loading....";
   }
 
   return (
@@ -81,15 +81,20 @@ const UpcomingEvent = () => {
       pagination={{ dynamicBullets: true, clickable: true }}
       modules={[Pagination, EffectCoverflow, Autoplay]}
       className="swiper_container"
+      style={{
+        "--swiper-pagination-color": "#FFBA08",
+        "--swiper-pagination-bullet-inactive-color": "#999999",
+        "--swiper-pagination-bullet-inactive-opacity": "1",
+        "--swiper-pagination-bullet-size": "16px",
+        "--swiper-pagination-bullet-horizontal-gap": "6px",
+      }}
     >
       {events.map((up) => (
         <SwiperSlide>
           <div className="event-card">
-            <h1 className="event-title">
-              {up.titleOfEvent}
-            </h1>
+            <h1 className="event-title">{up.titleOfEvent}</h1>
             <div className="event-time">
-              <CalendarIcon /> {`${up.dateAndTimeOfEvent.substring(0,10)}`}
+              <CalendarIcon /> {`${up.dateAndTimeOfEvent.substring(0, 10)}`}
             </div>
             <div className="event-location">
               <GlobeIcon /> {up.venueOfEvent}
