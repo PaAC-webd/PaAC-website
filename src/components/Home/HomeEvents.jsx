@@ -15,6 +15,7 @@ const HomeEvents = () => {
       effect={"coverflow"}
       grabCursor={true}
       loop={true}
+      centeredSlides={true}
       spaceBetween={90}
       slidesPerView={2.5}
       autoplay={{
