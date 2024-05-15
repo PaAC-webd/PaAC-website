@@ -54,6 +54,7 @@ const UpcomingEvent = () => {
       loop={true}
       spaceBetween={90}
       slidesPerView={2.5}
+      centeredSlides={true}
       autoplay={{
         delay: 3000,
       }}
