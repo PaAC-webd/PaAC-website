@@ -33,7 +33,7 @@ const HomeEvents = () => {
         },
         0: {
           spaceBetween: 40,
-          slidesPerView: 0.8,
+          slidesPerView: 1,
         },
       }}
       coverflowEffect={{
