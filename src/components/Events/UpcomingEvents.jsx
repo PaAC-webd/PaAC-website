@@ -68,7 +68,7 @@ const UpcomingEvent = () => {
         },
         0: {
           spaceBetween: 20,
-          slidesPerView: 0.8,
+          slidesPerView: 1,
         },
       }}
       coverflowEffect={{
