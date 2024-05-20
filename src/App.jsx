@@ -9,7 +9,7 @@ import Library from "./components/Library/Library";
 import OpenProjects from "./components/OpenProjects/OpenProjects";
 
 function App() {
-  /* Making a test commit */
+
   const router = createBrowserRouter([
     { path: "/", element: <Home /> },
     { path: "/events", element: <Events /> },
