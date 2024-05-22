@@ -34,9 +34,9 @@ export default function Gallery() {
 
   return (
     <div className="gallery-container" ref={comp}>
-      <div className="gallery-topbar">
+      {/* <div className="gallery-topbar">
         <Topbar />
-      </div>
+      </div> */}
       <div className="gallery-body" style={{ width: `${data.length * 100}%` }}>
         {data.map((image) => {
           return (

@@ -7,9 +7,9 @@ export default function Contact() {
   const form = useRef();
   return (
     <div className="contact-container">
-      <div className="contact-topbar">
+      {/* <div className="contact-topbar">
         <Topbar />
-      </div>
+      </div> */}
       <div className="contact-us-container">
         <div className="contact-desc">
           <div className="contact-us">

@@ -3,16 +3,17 @@
 }
 
 .home-container {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0;
   width: 100%;
   box-sizing: border-box;
   background-image: url("/Frame_96.png");
-  background-position: center;
+  background-position: center; */
   /* overflow: hidden; */
 }
+
 .logo-div {
   z-index: 2;
   position: absolute;
@@ -38,10 +39,9 @@
   align-items: center;
   width: 100%;
 }
-.home-topbar {
+/* .home-topbar {
   position: relative;
-  /* background-color: black; */
-}
+} */
 .ellipse {
   position: absolute;
   margin-left: 0;

@@ -9,9 +9,9 @@ export default function People() {
   const [year, setYear] = useState(2);
   return (
     <div className="about-container">
-      <div className="about-topbar">
+      {/* <div className="about-topbar">
         <Topbar />
-      </div>
+      </div> */}
       <div className="our-philo">
         <div className="philo-title">
           <h1 >Our Philosophy</h1>

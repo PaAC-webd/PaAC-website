@@ -4,15 +4,16 @@
   background-image: url("/Frame_96.png");
   background-position: center;
 }
-.contact-topbar {
+/* .contact-topbar {
   height: 15vh;
   width: 100%;
-}
+} */
 .contact-us-container {
   color: #f9ede9;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 7rem;
 }
 .contact-desc {
   margin-top: 0px;
@@ -137,14 +138,15 @@ input {
 }
 
 @media screen and (max-width: 700px) {
-  .contact-topbar {
+  /* .contact-topbar {
     height: 7vh;
     width: 100%;
-  }
+  } */
   .contact-us-container {
     flex-direction: column;
     padding: 3vw;
     align-items: center;
+    margin-top: 4rem;
   }
   .contact-desc {
     width: 100%;
