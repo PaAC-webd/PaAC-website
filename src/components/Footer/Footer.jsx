@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="footer-div address">
             <h1 className="footer-headings">Address</h1>
             <h2 className="footer-body">
-              Student Activity Center(SAC), Room No. 116, Indian Institute of
+              Student Activity Center (SAC), Room No. 116, Indian Institute of
               Technology Roorkee, Roorkee, Uttarakhand 247667
             </h2>
           </div>
