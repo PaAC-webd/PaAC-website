@@ -9,10 +9,10 @@
   background-image: url("/Frame_96.png");
   background-position: center;
 }
-.events-topbar {
+/* .events-topbar {
   position: relative;
   width: 100%;
-}
+} */
 
 /* -------------Upcoming events styling---------------- */
 .upcoming-events-container {

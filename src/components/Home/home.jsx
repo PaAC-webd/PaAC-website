@@ -14,14 +14,14 @@ import Achievement from "../Achievement/Achievement";
 
 export default function Home() {
   return (
-    <div>
+    <>
       {/* //   <div className="logo-div">
     //     <Logo></Logo>
     //   </div> */}
       <div className="home-container">
-        <div className="home-topbar">
+        {/* <div className="home-topbar">
           <Topbar />
-        </div>
+        </div> */}
         <div className="home-info">
           <img src={Ellipse} className="ellipse" alt=""></img>
           <div className="home-title">
@@ -80,6 +80,6 @@ export default function Home() {
           <Footer />
         </div>
       </div>
-    </div>
+    </>
   );
 }
