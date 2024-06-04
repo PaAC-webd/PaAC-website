@@ -8,7 +8,7 @@ const BookCard = ({
   return (
     <div className={`book-card ${bookAvailable ? "" : "not-available"}`}>
       <span className="book-edition">{bookEdition} Edition</span>
-      <img src={bookImage.url} alt="" className="book-image" />
+      <img src={bookImage.url} alt="" className="book-image" height={256}/>
       <h3 className="book-name">{bookName}</h3>
       <div className="author">
         <p className="book-author">{authorName}</p>

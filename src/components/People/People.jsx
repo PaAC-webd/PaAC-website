@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./People.css";
-import Topbar from "../Topbar/Topbar";
 import Footer from "../Footer/Footer";
 import { Secy, Head, Member } from "./Data.js";
 import Card from "./Card";
@@ -41,6 +40,7 @@ export default function People() {
         <div className="members-secys">
           {Secy.map((value) => (
             <Card
+            key={value.name}
               id={value.name}
               name={value.name}
               img={value.image}
@@ -57,6 +57,7 @@ export default function People() {
         <div className="members-heads">
           {Head.map((value) => (
             <Card
+            key={value.name}
               id={value.name}
               name={value.name}
               img={value.image}
@@ -101,6 +102,7 @@ export default function People() {
             if (value.year === year) {
               return (
                 <Card
+                key={value.name}
                   id={value.name}
                   name={value.name}
                   img={value.image}

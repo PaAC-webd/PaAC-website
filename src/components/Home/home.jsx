@@ -1,4 +1,3 @@
-import Topbar from "../Topbar/Topbar";
 import Footer from "../Footer/Footer";
 import "./home.css";
 import Ellipse from "../assets/Primary.png";

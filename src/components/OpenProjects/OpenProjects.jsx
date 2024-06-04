@@ -1,5 +1,4 @@
 import "./OpenProjects.css";
-import Topbar from "../Topbar/Topbar";
 import Footer from "../Footer/Footer";
 import ProjectCard from "./Card";
 const spaceId = import.meta.env.VITE_SPACE_ID;

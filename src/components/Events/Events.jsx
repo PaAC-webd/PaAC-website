@@ -1,5 +1,4 @@
 import "./Events.css";
-import Topbar from "../Topbar/Topbar";
 import Footer from "../Footer/Footer";
 import { Recent } from "./EventsData.js";
 import EventCard from "./EventCard";
