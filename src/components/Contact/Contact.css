@@ -32,6 +32,7 @@
   font-size: max(2.5vw, 13px);
   font-weight: 400;
 }
+
 .contact-form {
   border-radius: 1.5rem;
   background-color: #2d3787b4;
@@ -84,12 +85,17 @@
     color: #eca674;
 }
 
-label {
+/* h2.fTwyFH {
   font-size: max(1.5vw, 13px);
   margin-bottom: 1.25vh;
-  color: #eca674;
+  color: #eca674 !important;
   font-weight: 400;
+} */
+
+.fTwyFH{
+  color: white !important;
 }
+
 textarea {
   width: 95%;
   padding: 0.6rem;
@@ -136,6 +142,9 @@ input {
   border: 3px solid #eca674;
   border-radius: 5px;
 }
+
+/* Tally - Form Styling */
+
 
 @media screen and (max-width: 700px) {
   /* .contact-topbar {

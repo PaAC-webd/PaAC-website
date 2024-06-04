@@ -1,6 +1,5 @@
-import React, { useRef, useLayoutEffect } from "react";
+import { useRef, useLayoutEffect } from "react";
 import "./Gallery.css";
-import Topbar from "../Topbar/Topbar";
 import { data } from "./Images.js";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
