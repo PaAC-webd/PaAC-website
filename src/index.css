@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  background-color: #07072f;
+  color: white;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: lighter;
+  letter-spacing: 0.1vw;
+  word-spacing: 0.2vh;
+  overflow-x: hidden;
+}
+h1 {
+  font-family: "Paytone One", sans-serif;
+  font-display: swap;
+}
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button {
+  font-family: "Josefin Sans", sans-serif;
+  font-display: swap;
+}
+
+::selection {
+  background-color: #faddff;
+  color: #07072f;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5vw;
+  border-radius: 25px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #ffc7ba;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #07072f;
+  border-radius: 50px;
+}
+body::-webkit-scrollbar-track {
+  border-radius: 50px;
+}
+body::-webkit-scrollbar-track:hover {
+  background-color: #1f1f42;
+}

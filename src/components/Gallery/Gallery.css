@@ -1,0 +1,26 @@
+.gallery-container {
+  width: 100vw;
+  height: 100vh;
+  overscroll-behavior: none;
+}
+
+.gallery-body {
+  height: 100%;
+  overscroll-behavior: none;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.panel {
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.panel-content {
+  position: absolute;
+  left: 50vw;
+  bottom: 0;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}

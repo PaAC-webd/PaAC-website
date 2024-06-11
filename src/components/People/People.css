@@ -1,0 +1,244 @@
+.about-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("/Frame_96.png");
+  background-position: center;
+}
+.about-container > h1{
+  text-align: center;
+}
+.about-topbar {
+  width: 100%;
+}
+.our-philo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 5vw;
+}
+.philo-title, .about-heading {
+  position: relative;
+  font-size: max(2vw, 20px);
+  font-weight: 500;
+  color: #eca674;
+  margin-bottom: 2vh;
+}
+.philo-body {
+  width: 80%;
+  padding: 2vw;
+  line-height: 1.25;
+  font-size: max(1.5vw, 12px);
+}
+
+.members {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.members-secys {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 10vh;
+}
+.members-heads {
+  padding: 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 10vh;
+}
+.members-btn {
+  box-sizing: border-box;
+  padding: 2vw;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.members-btn-year {
+  transition: all 0.3s ease-in-out;
+  background-color: #eca674;
+  border: none;
+  color: #050528;
+  border-radius: 10px;
+  padding: max(1vw, 1rem);
+  margin: 0.5rem;
+  /* padding-left: max(1.75vw,4px); */
+  /* padding-right: max(1.75vw,4px); */
+  font-weight: 500;
+  /* font-size: max(1.25vw,10px); */
+  font-size: max(1.5vw, 1rem);
+}
+.active-year {
+  background-color: white;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 3px;
+}
+.members-btn-year:hover {
+  background-color: white;
+  cursor: pointer;
+}
+.members-members,
+.alums {
+  padding: 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 0vh;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 5vw;
+  width: max(25vw, 150px);
+  margin-bottom: 0;
+}
+.alum-container {
+  width: 100%;
+  padding: 0 10vw;
+}
+.alum-btn {
+  padding: 0.2rem 2rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+  background-color: #eca674;
+  color: #050528;
+  border-radius: 10px;
+}
+.alum-btn button {
+  background-color: #eca674;
+  border: none;
+}
+
+.members-heads .card-container {
+  width: max(10vw, 140px);
+}
+.members-members .card-container {
+  width: max(20vw, 140px);
+}
+.alums .card-container {
+  width: max(20vw, 140px);
+  margin: 0 1rem;
+}
+.card-image,
+.blur-image {
+  width: 14vw !important;
+  height: 14vw !important;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: .7rem;
+}
+.blur-image > canvas {
+  border-radius: 50%;
+}
+.card-name {
+  font-size: max(1.25vw, 12px);
+  font-weight: 500;
+  margin-bottom: 0.4vh;
+}
+.card-position {
+  font-weight: 400;
+  font-size: max(0.8vw, 9px);
+}
+.card-contacts {
+  display: flex;
+  width: min(9vw, 4rem);
+  align-items: center;
+  justify-content: space-evenly;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a > svg {
+  height: 1.2rem;
+  width: 1.2rem;
+  margin: 0.1rem;
+  color: #eca674;
+}
+.line-container {
+  display: flex;
+  justify-content: center;
+}
+.horizontal-line {
+  height: 0.75vh;
+  margin-top: 0;
+  width: 80%;
+  background-color: #ffffff50;
+}
+.card-socials {
+  font-size: max(2vw, 3vh);
+}
+
+.hide {
+  display: none;
+}
+/* .about-footer{
+    width: 100%;
+} */
+@media screen and (max-width: 700px) {
+  * {
+    box-sizing: border-box;
+  }
+  .about-container {
+    width: 100vw;
+  }
+  .about-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 5vw;
+  }
+  .intro-title {
+    position: relative;
+  }
+  .intro-para {
+    width: 100%;
+    padding: 2vw;
+  }
+  .members-secys {
+    margin-bottom: 3vh;
+  }
+  .members-heads {
+    margin-bottom: 3vh;
+  }
+  .alums {
+    margin-bottom: 3vh;
+  }
+  .card-image {
+    width: 20vw;
+    height: 20vw;
+    margin-bottom: .3rem;
+  }
+  h1{
+    font-size: 2rem;
+  }
+  .blur-image {
+    display: block;
+    width: 20vw !important;
+    height: 20vw !important;
+    margin-bottom: .3rem;
+  }
+  .card-name {
+    margin-bottom: 0;
+  }
+  .horizontal-line {
+    height: 0.4vh;
+  }
+}

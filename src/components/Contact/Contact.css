@@ -1,0 +1,198 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  background-image: url("/Frame_96.png");
+  background-position: center;
+}
+/* .contact-topbar {
+  height: 15vh;
+  width: 100%;
+} */
+.contact-us-container {
+  color: #f9ede9;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 7rem;
+}
+.contact-desc {
+  margin-top: 0px;
+  width: 40%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+/* .contact-desc-title {
+  color: #eca674;
+  font-size: max(3vw, 15px);
+  margin-bottom: 0;
+} */
+.contact-desc-desc {
+  font-size: max(2.5vw, 13px);
+  font-weight: 400;
+}
+
+.contact-form {
+  border-radius: 1.5rem;
+  background-color: #2d3787b4;
+  width: max(35%, 300px);
+  display: flex;
+  flex-direction: column;
+  padding: 2vw;
+}
+.chat-with-us{
+    display: flex;
+    flex-direction: column;
+}
+.visit-title,
+.chat-title {
+  color: #eca674;
+  font-size: max(3vw, 15px);
+  margin-bottom: .5rem;
+  text-align: center;
+}
+.visit-us, .contact-us, .chat-with-us{
+    margin-bottom: 2rem;
+}
+.chat-qr{
+    height: max(150px, 15vw);
+    width: max(150px, 20vw);
+    background-color: #2c2b6c9d;
+    margin: auto;
+}
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.location > h3{
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+.location > iframe {
+    width: 33%;
+    height: 9rem;
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-handle{
+    margin: 0.3rem;
+    color: #eca674;
+}
+
+/* h2.fTwyFH {
+  font-size: max(1.5vw, 13px);
+  margin-bottom: 1.25vh;
+  color: #eca674 !important;
+  font-weight: 400;
+} */
+
+.fTwyFH{
+  color: white !important;
+}
+
+textarea {
+  width: 95%;
+  padding: 0.6rem;
+  font-size: max(1vw, 10px);
+  height: 17vh;
+  margin-bottom: 5vh;
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  border-radius: 6px;
+  outline: none;
+}
+input {
+  width: 95%;
+  padding: 0.6rem;
+  font-size: max(1vw, 10px);
+  height: 6vh;
+  margin-bottom: 5vh;
+  color: black;
+  border-radius: 6px;
+  font-family: 'Josefin Sans', sans-serif;
+  outline: none;
+}
+
+.form-submit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.form-submit-btn {
+  background-color: #eca674;
+  border: 3px solid #eca674;
+  border-radius: 5px;
+  color: black;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.form-submit-btn:hover {
+  background-color: #2c2b6c9d;
+  color: #eca674;
+  border: 3px solid #eca674;
+  border-radius: 5px;
+}
+
+/* Tally - Form Styling */
+
+
+@media screen and (max-width: 700px) {
+  /* .contact-topbar {
+    height: 7vh;
+    width: 100%;
+  } */
+  .contact-us-container {
+    flex-direction: column;
+    padding: 3vw;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  .contact-desc {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .contact-desc-title {
+    font-size: 23px;
+  }
+  .contact-form {
+    width: 98%;
+    padding: 20px;
+  }
+  input {
+    font-size: 3.25vw;
+    height: 5vh;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  textarea {
+    font-size: 3vh;
+    width: 100%;
+    height: 15vh;
+  }
+  .form-submit-btn {
+    font-size: 15px;
+    width: 18%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+    .location{
+        flex-direction: column;
+    }
+    .location > iframe {
+        width: 80%;
+    }
+}
