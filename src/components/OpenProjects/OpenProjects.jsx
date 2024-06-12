@@ -1,5 +1,4 @@
 import "./OpenProjects.css";
-import Topbar from "../Topbar/Topbar";
 import Footer from "../Footer/Footer";
 import ProjectCard from "./Card";
 const spaceId = import.meta.env.VITE_SPACE_ID;
@@ -48,9 +47,9 @@ export default function Events() {
   }
   return (
     <div className="projects-container">
-      <div className="projects-topbar">
+      {/* <div className="projects-topbar">
         <Topbar />
-      </div>
+      </div> */}
       <section className="open-projects">
         <h1>Open Projects</h1>
         <section className="faq">

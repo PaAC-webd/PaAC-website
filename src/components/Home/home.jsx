@@ -1,4 +1,3 @@
-import Topbar from "../Topbar/Topbar";
 import Footer from "../Footer/Footer";
 import "./home.css";
 import Ellipse from "../assets/Primary.png";
@@ -7,19 +6,21 @@ import { NavLink } from "react-router-dom";
 import HomeEvents from "./HomeEvents";
 import Gp from "../assets/group_photo.webp";
 
+
 // import Logo from "./Logo";
 import Newsletter from "./Newsletter";
+import Achievement from "../Achievement/Achievement";
 
 export default function Home() {
   return (
-    <div>
+    <>
       {/* //   <div className="logo-div">
     //     <Logo></Logo>
     //   </div> */}
       <div className="home-container">
-        <div className="home-topbar">
+        {/* <div className="home-topbar">
           <Topbar />
-        </div>
+        </div> */}
         <div className="home-info">
           <img src={Ellipse} className="ellipse" alt=""></img>
           <div className="home-title">
@@ -56,9 +57,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          {/* <div className="home-achievement">
+          <div className="home-achievement">
             <Achievement />
-          </div> */}
+          </div>
 
           {/* ---------Home Events------------ */}
           <div className="home-events-section">
@@ -78,6 +79,6 @@ export default function Home() {
           <Footer />
         </div>
       </div>
-    </div>
+    </>
   );
 }

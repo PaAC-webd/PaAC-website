@@ -1,6 +1,5 @@
-import React, { useRef, useLayoutEffect } from "react";
+import { useRef, useLayoutEffect } from "react";
 import "./Gallery.css";
-import Topbar from "../Topbar/Topbar";
 import { data } from "./Images.js";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -34,9 +33,9 @@ export default function Gallery() {
 
   return (
     <div className="gallery-container" ref={comp}>
-      <div className="gallery-topbar">
+      {/* <div className="gallery-topbar">
         <Topbar />
-      </div>
+      </div> */}
       <div className="gallery-body" style={{ width: `${data.length * 100}%` }}>
         {data.map((image) => {
           return (
