@@ -3,7 +3,17 @@ import Footer from "../Footer/Footer";
 import { Recent } from "./EventsData.js";
 import EventCard from "./EventCard";
 import UpcomingEvents from "./UpcomingEvents.jsx";
+import { useEffect } from "react";
 export default function Events() {
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    })
+  })
+
   return (
     <div className="events-container">
       {/* <div className="events-topbar">
