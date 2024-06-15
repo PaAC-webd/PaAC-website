@@ -8,11 +8,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Library from "./components/Library/Library";
 import OpenProjects from "./components/OpenProjects/OpenProjects";
 import Layout from "./components/Layout";
-import ScrollToTop from "./components/Scroll/Scroll";
 
 
 function App() {
-  < ScrollToTop/>
   const router = createBrowserRouter([
     {
       path: '/',
