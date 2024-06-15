@@ -9,8 +9,8 @@ import Library from "./components/Library/Library";
 import OpenProjects from "./components/OpenProjects/OpenProjects";
 import Layout from "./components/Layout";
 
-function App() {
 
+function App() {
   const router = createBrowserRouter([
     {
       path: '/',
