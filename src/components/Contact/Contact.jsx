@@ -1,9 +1,18 @@
 import { useEffect, useRef } from "react";
 import "./Contact.css";
 import Footer from "../Footer/Footer";
+import { useEffect } from "react";
 
 export default function Contact() {
   const form = useRef();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    })
+  })
 
   useEffect(()=> {
     Tally.loadEmbeds();

@@ -5,13 +5,24 @@ import Planet from "../assets/Planet.png";
 import { NavLink } from "react-router-dom";
 import HomeEvents from "./HomeEvents";
 import Gp from "../assets/group_photo.webp";
-
+import { useEffect} from "react" ;
 
 // import Logo from "./Logo";
 import Newsletter from "./Newsletter";
 import Achievement from "../Achievement/Achievement";
 
 export default function Home() {
+
+  
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    })
+  })
+
+
   return (
     <>
       {/* //   <div className="logo-div">

@@ -3,9 +3,17 @@ import "./People.css";
 import Footer from "../Footer/Footer";
 import { Secy, Head, Member } from "./Data.js";
 import Card from "./Card";
+import { useEffect } from "react";
 
 export default function People() {
   const [year, setYear] = useState(2);
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    })
+  })
   return (
     <div className="about-container">
       {/* <div className="about-topbar">

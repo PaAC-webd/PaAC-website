@@ -3,6 +3,7 @@ import "./Gallery.css";
 import { data } from "./Images.js";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { useEffect } from "react";
 
 export default function Gallery() {
   const comp = useRef();
@@ -30,6 +31,16 @@ export default function Gallery() {
 
     return () => ctx.revert();
   }, []);
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    })
+  })
+
+
 
   return (
     <div className="gallery-container" ref={comp}>
