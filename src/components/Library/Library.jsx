@@ -8,6 +8,10 @@ import {
   ChevronDownIcon,
   ChevronUpIcon,
 } from "@radix-ui/react-icons";
+
+import { useEffect } from "react";
+
+
 const spaceId = import.meta.env.VITE_SPACE_ID;
 const accessToken = import.meta.env.VITE_ACCESS_TOKEN;
 
@@ -52,6 +56,15 @@ const Library = () => {
   if (!page) {
     return "Loading...";
   }
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    })
+  })
+
   
   const filteredBooks = page.filter((book) => {
     if (subject === "All") {
