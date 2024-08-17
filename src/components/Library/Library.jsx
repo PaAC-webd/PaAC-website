@@ -9,7 +9,6 @@ import {
   ChevronUpIcon,
 } from "@radix-ui/react-icons";
 
-import { useEffect } from "react";
 
 
 const spaceId = import.meta.env.VITE_SPACE_ID;
@@ -53,19 +52,18 @@ const Library = () => {
       });
   }, []);
 
-  if (!page) {
-    return "Loading...";
-  }
-
   useEffect(() => {
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: "smooth"
-    })
-  })
+      behavior: "smooth",
+    });
+  });
 
-  
+  if (!page) {
+    return "Loading...";
+  }
+
   const filteredBooks = page.filter((book) => {
     if (subject === "All") {
       return true;

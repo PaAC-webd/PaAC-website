@@ -5,7 +5,6 @@ const spaceId = import.meta.env.VITE_SPACE_ID;
 const accessToken = import.meta.env.VITE_ACCESS_TOKEN;
 import { useState, useEffect } from "react";
 import Faq from "./Faq";
-import { useEffect } from "react";
 
 export default function Events() {
   const [projects, setProjects] = useState(null);
@@ -44,17 +43,17 @@ export default function Events() {
       });
   }, []);
 
+   useEffect(() => {
+     window.scrollTo({
+       top: 0,
+       left: 0,
+       behavior: "smooth",
+     });
+   });
+
   if (!projects) {
     return "Loading...";
   }
-
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth"
-    })
-  })
 
 
   return (
