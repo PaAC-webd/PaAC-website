@@ -1,10 +1,8 @@
-import { useEffect, useRef } from "react";
+import { useEffect} from "react";
 import "./Contact.css";
 import Footer from "../Footer/Footer";
-import { useEffect } from "react";
 
 export default function Contact() {
-  const form = useRef();
 
   useEffect(() => {
     window.scrollTo({
@@ -16,7 +14,7 @@ export default function Contact() {
 
   useEffect(()=> {
     Tally.loadEmbeds();
-  })
+  }, [])
 
   return (
     <div className="contact-container">

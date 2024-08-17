@@ -21,8 +21,9 @@ export default function Footer() {
             <h2 className="footer-body">
               Shivam Singh Aswal : +91 798 378 9329
             </h2>
-            <h2 className="footer-body">Rajnish : +91 704 895 2487</h2>
-            <h2 className="footer-body">Kriti : +91 988 680 0307</h2>
+            <h2 className="footer-body">Sumedh : +91 9850672970</h2>
+            <h2 className="footer-body">Prajwal : +91 9949216026</h2>
+            <h2 className="footer-body">Khushi : +91 8168405906</h2>
           </div>
         </div>
         <div className="footer-div-right">
