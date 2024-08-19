@@ -20,9 +20,9 @@ export default function EventCard(props) {
         <div className="recent-bottom">
           <p className="recent-event-details">{props.details}</p>
         </div>
-        <a href="" className="learn-button">
+        {/* <a href="" className="learn-button">
           Learn more
-        </a>
+        </a> */}
       </div>
     </a>
   );
