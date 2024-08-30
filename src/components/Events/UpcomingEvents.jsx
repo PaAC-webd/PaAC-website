@@ -90,8 +90,8 @@ const UpcomingEvent = () => {
         "--swiper-pagination-bullet-horizontal-gap": "6px",
       }}
     >
-      {events.map((up) => (
-        <SwiperSlide>
+      {events.map((up, index) => (
+        <SwiperSlide key={index}>
           <div className="event-card">
             <h1 className="event-title">{up.titleOfEvent}</h1>
             <div className="event-time">
