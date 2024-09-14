@@ -13,7 +13,7 @@ export default function People() {
       left: 0,
       behavior: "smooth"
     })
-  })
+  }, [])
   return (
     <div className="about-container">
       {/* <div className="about-topbar">

@@ -12,15 +12,15 @@ import { CalendarIcon } from "@radix-ui/react-icons";
 const HomeEvents = () => {
   return (
     <Swiper
-      // effect={"coverflow"}
+      effect={"coverflow"}
       grabCursor={true}
       loop={true}
       centeredSlides={true}
       spaceBetween={90}
       slidesPerView={2.5}
-      // autoplay={{
-      //   delay: 3000
-      // }}
+      autoplay={{
+        delay: 3000
+      }}
       breakpoints={{
         1240: {
           spaceBetween: 250,
@@ -36,13 +36,13 @@ const HomeEvents = () => {
           slidesPerView: 1,
         },
       }}
-      // coverflowEffect={{
-      //   rotate: 0,
-      //   stretch: 0,
-      //   depth: 100,
-      //   modifier: 1,
-      //   slideShadows: false
-      // }}
+      coverflowEffect={{
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: false
+      }}
       pagination={{ dynamicBullets: true, clickable: true }}
       modules={[Pagination, EffectCoverflow, Autoplay]}
       className="swiper_container"
