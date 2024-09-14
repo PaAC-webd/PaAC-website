@@ -1,23 +1,27 @@
 import "./DropMenu.css";
 import * as Popover from "@radix-ui/react-popover";
-import { MixerHorizontalIcon, Cross2Icon } from "@radix-ui/react-icons";
+import { Cross1Icon, MixerHorizontalIcon , } from "@radix-ui/react-icons";
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import {useState } from "react";
 
 const DropMenu = () => {
 
   const [open, setIsOpen] = useState(false);
+
   return (
     <Popover.Root open={open}>
-      <Popover.Trigger asChild onClick={() => {setIsOpen((open) => {!open})}}>
+      <Popover.Trigger asChild onClick={() => {setIsOpen((open) => {return !open})}}>
         <button className="IconButton" aria-label="Update dimensions">
+          {
+            open ? <Cross1Icon/> :
           <MixerHorizontalIcon />
+          }
         </button>
       </Popover.Trigger>
       <Popover.Portal>
         <Popover.Content className="PopoverContent" sideOffset={5}>
           <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-          <NavLink to="/" className="dropDownMenuLink" onClick={(open) => {setIsOpen(false)}}>
+            <NavLink to="/" className="dropDownMenuLink" onClick={() => {setIsOpen(false)}}>
                 <p className="menuItems">Home</p>
             </NavLink>
             <NavLink to="/people" className="dropDownMenuLink" onClick={() => {setIsOpen(false)}}>
