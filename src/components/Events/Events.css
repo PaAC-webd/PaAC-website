@@ -237,6 +237,11 @@ span.swiper-pagination-bullet-active {
   }
   h1.recent-event-title{
     font-size: 6vw;
+    align-content: center;
+  }
+  h1.home-event-title{
+    font-size: 5vw;
+    align-content: center;
   }
   .recent-event-details{
     font-size: 4vw;
