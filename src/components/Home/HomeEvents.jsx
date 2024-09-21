@@ -54,11 +54,11 @@ const HomeEvents = () => {
         "--swiper-pagination-bullet-horizontal-gap": "6px",
       }}
     >
-      {home_events.map((event) => (
-        <SwiperSlide className="home-section-swiper-slide">
+      {home_events.map((event, index) => (
+        <SwiperSlide key={index} className="home-section-swiper-slide">
           <div className="home-event-card">
             <img src={event.image} alt="" className="home-event-image" />
-            {/* <h1 className="home-event-title">{event.title}</h1> */}
+            <h1 className="home-event-title">{event.title}</h1>
 
             <div className="home-event-time">
               <CalendarIcon /> {event.date}

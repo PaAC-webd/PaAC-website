@@ -3,11 +3,11 @@ import "./Events.css";
 
 export default function EventCard(props) {
   return (
-    <a
-      href=""
-      target="_blank"
-      rel="noreferrer"
-    >
+    // <a
+    //   href=""
+    //   target="_blank"
+    //   rel="noreferrer"
+    // >
       <div className="recent-event">
         <div className="recent-top">
           <img src={props.image} alt="" className="recent-event-image" />
@@ -20,10 +20,10 @@ export default function EventCard(props) {
         <div className="recent-bottom">
           <p className="recent-event-details">{props.details}</p>
         </div>
-        <a href="" className="learn-button">
+        {/* <a href="" className="learn-button">
           Learn more
-        </a>
+        </a> */}
       </div>
-    </a>
+    //  </a> 
   );
 }

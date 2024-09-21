@@ -30,14 +30,14 @@
 
 .swiper {
   width: 100vw;
-  display: flex !important;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
+  /* display: flex !important; */
+  /* justify-content: space-around; */
+  /* align-items: center; */
+  /* text-align: center; */
 }
 
 .swiper-wrapper {
-  width: 125% !important;
+  /* width: 125% !important; */
   margin-bottom: 2rem;
   align-items: center;
 }
@@ -129,7 +129,8 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  /* width: 22rem; */
+  /* max-width: 30rem; */
+  /* margin: auto; */
 }
 
 .event-title {
@@ -236,6 +237,11 @@ span.swiper-pagination-bullet-active {
   }
   h1.recent-event-title{
     font-size: 6vw;
+    align-content: center;
+  }
+  h1.home-event-title{
+    font-size: 5vw;
+    align-content: center;
   }
   .recent-event-details{
     font-size: 4vw;

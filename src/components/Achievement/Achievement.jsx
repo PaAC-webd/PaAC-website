@@ -21,7 +21,11 @@ export default function Achievement() {
       >
         <ChevronLeftIcon></ChevronLeftIcon>
       </button>
-      <p className="achi-desc">{Data[state].desc}</p>
+      <p className="achi-desc">{ state == 1 ? <>
+      {Data[state].desc.split(':')[0]} :
+      <br />
+      {Data[state].desc.split(':')[1]}
+      </> : Data[state].desc}</p>
       <button className="achi-btn" onClick={() => setState((state + 1) % len)}>
         <ChevronRightIcon></ChevronRightIcon>
       </button>
