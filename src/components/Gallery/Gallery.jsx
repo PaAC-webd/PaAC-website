@@ -1,7 +1,6 @@
 import { useRef, useLayoutEffect } from "react";
 import "./Gallery.css";
 // import { data } from "./Images.js";
-import { Link } from "react-router-dom";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useEffect } from "react";
