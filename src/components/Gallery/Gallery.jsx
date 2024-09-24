@@ -85,7 +85,7 @@ export default function Gallery() {
       }}
     >
       {/* <img src="../assets/gallery/gallery.webp" alt="alt" width={140} height={140} /> */}
-      <h1 style={{ marginBottom: "1rem", fontSize: "3rem", color: "#ea8d4b", }}>
+      <h1 style={{ marginBottom: "1rem", fontSize: "3rem", color: "#eca674", }}>
         {" "}
         Our Cosmic Captures are coming soon! Stay Tuned....
       </h1>
