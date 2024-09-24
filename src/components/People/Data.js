@@ -89,33 +89,6 @@ import vidhan from "../assets/members/vidhan_agrawal.jpg" ;
 
 
 const Secys = [
-  {
-    name: "Shivam Singh Aswal",
-    image: shivam,
-    blurhash: "LaJ*YSa#~pt7~pjZRkoeV@j]M{j[",
-    position: "Secretary",
-    linkedIn: "https://www.linkedin.com/in/shivam-singh-4bb4571a0",
-    email: "mailto:shivam_sa@ph.iitr.ac.in",
-    year: 5,
-  },
-  {
-    name: "Ayush Ashray Nishad",
-    blurhash: "LCE.CJLgFg^%=}cExCRP0hVs-4D%",
-    image: ashray,
-    position: "Additional Secretary - Physics",
-    linkedIn: "https://www.linkedin.com/in/ayush-ashray-nishad?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    email: "mailto:ayush_an@ph.iitr.ac.in",
-    year: 5,
-  },
-  {
-    name: "Rajnish Kumar Jha",
-    blurhash: "LEB{+D~Vx]Rm.8krx]ju0gIt%2t7",
-    image: rajnish,
-    position: "Additional Secretary - Astronomy",
-    linkedIn: "",
-    email: "mailto:rajnish_kj@ph.iitr.ac.in",
-    year: 5,
-  },
   // {
   //   name: "Sudharshan Kannan",
   //   image: sudharsan,
@@ -126,40 +99,20 @@ const Secys = [
   //   year: 4,
   // },
   {
-    name: "Priyanshu Parakhiya",
-    blurhash: "LIC%pfW,9pxv4mj^-tWC%5aQRhoy",
-    image: parakhiya,
-    position: "Joint Secretary",
-    linkedIn: "https://www.linkedin.com/in/priyanshu-parakhiya",
-    email: "mailto:p_parakhiya@ph.iitr.ac.in",
-    year: 4,
-  },
-  {
     name: "Roopa Pramodan",
     blurhash: "LPHUtU?cLHxDGw-=voNF?btSk8M{",
     image: roopa,
-    position: "Joint Secretary",
-    linkedIn: "https://www.linkedin.com/in/roopa-pramodan-117862229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    position: "Secretary",
+    linkedIn:
+      "https://www.linkedin.com/in/roopa-pramodan-117862229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     email: "mailto:r_pramodan@ph.iitr.ac.in",
     year: 4,
   },
   {
-    name: "Priyanshu Pansari",
-    blurhash: "LPHUtU?cLHxDGw-=voNF?btSk8M{",
-    image: "",
-    position: "Joint Secretary",
-    linkedIn: "https://www.linkedin.com/in/priyanshu-pansari-a12081231/",
-    email: "",
-    year: 4,
-  }
-];
-
-const Heads = [
-  {
     name: "Anand Bondge",
     blurhash: "L6Cs~G%w0cM_9:aL^-oi06oyzVRP",
     image: bondge,
-    position: "Design Head",
+    position: "Additional Secretary",
     linkedIn: "https://www.linkedin.com/in/anandbondge",
     email: "mailto:b_arajesh@bt.iitr.ac.in",
     year: 4,
@@ -168,28 +121,78 @@ const Heads = [
     name: " Jeevika",
     blurhash: "LAHw=A,n6TIU5u=^?a?F_LX8MeIV",
     image: gjeevika,
-    position: "Web Development Head",
+    position: "Additional Secretary",
     linkedIn: "https://www.linkedin.com/in/jeevika-g/",
     email: "mailto:g_jeevika@me.iitr.ac.in",
     year: 4,
   },
   {
-    name: "Suraj",
-    blurhash: "LHDlyUR400b_00o}~pi^oft7r=bH",
-    image: suraj,
-    position: "Astrophotography Head",
-    linkedIn: "https://www.linkedin.com/in/suraj-364a18223/",
-    email: "mailto:suraj@ee.iitr.ac.in",
+    name: "Priyanshu Parakhiya",
+    blurhash: "LIC%pfW,9pxv4mj^-tWC%5aQRhoy",
+    image: parakhiya,
+    position: "Additional Secretary",
+    linkedIn: "https://www.linkedin.com/in/priyanshu-parakhiya",
+    email: "mailto:p_parakhiya@ph.iitr.ac.in",
     year: 4,
   },
   {
-    name: "Vansh Uppal",
-    blurhash: "LuIYUyWCkWX7%%oes:s;-=kBRjM{",
-    image: vansh,
-    position: "Marketing Head",
-    linkedIn: "https://www.linkedin.com/in/vansh-uppal-38b9b11b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    email: "mailto:v_uppal@ma.iitr.ac.in",
-    year: 4,
+    name: "Sumedh Gosavi ",
+    blurhash: "L5Du}J8{ID4V?c~9S%M_?bV]I:4:",
+    image: sumedh,
+    position: "Joint Secretary",
+    linkedIn:
+      "https://www.linkedin.com/in/sumedh-gosavi-1b5311246?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    email: "mailto:gosavi_sd@ph.iitr.ac.in",
+    year: 3,
+  },
+  {
+    name: "Khushi",
+    blurhash: "LzNc]8jF_NS4_3ayt7t7IpWVR5jY",
+    image: khushii,
+    position: "Joint Secretary",
+    linkedIn:
+      "https://www.linkedin.com/in/khushi-arichwal-702168295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    email: "mailto:khushi@ce.iitr.ac.in",
+    year: 3,
+  },
+  {
+    name: "Prajwal Sastry",
+    blurhash: "LSHKk9WVE2oL.moLk9R+~qayV@s.",
+    image: prajwal,
+    position: "Joint Secretary",
+    linkedIn: "https://www.linkedin.com/in/prajwal-sastry-1a29b2268/",
+    email: "mailto:prajwal_s@ece.iitr.ac.in",
+    year: 3,
+  },
+];
+
+const Heads = [
+  {
+    name: "Vikrant Singh",
+    blurhash: "L8B{os_10Lx]00ae}?nh02IV=}NI",
+    image: vikrant,
+    position: "Head of Design",
+    linkedIn: "https://www.linkedin.com/in/vikrant-singh-234894242/",
+    email: "mailto:vikrant_s@ph.iitr.ac.in",
+    year: 3,
+  },
+  {
+    name: "Vaibhav",
+    blurhash: "LLEM8wx]-o%M~pRjWVaeoJV@M|ay",
+    image: VAIBHAV,
+    position: "Head of Web Development",
+    linkedIn: "",
+    email: "",
+    year: 3,
+  },
+  {
+    name: "Aryan Singh Chaudhry",
+    blurhash: "LSE{wp%Mt,Rk_4jboMoe.Tt7xHt6",
+    image: aryan,
+    position: "Head of Astrophotography",
+    linkedIn: "https://www.linkedin.com/in/aryan-singh-chaudhry-155963255/",
+    email: "mailto:aryan_sc@ph.iitr.ac.in",
+    year: 3,
   },
 ];
 
@@ -258,6 +261,53 @@ const Members = [
   //   year: 5,
   // },
   {
+    name: "Suraj",
+    blurhash: "LHDlyUR400b_00o}~pi^oft7r=bH",
+    image: suraj,
+    position: "Member",
+    linkedIn: "https://www.linkedin.com/in/suraj-364a18223/",
+    email: "mailto:suraj@ee.iitr.ac.in",
+    year: 4,
+  },
+  {
+    name: "Vansh Uppal",
+    blurhash: "LuIYUyWCkWX7%%oes:s;-=kBRjM{",
+    image: vansh,
+    position: "Member",
+    linkedIn:
+      "https://www.linkedin.com/in/vansh-uppal-38b9b11b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    email: "mailto:v_uppal@ma.iitr.ac.in",
+    year: 4,
+  },
+  {
+    name: "Shivam Singh Aswal",
+    image: shivam,
+    blurhash: "LaJ*YSa#~pt7~pjZRkoeV@j]M{j[",
+    position: "Member",
+    linkedIn: "https://www.linkedin.com/in/shivam-singh-4bb4571a0",
+    email: "mailto:shivam_sa@ph.iitr.ac.in",
+    year: 5,
+  },
+  {
+    name: "Ayush Ashray Nishad",
+    blurhash: "LCE.CJLgFg^%=}cExCRP0hVs-4D%",
+    image: ashray,
+    position: "Member",
+    linkedIn:
+      "https://www.linkedin.com/in/ayush-ashray-nishad?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    email: "mailto:ayush_an@ph.iitr.ac.in",
+    year: 5,
+  },
+  {
+    name: "Rajnish Kumar Jha",
+    blurhash: "LEB{+D~Vx]Rm.8krx]ju0gIt%2t7",
+    image: rajnish,
+    position: "Member",
+    linkedIn: "",
+    email: "mailto:rajnish_kj@ph.iitr.ac.in",
+    year: 5,
+  },
+  {
     name: "Aman Ghadge",
     blurhash: "LiHo8zRj-;fQ~qtQRkt7xtjuV@ae",
     image: aman,
@@ -268,7 +318,7 @@ const Members = [
   },
   {
     name: "Ahmed Rockey Saikia",
-    blurhash:"LSFs43t7o{ax9sW9WYkC%jWCnjo0",
+    blurhash: "LSFs43t7o{ax9sW9WYkC%jWCnjo0",
     image: rocky,
     position: "Member",
     linkedIn: "http://linkedin.com/in/ahmed-rockey-saikia-333113180",
@@ -314,7 +364,7 @@ const Members = [
   {
     name: "Shivank Garg",
     image: shivank,
-    blurhash:"LEGlL;O^%zx^1A.9x|SQY8XV4nIp",
+    blurhash: "LEGlL;O^%zx^1A.9x|SQY8XV4nIp",
     position: "Member",
     linkedIn: "https://www.linkedin.com/in/shivank-garg21/",
     email: "mailto:shivank_g@mfs.iitr.ac.in",
@@ -330,30 +380,13 @@ const Members = [
     year: 3,
   },
   {
-    name: "Vaibhav",
-    blurhash: "LLEM8wx]-o%M~pRjWVaeoJV@M|ay",
-    image: VAIBHAV,
-    position: "Member",
-    linkedIn: "",
-    email: "",
-    year: 3,
-  },
-  {
     name: "Yug Maheshwari ",
     blurhash: "LFGv36Mw~B?G#6EM%$Md8_IUMxRj",
     image: YUG,
     position: "Member",
-    linkedIn: "https://www.linkedin.com/in/yug-maheshwari-37b432251?original_referer=https%3A%2F%2Fwww%2Egoogle%2Eco%2Ein%2F&originalSubdomain=in",
+    linkedIn:
+      "https://www.linkedin.com/in/yug-maheshwari-37b432251?original_referer=https%3A%2F%2Fwww%2Egoogle%2Eco%2Ein%2F&originalSubdomain=in",
     email: "mailto:yug_m@ce.iitr.ac.in",
-    year: 3,
-  },
-  {
-    name: "Khushi",
-    blurhash: "LzNc]8jF_NS4_3ayt7t7IpWVR5jY",
-    image: khushii,
-    position: "Member",
-    linkedIn: "https://www.linkedin.com/in/khushi-arichwal-702168295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    email: "mailto:khushi@ce.iitr.ac.in",
     year: 3,
   },
   {
@@ -370,7 +403,8 @@ const Members = [
     blurhash: "LmHoUfxtxuWB?wRkfRj[j]oeRit7",
     image: TSEWANG,
     position: "Member",
-    linkedIn: "https://www.linkedin.com/in/tsewang-khasphel-677a98252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedIn:
+      "https://www.linkedin.com/in/tsewang-khasphel-677a98252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     email: "mailto:tsewang_k@ph.iitr.ac.in",
     year: 3,
   },
@@ -379,7 +413,8 @@ const Members = [
     blurhash: "LFLMFj002|#Z0[H;^I%N85M-mU%{",
     image: shan,
     position: "Member",
-    linkedIn: "https://www.linkedin.com/in/dhanasri-shanmukhini-998954261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedIn:
+      "https://www.linkedin.com/in/dhanasri-shanmukhini-998954261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     email: "mailto:bolisetti_dss@mt.iitr.ac.in",
     year: 3,
   },
@@ -393,48 +428,13 @@ const Members = [
     year: 4,
   },
   {
-    name: "Sumedh Gosavi ",
-    blurhash: "L5Du}J8{ID4V?c~9S%M_?bV]I:4:",
-    image: sumedh,
-    position: "Member",
-    linkedIn: "https://www.linkedin.com/in/sumedh-gosavi-1b5311246?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    email: "mailto:gosavi_sd@ph.iitr.ac.in",
-    year: 3,
-  },
-  {
     name: "Raghav Garg ",
     blurhash: "L9ECwI4;C$^*0c$zrF9a.kNY^Nox",
     image: raghav,
     position: "Member",
-    linkedIn: "https://www.linkedin.com/in/raghav-garg-307467251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedIn:
+      "https://www.linkedin.com/in/raghav-garg-307467251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     email: "mailto:raghav_g@ph.iitr.ac.in",
-    year: 3,
-  },
-  {
-    name: "Aryan Singh Chaudhry",
-    blurhash: "LSE{wp%Mt,Rk_4jboMoe.Tt7xHt6",
-    image: aryan,
-    position: "Member",
-    linkedIn: "https://www.linkedin.com/in/aryan-singh-chaudhry-155963255/",
-    email: "mailto:aryan_sc@ph.iitr.ac.in",
-    year: 3,
-  },
-  {
-    name: "Prajwal Sastry",
-    blurhash: "LSHKk9WVE2oL.moLk9R+~qayV@s.",
-    image: prajwal,
-    position: "Member",
-    linkedIn: "https://www.linkedin.com/in/prajwal-sastry-1a29b2268/",
-    email: "mailto:prajwal_s@ece.iitr.ac.in",
-    year: 3,
-  },
-  {
-    name: "Vikrant Singh",
-    blurhash: "L8B{os_10Lx]00ae}?nh02IV=}NI",
-    image: vikrant,
-    position: "Member",
-    linkedIn: "https://www.linkedin.com/in/vikrant-singh-234894242/",
-    email: "mailto:vikrant_s@ph.iitr.ac.in",
     year: 3,
   },
   {
@@ -451,7 +451,8 @@ const Members = [
     blurhash: "LsH.NUIU-;WA~qWCt7j[ozt7V@WV",
     image: mudit,
     position: "Member",
-    linkedIn: "https://www.linkedin.com/in/mudit-tuteja-25054b253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedIn:
+      "https://www.linkedin.com/in/mudit-tuteja-25054b253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     email: "mailto:mudit_t@ece.iitr.ac.in",
     year: 3,
   },
@@ -509,8 +510,7 @@ const Members = [
   //   email: "mailto:abhishek_k@ma.iitr.ac.in",
   //   year: 4,
   // },
-  
-  
+
   // 2y
   {
     name: "Anish Sharma",
@@ -519,16 +519,17 @@ const Members = [
     position: "Member",
     linkedIn: "https://www.linkedin.com/in/anish-sharma-b24927269/",
     email: "mailto:anish_rs@ph.iitr.ac.in",
-    year: 2
+    year: 3,
   },
   {
     name: "Tungala Venkata Sai Nihar",
     blurhash: "LME_:U}R~p%KNZn$NHj]NFX9s9s:",
     image: sai,
     position: "Member",
-    linkedIn: "https://www.linkedin.com/in/tungala-venkata-sai-nihar-bb4330288/",
+    linkedIn:
+      "https://www.linkedin.com/in/tungala-venkata-sai-nihar-bb4330288/",
     email: "mailto:venkata_snt@ma.iitr.ac.in",
-    year: 2
+    year: 2,
   },
   {
     name: "Sukrit Jindal",
@@ -537,16 +538,17 @@ const Members = [
     position: "Member",
     linkedIn: "https://www.linkedin.com/in/sukritjindal21/",
     email: "mailto:jindalsukrit21@gmail.com",
-    year: 3
-},
+    year: 3,
+  },
   {
     name: "Tirthankar De",
     blurhash: "LtIYd.aytMoM_4oLajfkx^j[a_j[",
     image: tirthankar,
     position: "Member",
-    linkedIn: "https://www.linkedin.com/in/tirthankar-de-99a9b6283?trk=contact-info",
+    linkedIn:
+      "https://www.linkedin.com/in/tirthankar-de-99a9b6283?trk=contact-info",
     email: "mailto:tirtha0510@gmail.com",
-    year: 2
+    year: 2,
   },
   //
   {
@@ -554,18 +556,20 @@ const Members = [
     blurhash: "",
     image: "",
     position: "Member",
-    linkedIn: "https://www.linkedin.com/in/mukul-j-2a22332b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedIn:
+      "https://www.linkedin.com/in/mukul-j-2a22332b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     email: "mailto:mukul_j@ma.iitr.ac.in",
-    year: 2
+    year: 2,
   },
   {
     name: "Bipasha Gayary",
     blurhash: "LAHJ:OJD3D}B3qE3xu1KH@IU;L,?",
     image: bipasha,
     position: "Member",
-    linkedIn: "https://www.linkedin.com/in/bipasha-brahma-gayary-a54bb7250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    linkedIn:
+      "https://www.linkedin.com/in/bipasha-brahma-gayary-a54bb7250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     email: "mailto:bipasha_bg@es.iitr.ac.in",
-    year: 2
+    year: 2,
   },
   {
     name: "Swastika Sanghi",
@@ -574,16 +578,17 @@ const Members = [
     position: "Member",
     linkedIn: "www.linkedin.com/in/swastika-sanghi",
     email: "mailto:swastika_s@ph.iitr.ac.in",
-    year: 2
+    year: 2,
   },
   {
     name: "Vansh Agrawal",
     blurhash: "LjFPsixuM{jZ_Nt8M{oy?bWVkCog",
     image: vansh_a,
     position: "Member",
-    linkedIn: "https://www.linkedin.com/in/vansh-agrawal-78585a280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedIn:
+      "https://www.linkedin.com/in/vansh-agrawal-78585a280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     email: "mailto:Vansh_a@ph.iitr.ac.in",
-    year: 2
+    year: 2,
   },
   {
     name: "Pranjay Saini",
@@ -592,43 +597,47 @@ const Members = [
     position: "Member",
     linkedIn: "https://www.linkedin.com/in/pranjay-saini-83059325b/",
     email: "mailto:pranjay_s@ph.iitr.ac.in",
-    year: 3
+    year: 3,
   },
   {
     name: "Dhyey Dave",
     blurhash: "LBBWueIWOMNg8^xt9li^K-Rj^Gai",
     image: dhyey,
     position: "Member",
-    linkedIn: "https://www.linkedin.com/in/dhyey-dave-820a2528b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedIn:
+      "https://www.linkedin.com/in/dhyey-dave-820a2528b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     email: "mailto:dhyey_hd@ph.iitr.ac.in",
-    year: 2
+    year: 2,
   },
   {
     name: "Vidhan Agarwal",
     blurhash: "L|N^6rM|W=RjkYoJjZj@_4t6aeoz",
     image: vidhan,
     position: "Member",
-    linkedIn: "https://www.linkedin.com/in/vidhan-agarwal-41ab31280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedIn:
+      "https://www.linkedin.com/in/vidhan-agarwal-41ab31280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     email: "mailto:vidhan_a@es.iitr.ac.in",
-    year: 2
+    year: 2,
   },
   {
     name: "Krishna Pahariya",
     blurhash: "LsI5b:Rj%LtR_NWBkVozx[afR+j[",
     image: krishna,
     position: "Member",
-    linkedIn: "https://www.linkedin.com/in/krishna-pahariya-8ab31b28b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedIn:
+      "https://www.linkedin.com/in/krishna-pahariya-8ab31b28b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     email: "mailto:krishna_p@cs.iitr.ac.in",
-    year: 2
+    year: 2,
   },
   {
     name: "Vedant Patel",
     blurhash: "L*HCTQt7t6V[?wWXRjfktSj@j[og",
     image: vedant,
     position: "Member",
-    linkedIn: "https://www.linkedin.com/in/vedant-patel-09b495284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedIn:
+      "https://www.linkedin.com/in/vedant-patel-09b495284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     email: "mailto:vedant_pp@ee.iitr.ac.in",
-    year: 2
+    year: 2,
   },
   {
     name: "Harshita",
@@ -637,7 +646,7 @@ const Members = [
     position: "Member",
     linkedIn: "www.linkedin.com/in/harshita-160048304",
     email: "mailto:harshita1@ce.iitr.ac.in",
-    year: 2
+    year: 2,
   },
   {
     name: "Prakul Balaji",
@@ -646,16 +655,17 @@ const Members = [
     position: "Member",
     linkedIn: "https://www.linkedin.com/in/prakul-balaji-07839730b/",
     email: "mailto:prakul_b@ph.iitr.ac.in",
-    year: 2
+    year: 2,
   },
   {
     name: "Sanjana Arun Patnaik",
     blurhash: "LPN9agI9xp$_4To}ococ~pT1MzWC",
     image: sanjana,
     position: "Member",
-    linkedIn: "https://www.linkedin.com/in/sanjana-patnaik-2810042b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedIn:
+      "https://www.linkedin.com/in/sanjana-patnaik-2810042b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     email: "mailto:sanjana_ap@ph.iitr.ac.in",
-    year: 2
+    year: 2,
   },
   {
     name: "Arpit Bhargava",
@@ -664,16 +674,17 @@ const Members = [
     position: "Member",
     linkedIn: "https://www.linkedin.com/in/arpit-bhargava-37b980289/",
     email: "mailto:arpit_b@ch.iitr.ac.in",
-    year: 2
+    year: 2,
   },
   {
     name: "Devansh Gupta",
     blurhash: "LeKd_Eay%NofaKfPxuj[~qkCV@WB",
     image: devansh,
     position: "Member",
-    linkedIn: "https://www.linkedin.com/in/devansh-gupta-5a3907279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedIn:
+      "https://www.linkedin.com/in/devansh-gupta-5a3907279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     email: "mailto:devansh_g@cs.iitr.ac.in",
-    year: 2
+    year: 2,
   },
   {
     name: "Ansh Bhamniya",
@@ -682,17 +693,18 @@ const Members = [
     position: "Member",
     linkedIn: "https://www.linkedin.com/in/ansh-bhamniya-98b680258/",
     email: "mailto:ansh_b@bt.iitr.ac.in",
-    year: 3
+    year: 3,
   },
   {
     name: "Pratham Kumar Shrivastava",
     blurhash: "LJGIGq?wxunNHXQ,MxtRT1ozbcRk",
     image: pratham,
     position: "Member",
-    linkedIn: "https://www.linkedin.com/in/pratham-shrivastava?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    linkedIn:
+      "https://www.linkedin.com/in/pratham-shrivastava?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     email: "mailto:prathamks.email@gmail.com",
-    year: 4
-  }
+    year: 4,
+  },
 ];
 
 
