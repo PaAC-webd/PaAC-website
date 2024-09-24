@@ -1,11 +1,9 @@
 import { useRef, useLayoutEffect } from "react";
 import "./Gallery.css";
 // import { data } from "./Images.js";
-import { Link } from 'react-router-dom'
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useEffect } from "react";
-
 
 export default function Gallery() {
   const comp = useRef();
@@ -38,11 +36,9 @@ export default function Gallery() {
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: "smooth"
-    })
-  })
-
-
+      behavior: "smooth",
+    });
+  });
 
   return (
     // <div className="gallery-container" ref={comp}>
@@ -75,30 +71,36 @@ export default function Gallery() {
         justifyContent: "center",
         alignItems: "center",
         height: "100vh",
-        padding: "2rem",
+        paddingLeft: "5rem",
+        paddingRight: "5rem",
         textAlign: "center",
-        backgroundImage: "url(planet1.webp)",
+        backgroundImage: "url(Frame_96.png)",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
         opacity: 0.7,
+        // maxWidth: "60%"
       }}
     >
       {/* <img src="../assets/gallery/gallery.webp" alt="alt" width={140} height={140} /> */}
-      <h1 style={{ marginBottom: "1rem", fontSize: "3rem", color: "#eca674", }}>
+      <h1 style={{ marginBottom: "1rem", fontSize: "3rem", color: "#eca674" }}>
         {" "}
-        Our Cosmic Captures are coming soon! Stay Tuned....
+        Our cosmic captures are coming soon!
       </h1>
-      <Link
+      <h1 style={{ marginBottom: "1rem", fontSize: "3rem", color: "#eca674" }}>
+        {" "}
+        Stay Tuned...
+      </h1>
+      {/* <Link
         to="/"
         style={{
           textDecoration: "underline",
           fontWeight: "bold",
-          textUnderlineOffset: "2px"
+          textUnderlineOffset: "2px",
         }}
       >
         <i>Back to Home</i>
-      </Link>
+      </Link> */}
     </div>
   );
 }
