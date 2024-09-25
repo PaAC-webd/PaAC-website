@@ -24,3 +24,22 @@
   text-align: center;
   transform: translate(-50%, -50%);
 }
+
+
+
+/* -------- LightBox Styling starts here ---------- */
+.gallery_image{
+  width: 100%;
+  display: none;
+}
+/* #slideshowAnim{
+  display: none;
+} */
+ .gallery-container{
+  display: grid;
+  grid-template-columns: 2;
+ }
+.masonry{
+  padding: 1rem;
+  cursor: pointer;
+}

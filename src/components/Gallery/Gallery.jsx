@@ -1,37 +1,44 @@
-import { useRef, useLayoutEffect } from "react";
+import { useEffect, useState } from "react";
 import "./Gallery.css";
-// import { data } from "./Images.js";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-import { useEffect } from "react";
+import { data } from "./Images.js";
+import "lightbox.js-react/dist/index.css";
+import { Image, SlideshowLightbox, initLightboxJS } from "lightbox.js-react";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+// import gsap from "gsap";
+// import ScrollTrigger from "gsap/ScrollTrigger";
 
 export default function Gallery() {
-  const comp = useRef();
-  gsap.registerPlugin(ScrollTrigger);
 
-  useLayoutEffect(() => {
-    let ctx = gsap.context(() => {
-      let sections = gsap.utils.toArray(".panel");
-      gsap.to(
-        sections,
-        {
-          xPercent: -100 * (sections.length - 1),
-          ease: "none",
-          scrollTrigger: {
-            trigger: ".gallery-body",
-            pin: true,
-            scrub: 1,
-            snap: 1 / (sections.length - 1),
-            end: "+=3500",
-          },
-        },
-        []
-      );
-    }, comp);
+  const openModal = () => {
+    console.log(1)
+    document.getElementById("slideshowAnim").style.display = "block";
+  }
+  // const comp = useRef();
+  // gsap.registerPlugin(ScrollTrigger);
 
-    return () => ctx.revert();
-  }, []);
+  // useLayoutEffect(() => {
+  //   let ctx = gsap.context(() => {
+  //     let sections = gsap.utils.toArray(".panel");
+  //     gsap.to(
+  //       sections,
+  //       {
+  //         xPercent: -100 * (sections.length - 1),
+  //         ease: "none",
+  //         scrollTrigger: {
+  //           trigger: ".gallery-body",
+  //           pin: true,
+  //           scrub: 1,
+  //           snap: 1 / (sections.length - 1),
+  //           end: "+=3500",
+  //         },
+  //       },
+  //       []
+  //     );
+  //   }, comp);
 
+  //   return () => ctx.revert();
+  // }, []);
+  //  const [isOpen, setIsOpen] = useState(true);
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -39,6 +46,10 @@ export default function Gallery() {
       behavior: "smooth",
     });
   });
+
+  useEffect(() => {
+    initLightboxJS(import.meta.env.VITE_LIGHTBOX_LICENSE_KEY, "Individual");
+  }, []);
 
   return (
     // <div className="gallery-container" ref={comp}>
@@ -64,43 +75,75 @@ export default function Gallery() {
     //     })}
     //   </div>
     // </div>
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-        paddingLeft: "5rem",
-        paddingRight: "5rem",
-        textAlign: "center",
-        backgroundImage: "url(Frame_96.png)",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        opacity: 0.7,
-        // maxWidth: "60%"
-      }}
-    >
-      {/* <img src="../assets/gallery/gallery.webp" alt="alt" width={140} height={140} /> */}
-      <h1 style={{ marginBottom: "1rem", fontSize: "3rem", color: "#eca674" }}>
-        {" "}
-        Our cosmic captures are coming soon!
-      </h1>
-      <h1 style={{ marginBottom: "1rem", fontSize: "3rem", color: "#eca674" }}>
-        {" "}
-        Stay Tuned...
-      </h1>
-      {/* <Link
-        to="/"
-        style={{
-          textDecoration: "underline",
-          fontWeight: "bold",
-          textUnderlineOffset: "2px",
-        }}
-      >
-        <i>Back to Home</i>
-      </Link> */}
-    </div>
+
+    // <div
+    //   style={{
+    //     display: "flex",
+    //     flexDirection: "column",
+    //     justifyContent: "center",
+    //     alignItems: "center",
+    //     height: "100vh",
+    //     paddingLeft: "5rem",
+    //     paddingRight: "5rem",
+    //     textAlign: "center",
+    //     backgroundImage: "url(Frame_96.png)",
+    //     backgroundRepeat: "no-repeat",
+    //     backgroundPosition: "center",
+    //     backgroundSize: "cover",
+    //     opacity: 0.7,
+    //   }}
+    // >
+    //   <h1 style={{ marginBottom: "1rem", fontSize: "3rem", color: "#eca674" }}>
+    //     {" "}
+    //     Our cosmic captures are coming soon!
+    //   </h1>
+    //   <h1 style={{ marginBottom: "1rem", fontSize: "3rem", color: "#eca674" }}>
+    //     {" "}
+    //     Stay Tuned...
+    //   </h1>
+    // </div>
+    <>
+      <div className="gallery_container">
+        <SlideshowLightbox
+          backgroundColor="#050528"
+          className="lightBox"
+          theme="night"
+          open={true}
+          fullScreen={true}
+          showThumbnails={true}
+          imgAnimation="imgMotion"
+          modalClose="clickOutside"
+        >
+          {data.map((image, index) => {
+            return (
+              <img
+                className="gallery_image"
+                key={index}
+                src={image.image}
+                alt="gallery"
+              />
+            );
+            // <Image key={index} image={{src: image.image, title: image.caption}} />
+          })}
+        </SlideshowLightbox>
+      </div>
+
+      <div className="masonry" onClick={() => {openModal()}}>
+        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 500: 2 }}>
+          <Masonry gutter="10px">
+            {data.map((image, index) => {
+              return (
+                <img
+                  key={index}
+                  src={image.image}
+                  alt={image.caption}
+                  style={{ width: "100%", display: "block" }}
+                />
+              );
+            })}
+          </Masonry>
+        </ResponsiveMasonry>
+      </div>
+    </>
   );
 }
