@@ -1,5 +1,6 @@
 #!/bin/bash
 git pull
+npm install
 npm run build
 sudo rm -rf /etc/nginx/sites/paac
 sudo cp -r ./dist /etc/nginx/sites
