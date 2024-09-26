@@ -2,17 +2,17 @@ import { useEffect, useState } from "react";
 import "./Gallery.css";
 import { data } from "./Images.js";
 import "lightbox.js-react/dist/index.css";
-import { Image, SlideshowLightbox, initLightboxJS } from "lightbox.js-react";
+import {Image, SlideshowLightbox, initLightboxJS } from "lightbox.js-react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 // import gsap from "gsap";
 // import ScrollTrigger from "gsap/ScrollTrigger";
 
 export default function Gallery() {
 
-  const openModal = () => {
-    console.log(1)
-    document.getElementById("slideshowAnim").style.display = "block";
-  }
+  // const openModal = () => {
+  //   console.log(1)
+  //   document.getElementById("slideshowAnim").style.display = "block";
+  // }
   // const comp = useRef();
   // gsap.registerPlugin(ScrollTrigger);
 
@@ -38,7 +38,7 @@ export default function Gallery() {
 
   //   return () => ctx.revert();
   // }, []);
-  //  const [isOpen, setIsOpen] = useState(true);
+   const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -50,6 +50,15 @@ export default function Gallery() {
   useEffect(() => {
     initLightboxJS(import.meta.env.VITE_LIGHTBOX_LICENSE_KEY, "Individual");
   }, []);
+
+  useEffect(() => {
+    // if(isOpen == true){
+      // console.log(isOpen)
+    //   setIsOpen(false);
+    // }
+      console.log(isOpen);
+
+  }, [isOpen])
 
   return (
     // <div className="gallery-container" ref={comp}>
@@ -108,7 +117,7 @@ export default function Gallery() {
           backgroundColor="#050528"
           className="lightBox"
           theme="night"
-          open={true}
+          open={isOpen}
           fullScreen={true}
           showThumbnails={true}
           imgAnimation="imgMotion"
@@ -123,17 +132,17 @@ export default function Gallery() {
                 alt="gallery"
               />
             );
-            // <Image key={index} image={{src: image.image, title: image.caption}} />
           })}
         </SlideshowLightbox>
       </div>
 
-      <div className="masonry" onClick={() => {openModal()}}>
-        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 500: 2 }}>
+      <div className="masonry" onClick={() => {setIsOpen(!isOpen);}}>
+        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 500: 3 }}>
           <Masonry gutter="10px">
             {data.map((image, index) => {
               return (
                 <img
+                title="Double click for slideshow"
                   key={index}
                   src={image.image}
                   alt={image.caption}
