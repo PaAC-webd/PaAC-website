@@ -1,13 +1,13 @@
 import comet from "../assets/gallery/comet.jpg";
-import moon from "../assets/gallery/moon-1.jpg";
-import nebula from "../assets/gallery/nebula.jpg";
-import nebula_2 from "../assets/gallery/nebula-2.jpg";
-import orion from "../assets/gallery/orion.jpg";
+import moon from "../assets/gallery/moon-1-min.jpg";
+import nebula from "../assets/gallery/nebula-min.jpg";
+import nebula_2 from "../assets/gallery/nebula-2-min.jpg";
+import orion from "../assets/gallery/orion-min.jpg";
 import paac from "../assets/gallery/paac.jpg";
-import trail from "../assets/gallery/trail.jpg";
-import eclipse_1 from "../assets/gallery/eclipse-1.JPG";
-import eclipse_2 from "../assets/gallery/eclipse-2.jpg";
-import eclipse_3 from "../assets/gallery/eclipse-3.jpg";
+import trail from "../assets/gallery/trail-min.jpg";
+import eclipse_1 from "../assets/gallery/eclipse-1-min.JPG";
+import eclipse_2 from "../assets/gallery/eclipse-2-min.jpg";
+import eclipse_3 from "../assets/gallery/eclipse-3-min.jpg";
 export const data = [
     {
       image: comet,

@@ -48,6 +48,16 @@ const NavMenu = () => {
                     Open Projects
                   </NavigationMenu.Link>
                 </li>
+                <li className="ListItem">
+                  <a
+                    className="NavigationMenuLink"
+                    href="https://medium.com/@paac_iitr"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Blog
+                  </a>
+                </li>
               </ul>
             </NavigationMenu.Content>
           </NavigationMenu.Item>
