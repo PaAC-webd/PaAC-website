@@ -2,10 +2,8 @@ import { useEffect, useState } from "react";
 import "./Gallery.css";
 import { data } from "./Images.js";
 import "lightbox.js-react/dist/index.css";
-import {Image, SlideshowLightbox, initLightboxJS } from "lightbox.js-react";
+import { SlideshowLightbox, initLightboxJS } from "lightbox.js-react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-// import gsap from "gsap";
-// import ScrollTrigger from "gsap/ScrollTrigger";
 
 export default function Gallery() {
 
@@ -39,6 +37,7 @@ export default function Gallery() {
   //   return () => ctx.revert();
   // }, []);
    const [isOpen, setIsOpen] = useState(false);
+
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -52,12 +51,13 @@ export default function Gallery() {
   }, []);
 
   useEffect(() => {
-    // if(isOpen == true){
-      // console.log(isOpen)
-    //   setIsOpen(false);
-    // }
-      console.log(isOpen);
-
+    if (isOpen) {
+      setTimeout(() => {
+        document.getElementById("closeBtn").addEventListener("click", () => {
+          setIsOpen(false);
+        });
+      }, 1000)
+    }
   }, [isOpen])
 
   return (
@@ -142,7 +142,7 @@ export default function Gallery() {
             {data.map((image, index) => {
               return (
                 <img
-                title="Double click for slideshow"
+                title="Click for slideshow"
                   key={index}
                   src={image.image}
                   alt={image.caption}
