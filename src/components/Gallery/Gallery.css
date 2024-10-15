@@ -32,20 +32,6 @@
   width: 100%;
   display: none;
 }
-/* #slideshowAnim{
-  display: none;
-} */
- /* .gallery-container{
-  display: grid;
-  grid-template-columns: 2;
- } */
-  .lightBox{
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr))
-  }
-  /* .lightBox > img{
-    heig
-  } */
 .masonry{
   padding: 1rem;
   cursor: pointer;
