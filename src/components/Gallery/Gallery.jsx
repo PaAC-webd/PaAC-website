@@ -8,7 +8,11 @@ import Masonry from "react-responsive-masonry";
 export default function Gallery() {
 
    const [isOpen, setIsOpen] = useState(false);
+  const[windowWidth, setWindowWitdth] = useState(window.innerWidth);
 
+  const handleResize = () => {
+    setWindowWitdth(window.innerWidth);
+  }
 
   useEffect(() => {
     window.scrollTo({
@@ -16,7 +20,12 @@ export default function Gallery() {
       left: 0,
       behavior: "smooth",
     });
+    window.addEventListener("resize", handleResize)
     initLightboxJS(import.meta.env.VITE_LIGHTBOX_LICENSE_KEY, "Individual");
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   useEffect(() => {
@@ -74,7 +83,7 @@ export default function Gallery() {
       </div> */}
 
       <SlideshowLightbox showThumbnails={true} lightboxIdentifier="lbox1">
-        <Masonry columnsCount={3} gutter="10px">
+        <Masonry columnsCount={windowWidth > 600 ? 3 : 2} gutter="10px">
           {data.map((image, i) => (
             <img
             title="Click for slideshow"
