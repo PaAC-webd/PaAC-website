@@ -3,40 +3,12 @@ import "./Gallery.css";
 import { data } from "./Images.js";
 import "lightbox.js-react/dist/index.css";
 import { SlideshowLightbox, initLightboxJS } from "lightbox.js-react";
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import Masonry from "react-responsive-masonry";
 
 export default function Gallery() {
 
-  // const openModal = () => {
-  //   console.log(1)
-  //   document.getElementById("slideshowAnim").style.display = "block";
-  // }
-  // const comp = useRef();
-  // gsap.registerPlugin(ScrollTrigger);
-
-  // useLayoutEffect(() => {
-  //   let ctx = gsap.context(() => {
-  //     let sections = gsap.utils.toArray(".panel");
-  //     gsap.to(
-  //       sections,
-  //       {
-  //         xPercent: -100 * (sections.length - 1),
-  //         ease: "none",
-  //         scrollTrigger: {
-  //           trigger: ".gallery-body",
-  //           pin: true,
-  //           scrub: 1,
-  //           snap: 1 / (sections.length - 1),
-  //           end: "+=3500",
-  //         },
-  //       },
-  //       []
-  //     );
-  //   }, comp);
-
-  //   return () => ctx.revert();
-  // }, []);
    const [isOpen, setIsOpen] = useState(false);
+
 
   useEffect(() => {
     window.scrollTo({
@@ -44,9 +16,6 @@ export default function Gallery() {
       left: 0,
       behavior: "smooth",
     });
-  });
-
-  useEffect(() => {
     initLightboxJS(import.meta.env.VITE_LIGHTBOX_LICENSE_KEY, "Individual");
   }, []);
 
@@ -61,58 +30,8 @@ export default function Gallery() {
   }, [isOpen])
 
   return (
-    // <div className="gallery-container" ref={comp}>
-    //   {/* <div className="gallery-topbar">
-    //     <Topbar />
-    //   </div> */}
-    //   <div className="gallery-body" style={{ width: `${data.length * 100}%` }}>
-    //     {data.map((image) => {
-    //       return (
-    //         <div
-    //           className="panel"
-    //           key={image.title}
-    //           style={{
-    //             backgroundImage: `url(${image.image})`,
-    //           }}
-    //         >
-    //           <div className="panel-content">
-    //             <h1>{image.caption}</h1>
-    //             <p>{image.description}</p>
-    //           </div>
-    //         </div>
-    //       );
-    //     })}
-    //   </div>
-    // </div>
-
-    // <div
-    //   style={{
-    //     display: "flex",
-    //     flexDirection: "column",
-    //     justifyContent: "center",
-    //     alignItems: "center",
-    //     height: "100vh",
-    //     paddingLeft: "5rem",
-    //     paddingRight: "5rem",
-    //     textAlign: "center",
-    //     backgroundImage: "url(Frame_96.png)",
-    //     backgroundRepeat: "no-repeat",
-    //     backgroundPosition: "center",
-    //     backgroundSize: "cover",
-    //     opacity: 0.7,
-    //   }}
-    // >
-    //   <h1 style={{ marginBottom: "1rem", fontSize: "3rem", color: "#eca674" }}>
-    //     {" "}
-    //     Our cosmic captures are coming soon!
-    //   </h1>
-    //   <h1 style={{ marginBottom: "1rem", fontSize: "3rem", color: "#eca674" }}>
-    //     {" "}
-    //     Stay Tuned...
-    //   </h1>
-    // </div>
     <>
-      <div className="gallery_container">
+      {/* <div className="gallery_container">
         <SlideshowLightbox
           backgroundColor="#050528"
           className="lightBox"
@@ -152,7 +71,21 @@ export default function Gallery() {
             })}
           </Masonry>
         </ResponsiveMasonry>
-      </div>
+      </div> */}
+
+      <SlideshowLightbox showThumbnails={true} lightboxIdentifier="lbox1">
+        <Masonry columnsCount={3} gutter="10px">
+          {data.map((image, i) => (
+            <img
+            title="Click for slideshow"
+              key={i}
+              src={image.image}
+              data-lightboxjs="lbox1"
+              style={{ width: "100%", display: "block" }}
+            />
+          ))}
+        </Masonry>
+      </SlideshowLightbox>
     </>
   );
 }
