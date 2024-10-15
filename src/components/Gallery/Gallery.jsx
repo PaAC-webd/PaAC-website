@@ -6,13 +6,12 @@ import { SlideshowLightbox, initLightboxJS } from "lightbox.js-react";
 import Masonry from "react-responsive-masonry";
 
 export default function Gallery() {
-
-   const [isOpen, setIsOpen] = useState(false);
-  const[windowWidth, setWindowWitdth] = useState(window.innerWidth);
+  const [isOpen, setIsOpen] = useState(false);
+  const [windowWidth, setWindowWitdth] = useState(window.innerWidth);
 
   const handleResize = () => {
     setWindowWitdth(window.innerWidth);
-  }
+  };
 
   useEffect(() => {
     window.scrollTo({
@@ -20,7 +19,7 @@ export default function Gallery() {
       left: 0,
       behavior: "smooth",
     });
-    window.addEventListener("resize", handleResize)
+    window.addEventListener("resize", handleResize);
     initLightboxJS(import.meta.env.VITE_LIGHTBOX_LICENSE_KEY, "Individual");
 
     return () => {
@@ -34,9 +33,9 @@ export default function Gallery() {
         document.getElementById("closeBtn").addEventListener("click", () => {
           setIsOpen(false);
         });
-      }, 1000)
+      }, 1000);
     }
-  }, [isOpen])
+  }, [isOpen]);
 
   return (
     <>
@@ -86,7 +85,7 @@ export default function Gallery() {
         <Masonry columnsCount={windowWidth > 600 ? 3 : 2} gutter="10px">
           {data.map((image, i) => (
             <img
-            title="Click for slideshow"
+              title="Click for slideshow"
               key={i}
               src={image.image}
               data-lightboxjs="lbox1"
