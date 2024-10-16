@@ -1,5 +1,5 @@
 import comet from "../assets/gallery/comet.jpg";
-import moon from "../assets/gallery/moon-1-min.jpg";
+import moon from "../assets/gallery/moon.jpg";
 import nebula from "../assets/gallery/nebula-min.jpg";
 import nebula_2 from "../assets/gallery/nebula-2-min.jpg";
 import orion from "../assets/gallery/orion-min.jpg";
