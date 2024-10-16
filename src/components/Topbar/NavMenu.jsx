@@ -1,5 +1,6 @@
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import "./Topbar.css";
+import { NavLink } from "react-router-dom";
 
 const NavMenu = () => {
   return (
@@ -7,15 +8,15 @@ const NavMenu = () => {
       <NavigationMenu.Root className="NavigationMenuRoot">
         <NavigationMenu.List className="NavigationMenuList">
           <NavigationMenu.Item>
-            <NavigationMenu.Link className="NavigationMenuLink" href="/">
+            <NavLink className="NavigationMenuLink" to="/">
               Home
-            </NavigationMenu.Link>
+            </NavLink>
           </NavigationMenu.Item>
 
           <NavigationMenu.Item>
-            <NavigationMenu.Link className="NavigationMenuLink" href="/people">
+            <NavLink className="NavigationMenuLink" to="/people">
               About
-            </NavigationMenu.Link>
+            </NavLink>
           </NavigationMenu.Item>
 
           <NavigationMenu.Item>
@@ -25,28 +26,28 @@ const NavMenu = () => {
             <NavigationMenu.Content className="NavigationMenuContent">
               <ul className="List two">
                 <li className="ListItem">
-                  <NavigationMenu.Link
+                  <NavLink
                     className="NavigationMenuLink"
-                    href="/library"
+                    to="/library"
                   >
                     Library
-                  </NavigationMenu.Link>
+                  </NavLink>
                 </li>
                 <li className="ListItem">
-                  <NavigationMenu.Link
+                  <NavLink
                     className="NavigationMenuLink"
-                    href="/events"
+                    to="/events"
                   >
                     Events
-                  </NavigationMenu.Link>
+                  </NavLink>
                 </li>
                 <li className="ListItem">
-                  <NavigationMenu.Link
+                  <NavLink
                     className="NavigationMenuLink"
-                    href="/open-projects"
+                    to="/open-projects"
                   >
                     Open Projects
-                  </NavigationMenu.Link>
+                  </NavLink>
                 </li>
                 <li className="ListItem">
                   <a
@@ -65,18 +66,18 @@ const NavMenu = () => {
           <NavigationMenu.Item></NavigationMenu.Item>
 
           <NavigationMenu.Item>
-            <NavigationMenu.Link className="NavigationMenuLink" href="/gallery">
+            <NavLink className="NavigationMenuLink" to="/gallery">
               Gallery
-            </NavigationMenu.Link>
+            </NavLink>
           </NavigationMenu.Item>
 
           <NavigationMenu.Item>
-            <NavigationMenu.Link
+            <NavLink
               className="NavigationMenuLink"
-              href="/contact-us"
+              to="/contact-us"
             >
               Contact
-            </NavigationMenu.Link>
+            </NavLink>
           </NavigationMenu.Item>
 
           <NavigationMenu.Indicator className="NavigationMenuIndicator">

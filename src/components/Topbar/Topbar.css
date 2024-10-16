@@ -115,7 +115,7 @@
   left: 38%;
 }
 
-.NavigationMenuLink.active::after {
+/* .NavigationMenuLink.active::after {
   content: "";
   position: absolute;
   left: min(20%, 1rem);
@@ -126,7 +126,7 @@
   background-color: #eca674;
   transition: width 0.5s ease;
   transform-origin: bottom right;
-}
+} */
 .NavigationMenuTrigger {
   display: flex;
   align-items: center;
