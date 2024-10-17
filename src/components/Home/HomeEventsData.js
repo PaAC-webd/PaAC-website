@@ -14,17 +14,17 @@ export const home_events = [
     {
         date: "October 2022",
         image: paac_x_qcg,
-        title: "Many Body Quantum Theory meet   s Quantum Computation",
+        title: "Many Body Quantum Theory meets Quantum Computation",
         desc: "PaAC, together with the Quantum Computing Group brings you a series of student seminars on Many Body Quantum theory and its implications on the domain of Quantum Computation and Information."
     },
     {
         date: "September 2024",
         image: integration_bee,
         title: "Integration Bee",
-        desc: "PaAC brings you IITR’s own Integration Bee this year! Deriving inspiration from MIT’s Integration Bee, the tournament will be conducted by integrating the same spirit with our fun and quirky elements."    
+        desc: "PaAC brings you IITR’s own Integration Bee this year! Deriving inspiration from MIT’s Integration Bee, the tournament will be conducted by integrating the same spirit with our fun and quirky elements."
     },
     {
-        date: "March 2023", 
+        date: "March 2023",
         image: cosmic_voyage,
         title: "Cosmic Voyage",
         desc: "PaAC is back with Cosmic Voyage, our annual cosmic fiesta. With lectures from esteemed professors to open discussions and exciting quizzes, we have everything for your backyard astronomer and nerd!"
