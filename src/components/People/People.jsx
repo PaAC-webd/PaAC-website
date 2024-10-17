@@ -25,7 +25,7 @@ export default function People() {
         </div>
         <div className="philo-body">
           <p className="philo-body-text">
-            Have you ever looked at the stars in your search meaning and turned
+            Have you ever looked at the stars in your search for meaning and turned
             to science forever? Then welcome to PaAC! A vibrant hub fostering
             scientific discourse and academic dialogue for the campus community.
             While our primary focus spans Physics, Mathematics, and Astronomy,
