@@ -18,7 +18,7 @@ export const home_events = [
         desc: "PaAC, together with the Quantum Computing Group brings you a series of student seminars on Many Body Quantum theory and its implications on the domain of Quantum Computation and Information."
     },
     {
-        date: "September 2022",
+        date: "September 2024",
         image: integration_bee,
         title: "Integration Bee",
         desc: "PaAC brings you IITR’s own Integration Bee this year! Deriving inspiration from MIT’s Integration Bee, the tournament will be conducted by integrating the same spirit with our fun and quirky elements."
