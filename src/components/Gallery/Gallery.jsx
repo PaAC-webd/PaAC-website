@@ -81,16 +81,19 @@ export default function Gallery() {
         </ResponsiveMasonry>
       </div> */}
 
-      <SlideshowLightbox showThumbnails={true} lightboxIdentifier="lbox1">
+      <SlideshowLightbox showThumbnails={true} images={data} lightboxIdentifier="lbox1">
         <Masonry columnsCount={windowWidth > 600 ? 3 : 2} gutter="10px">
           {data.map((image, i) => (
+            <div key={i}>
             <img
               title="Click for slideshow"
               key={i}
               src={image.image}
               data-lightboxjs="lbox1"
               style={{ width: "100%", display: "block" }}
-            />
+              />
+              <p>{image.caption}</p>
+              </div>
           ))}
         </Masonry>
       </SlideshowLightbox>
