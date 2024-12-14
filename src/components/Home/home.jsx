@@ -25,13 +25,7 @@ export default function Home() {
 
   return (
     <>
-      {/* //   <div className="logo-div">
-    //     <Logo></Logo>
-    //   </div> */}
       <div className="home-container">
-        {/* <div className="home-topbar">
-          <Topbar />
-        </div> */}
         <div className="home-info">
           <img src={Ellipse} className="ellipse" alt=""></img>
           <div className="home-title">

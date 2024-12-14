@@ -33,172 +33,177 @@ import cosmic_27 from "../assets/gallery/new_images/27.png";
 import cosmic_28 from "../assets/gallery/new_images/28.png";
 export const data = [
   {
-    image: comet,
+    src: comet,
+    // src:
+    //   "https://imgs.search.brave.com/nxjQMG_QSbCmH1b29Wk111bQeOHDktoVAe-SafBY9XY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5jbm4uY29tL2Fw/aS92MS9pbWFnZXMv/c3RlbGxhci9wcm9k/LzE5MTEyNjE2Mzgx/MC13b25kZXJzLW9m/LXRoZS11bml2ZXJz/ZS0xMTI2LXRlYXNl/LmpwZz9xPXdfMTEx/MCxjX2ZpbGw",
     caption: "C/2022 E3(ZTF)",
     description: "A once in 50,000 years wonder",
   },
   {
-    image: moon,
+    src: moon,
+    // src: "https://imgs.search.brave.com/ifch9Qbdc89aY_FhAjvd--r28WbW4f66nLO4InPmCIc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA0Lzc3LzkyLzg0/LzM2MF9GXzQ3Nzky/ODQ3M19NWWxJSFpr/alpSZlluRWdkaWpU/WVVvSmZXOVhQWjJJ/ci5qcGc",
     caption: "The Moon",
     description: "Clicked by Abhijeet Anand",
   },
   {
-    image: nebula,
+    src: nebula,
+    // src: "https://imgs.search.brave.com/NftK5Iln8azg4hZkm9_yzCsYLyz9ZnJc3w4ZJkYz7FI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9za3ktY2xvdWRz/XzQyMDQ0LTMwNzMu/anBnP3NlbXQ9YWlz/X2h5YnJpZA",
     caption: "Cloudy Skies",
     description: "By Abhijeet Anand",
   },
   {
-    image: nebula_2,
+    src: nebula_2,
+    // src: "https://imgs.search.brave.com/eoPReH_pSjkaY6AvQTpy6duI4W5cKVi8YWgw-4RbLGY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTMw/MDQ1MTg1L3Bob3Rv/L2FuZHJvbWVkYS1n/YWxheHkuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPVVWcGdt/aEZYYWhtN3FEdmtj/QmxVQ1p3aE1wOWpC/VTlLdGVydFAyWTRm/LW89",
     caption: "The Milky Way",
     description:
       "By Kaustav Bhattacharjee. from Spiti Valley, Google Pixel Astrophotography mode",
   },
   {
-    image: orion,
+    src: orion,
     caption: "The Milky Way",
     description:
       "By Kaustav Bhattacharjee. from Spiti Valley, Google Pixel Astrophotography mode",
   },
   {
-    image: paac,
+    src: paac,
     caption: "'PaAC' Light Painting",
     description:
       "Dhyan Chand Stadium, IIT Roorkee, using light painting mode on mobile camera",
   },
   {
-    image: trail,
+    src: trail,
     caption: "Star Trails",
     description:
       "Trails of Stars showing the apparent revolution of earth around ",
   },
 
   {
-    image: cosmic_22,
+    src: cosmic_22,
     caption: "The Milky Way",
     description: "By Kaustav Bhattacharjee. from Spiti Valley",
   },
   {
-    image: cosmic_23,
+    src: cosmic_23,
     caption: "The Milky Way",
     description: "By Kaustav Bhattacharjee. from Spiti Valley",
   },
   {
-    image: cosmic_24,
+    src: cosmic_24,
     caption: "The Milky Way",
     description: "By Kaustav Bhattacharjee. from Spiti Valley",
   },
   {
-    image: cosmic_25,
+    src: cosmic_25,
     caption: "The Milky Way",
     description: "By Kaustav Bhattacharjee. from Spiti Valley",
   },
   {
-    image: cosmic_26,
+    src: cosmic_26,
     caption: "The Milky Way",
     description: "By Kaustav Bhattacharjee. from Spiti Valley",
   },
   {
-    image: eclipse_1,
+    src: eclipse_1,
     caption: "Solar Eclipse Group Photo",
     description: "Solar Eclipse of 10th Nov 2022, IIT Roorkee",
   },
   {
-    image: eclipse_2,
+    src: eclipse_2,
     caption: "Solar Eclipse",
     description: "Solar Eclipse of 10th Nov 2022, using a 7x Zoom Binoculars",
   },
   {
-    image: eclipse_3,
+    src: eclipse_3,
     caption: "Solar Eclipse",
     description: "Solar Eclipse of 10th Nov, 2022",
   },
   {
-    image: doggo,
+    src: doggo,
     caption: "Doggo",
     description: "A doggo looking at the stars",
   },
   {
-    image: cosmic_1,
+    src: cosmic_1,
     caption: "The Milky Way",
     description: "By Kaustav Bhattacharjee. from Spiti Valley",
   },
   {
-    image: cosmic_2,
+    src: cosmic_2,
     caption: "The Milky Way",
     description: "By Kaustav Bhattacharjee. from Spiti Valley",
   },
   {
-    image: cosmic_3,
+    src: cosmic_3,
     caption: "The Milky Way",
     description: "By Kaustav Bhattacharjee. from Spiti Valley",
   },
   {
-    image: cosmic_4,
+    src: cosmic_4,
     caption: "The Milky Way",
     description: "By Kaustav Bhattacharjee. from Spiti Valley",
   },
   {
-    image: cosmic_5,
+    src: cosmic_5,
     caption: "The Milky Way",
     description: "By Kaustav Bhattacharjee. from Spiti Valley",
   },
   {
-    image: cosmic_6,
+    src: cosmic_6,
     caption: "The Milky Way",
     description: "By Kaustav Bhattacharjee. from Spiti Valley",
   },
   {
-    image: cosmic_7,
+    src: cosmic_7,
     caption: "The Milky Way",
     description: "By Kaustav Bhattacharjee. from Spiti Valley",
   },
   {
-    image: cosmic_8,
+    src: cosmic_8,
     caption: "The Milky Way",
     description: "By Kaustav Bhattacharjee. from Spiti Valley",
   },
   {
-    image: cosmic_11,
+    src: cosmic_11,
     caption: "The Milky Way",
     description: "By Kaustav Bhattacharjee. from Spiti Valley",
   },
   {
-    image: cosmic_13,
+    src: cosmic_13,
     caption: "The Milky Way",
     description: "By Kaustav Bhattacharjee. from Spiti Valley",
   },
   {
-    image: cosmic_15,
+    src: cosmic_15,
     caption: "The Milky Way",
     description: "By Kaustav Bhattacharjee. from Spiti Valley",
   },
   {
-    image: cosmic_16,
+    src: cosmic_16,
     caption: "The Milky Way",
     description: "By Kaustav Bhattacharjee. from Spiti Valley",
   },
   {
-    image: cosmic_17,
+    src: cosmic_17,
     caption: "The Milky Way",
     description: "By Kaustav Bhattacharjee. from Spiti Valley",
   },
   {
-    image: cosmic_27,
+    src: cosmic_27,
     caption: "The Milky Way",
     description: "By Kaustav Bhattacharjee. from Spiti Valley",
   },
   {
-    image: cosmic_28,
+    src: cosmic_28,
     caption: "The Milky Way",
     description: "By Kaustav Bhattacharjee. from Spiti Valley",
   },
   {
-    image: cosmic_18,
+    src: cosmic_18,
     caption: "The Milky Way",
     description: "By Kaustav Bhattacharjee. from Spiti Valley",
   },
   {
-    image: cosmic_20,
+    src: cosmic_20,
     caption: "The Milky Way",
     description: "By Kaustav Bhattacharjee. from Spiti Valley",
   },
