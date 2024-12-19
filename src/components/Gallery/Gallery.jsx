@@ -78,6 +78,12 @@ export default function Gallery() {
         open={eventLightbox.isOpen}
         startingSlideIndex={eventLightbox.slideIndex}
         onClose={() => setEventLightbox({ ...eventLightbox, isOpen: false })}
+        captionStyle={{
+          color: "#eca674",
+          "letter-spacing": "normal",
+          // "font-weight": "bold",
+        }}
+        iconColor="#eca674"
       >
         <Masonry columnsCount={windowWidth > 600 ? 3 : 2} gutter="10px">
           {data.map((image, i) => (

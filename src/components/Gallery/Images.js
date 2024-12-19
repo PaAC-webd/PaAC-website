@@ -1,11 +1,4 @@
-// import comet from "../assets/gallery/comet.jpg";
-//import moon_1 from "../assets/gallery/moon-1-min.jpg";
-// import moon from "../assets/gallery/moon.jpg";
-// import nebula from "../assets/gallery/nebula-min.jpg";
-// import nebula_2 from "../assets/gallery/nebula-2-min.jpg";
-// import orion from "../assets/gallery/orion-min.jpg";
 import paac from "../assets/gallery/paac.jpg";
-// import trail from "../assets/gallery/trail-min.jpg";
 import eclipse_1 from "../assets/gallery/eclipse-1-min.JPG";
 import eclipse_2 from "../assets/gallery/eclipse-2-min.jpg";
 import eclipse_3 from "../assets/gallery/eclipse-3-min.jpg";
@@ -13,7 +6,6 @@ import doggo from "../assets/gallery/new_images/ABH_6992.png";
 import cosmic_1 from "../assets/gallery/new_images/1.png";
 import cosmic_2 from "../assets/gallery/new_images/2.png";
 import cosmic_3 from "../assets/gallery/new_images/3.png";
-import cosmic_4 from "../assets/gallery/new_images/4.png";
 import cosmic_5 from "../assets/gallery/new_images/5.png";
 import cosmic_6 from "../assets/gallery/new_images/6.png";
 import cosmic_7 from "../assets/gallery/new_images/7.jpg";
@@ -27,116 +19,98 @@ import cosmic_18 from "../assets/gallery/new_images/18.jpg";
 import cosmic_20 from "../assets/gallery/new_images/20.png";
 import cosmic_27 from "../assets/gallery/new_images/27.png";
 import cosmic_28 from "../assets/gallery/new_images/28.png";
+
 export const data = [
   {
     src: paac,
-    caption: "'PaAC' Light Painting",
-    description:
+    caption:
       "Dhyan Chand Stadium, IIT Roorkee, using light painting mode on mobile camera",
   },
   {
     src: eclipse_1,
-    caption: "Solar Eclipse Group Photo",
-    description: "Solar Eclipse of 10th Nov 2022, IIT Roorkee",
+    caption: "Solar Eclipse on 10th Nov 2022, IIT Roorkee",
   },
   {
     src: eclipse_2,
-    caption: "Solar Eclipse",
-    description: "Solar Eclipse of 10th Nov 2022, using a 7x Zoom Binoculars",
+    caption: "Solar Eclipse on 10th Nov 2022, using a 7x Zoom Binoculars",
   },
   {
     src: eclipse_3,
-    caption: "Solar Eclipse",
-    description: "Solar Eclipse of 10th Nov, 2022",
+    caption: "Solar Eclipse of 10th Nov, 2022",
   },
   {
     src: doggo,
-    caption: "Doggo",
-    description: "A doggo looking at the stars",
+    caption: "A doggo looking at the stars",
   },
   {
     src: cosmic_1,
-    caption: "The Milky Way",
-    description: "By Kaustav Bhattacharjee. from Spiti Valley",
+    caption:
+      "Guest lecture on the topic 'Summation of Divergent Series' by Prof. Carl Bender during Cosmic Voyage '23",
   },
   {
     src: cosmic_2,
-    caption: "The Milky Way",
-    description: "By Kaustav Bhattacharjee. from Spiti Valley",
+    caption:
+      "Guest lecture on the topic 'Challenging the Cosmological Standard Model' by Prof. Subir Sarkar during Cosmic Voyage '23",
   },
   {
     src: cosmic_3,
-    caption: "The Milky Way",
-    description: "By Kaustav Bhattacharjee. from Spiti Valley",
-  },
-  {
-    src: cosmic_4,
-    caption: "The Milky Way",
-    description: "By Kaustav Bhattacharjee. from Spiti Valley",
+    caption:
+      "Student Lecture by PaAC member Jyotsana on Special Relativity during Cosmic Voyage",
   },
   {
     src: cosmic_5,
-    caption: "The Milky Way",
-    description: "By Kaustav Bhattacharjee. from Spiti Valley",
+    caption:
+      "PaAC Trip to Udaipur, Rajasthan in search of the comet 'C/2022 E3(ZTF)'",
   },
   {
     src: cosmic_6,
-    caption: "The Milky Way",
-    description: "By Kaustav Bhattacharjee. from Spiti Valley",
+    caption:
+      "Guest Lecture by Prof. Avi Loeb on 'The Galileo Project: In search of technological Interstellar objects' during Cosmic Voyage '23",
   },
   {
     src: cosmic_7,
-    caption: "The Milky Way",
-    description: "By Kaustav Bhattacharjee. from Spiti Valley",
+    caption: "PaAC at Shristi 2019 : Intercollegiate Tech Exhibition",
   },
   {
     src: cosmic_8,
-    caption: "The Milky Way",
-    description: "By Kaustav Bhattacharjee. from Spiti Valley",
+    caption: "PaAC at Shristi 2019 : Intercollegiate Tech Exhibition",
   },
   {
     src: cosmic_11,
-    caption: "The Milky Way",
-    description: "By Kaustav Bhattacharjee. from Spiti Valley",
+    caption: "Doggo and the moon",
   },
   {
     src: cosmic_13,
-    caption: "The Milky Way",
-    description: "By Kaustav Bhattacharjee. from Spiti Valley",
+    caption:
+      "The first edition of the 'Astro Newsletter' inaugurated by then Director of IIT Roorkee Prof. Ajit K. Chaturvedi",
   },
   {
     src: cosmic_15,
-    caption: "The Milky Way",
-    description: "By Kaustav Bhattacharjee. from Spiti Valley",
+    caption: "Students solving Integrals during Integration Bee",
   },
   {
     src: cosmic_16,
-    caption: "The Milky Way",
-    description: "By Kaustav Bhattacharjee. from Spiti Valley",
+    caption:
+      "Integration Bee 2023: Group Photo with the winners, Team PaAC and Prof. B K Patra",
   },
   {
     src: cosmic_17,
-    caption: "The Milky Way",
-    description: "By Kaustav Bhattacharjee. from Spiti Valley",
+    caption: "Prof. B K Patra awarding winners of Integration Bee 2023",
   },
   {
     src: cosmic_27,
-    caption: "The Milky Way",
-    description: "By Kaustav Bhattacharjee. from Spiti Valley",
+    caption: "PaAC Intro talk for students of IIT Roorkee",
   },
   {
     src: cosmic_28,
-    caption: "The Milky Way",
-    description: "By Kaustav Bhattacharjee. from Spiti Valley",
+    caption: "Group Photo of PaAC members after the Intro Talk",
   },
   {
     src: cosmic_18,
-    caption: "The Milky Way",
-    description: "By Kaustav Bhattacharjee. from Spiti Valley",
+    caption: "Winners of Integration Bee 2023 with Prof. B K Patra",
   },
   {
     src: cosmic_20,
-    caption: "The Milky Way",
-    description: "By Kaustav Bhattacharjee. from Spiti Valley",
+    caption: "PaAC Alumni (now) at their Graduation Photoshoot",
   },
 ];

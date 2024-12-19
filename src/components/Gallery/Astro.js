@@ -14,7 +14,7 @@ import cosmic_26 from "../assets/gallery/new_images/26.jpg";
 export const astro_data = [
   {
     src: comet,
-    caption: "C/2022 E3(ZTF) \nA once in 50,000 years wonder",
+    caption: "C/2022 E3(ZTF) A once in 50,000 years wonder",
     description: "",
   },
   {
