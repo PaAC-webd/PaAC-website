@@ -24,25 +24,35 @@
   text-align: center;
   transform: translate(-50%, -50%);
 }
-
-
+.gallery-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* background-color: aliceblue; */
+  padding: 1rem;
+}
+.gallery-heading h1 {
+  color: #eca674;
+}
 
 /* -------- LightBox Styling starts here ---------- */
-.gallery_image{
+.gallery_image {
   width: 100%;
   display: none;
 }
-.masonry{
+.masonry {
   padding: 1rem;
   cursor: pointer;
 }
 
-._jp0uN{
+._jp0uN {
   /* background: rgb(85, 85, 85); */
   background-color: rgba(30, 27, 68, 0.5);
   /* padding: .2rem 0 .2rem 10rem; */
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   /* padding-left: .4rem !important; */
   /* margin-left: .2rem; */
   display: flex;
@@ -51,19 +61,16 @@
   /* opca */
 }
 
-._1R214{
+._1R214 {
   /* margin-left: .1rem; */
   /* margin: auto !important; */
-  margin-right: .5rem !important;
-  margin-left: .5rem;
+  margin-right: 0.5rem !important;
+  margin-left: 0.5rem;
 }
 
-._30i9K{
-  padding: .3rem .5rem !important;
+._30i9K {
+  padding: 0.3rem 0.5rem !important;
 }
-._3BNPD{
+._3BNPD {
   background-color: #050528 !important;
 }
-/* ._3-Y1e{
-  border-radius: 1rem;
-} */
