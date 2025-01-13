@@ -2,7 +2,7 @@ const Newsletter = () => {
   return (
     <div className="newsletter">
       <div className="newsletter-left">
-        <p>Third Edition of our </p>
+        <p>Fourth Edition of our </p>
         <p>Biannual Newsletter is out!</p>
         <h1>THE ASTRO INSIDER</h1>
         <a
