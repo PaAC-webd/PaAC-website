@@ -1,12 +1,63 @@
 import { useState } from "react";
 import "./People.css";
 import Footer from "../Footer/Footer";
-import { Secy, Head, Member } from "./Data.js";
+// import { Secy, Head, Member } from "./Data.js"; 
 import Card from "./Card";
 import { useEffect } from "react";
 
+
+const spaceId = import.meta.env.VITE_SPACE_ID;
+const accessToken = import.meta.env.VITE_ACCESS_TOKEN;
+
 export default function People() {
-  const [year, setYear] = useState(2);
+  const [years , setYear] = useState(2);
+  const [secy , newsecy ] = useState([]) ;
+  const [head , newhead ] = useState([]) ;
+  const [member , newmember ] = useState([]) ;
+
+  useEffect(() => {
+      window
+        .fetch(`https://graphql.contentful.com/content/v1/spaces/${spaceId}/`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${accessToken}`,
+          },
+          body: JSON.stringify({
+            query: `query {
+              members {
+                info {
+                  Name
+                  profile{
+                    url
+                  }
+                  por
+                  year
+                  linkedin
+                  email
+                  blurhash
+                  }
+              }
+            }`,
+          }),
+        })
+        .then((response) => response.json())
+        .then(({ data, errors }) => {
+          if (errors) {
+            console.error(errors);
+          }
+          const all =  data.members.info ;
+          const secys = all.filter((member) => member.por === ( "Secretary" | "Additional Secretary" | "Joint Secretary" )) ;
+          const mem = all.filter((member) => member.por === "Member") ;
+          const heds = all.filter((member) => member.por === "Head") ;
+          newsecy(secys) ;
+          newmember(mem) ;
+          newhead(heds) ;
+        });
+    }, []);
+
+
+
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -46,14 +97,14 @@ export default function People() {
 
       <div className="members">
         <div className="members-secys">
-          {Secy.map((value) => (
+          {secy.map((value) => (
             <Card
-            key={value.name}
-              id={value.name}
-              name={value.name}
-              img={value.image}
-              position={value.position}
-              linkedIn={value.linkedIn}
+            key={value.Name}
+              id={value.Name}
+              name={value.Name}
+              img={value.profile}
+              position={value.por}
+              linkedIn={value.linkedin}
               email={value.email}
               blurhash={value.blurhash}
             />
@@ -63,14 +114,14 @@ export default function People() {
           <div className="horizontal-line"></div>
         </div>
         <div className="members-heads">
-          {Head.map((value) => (
+          {head.map((value) => (
             <Card
-            key={value.name}
-              id={value.name}
-              name={value.name}
-              img={value.image}
-              position={value.position}
-              linkedIn={value.linkedIn}
+            key={value.Name}
+              id={value.Name}
+              name={value.Name}
+              img={value.profile}
+              position={value.por}
+              linkedIn={value.linkedin}
               email={value.email}
               blurhash={value.blurhash}
             />
@@ -81,41 +132,41 @@ export default function People() {
         </div>
         <div className="members-btn">
           <button
-            className={"members-btn-year " + (year === 2 ? "active-year" : "")}
+            className={"members-btn-year " + (years === 2 ? "active-year" : "")}
             onClick={() => setYear(2)}
           >
             2nd Y
           </button>
           <button
-            className={"members-btn-year " + (year === 3 ? "active-year" : "")}
+            className={"members-btn-year " + (years === 3 ? "active-year" : "")}
             onClick={() => setYear(3)}
           >
             3rd Y
           </button>
           <button
-            className={"members-btn-year " + (year === 4 ? "active-year" : "")}
+            className={"members-btn-year " + (years === 4 ? "active-year" : "")}
             onClick={() => setYear(4)}
           >
             4th Y
           </button>
           <button
-            className={"members-btn-year " + (year === 5 ? "active-year" : "")}
+            className={"members-btn-year " + (years === 5 ? "active-year" : "")}
             onClick={() => setYear(5)}
           >
             5th Y
           </button>
         </div>
         <div className="members-members">
-          {Member.map((value) => {
-            if (value.year === year) {
+          {member.map((value) => {
+            if (value.year === years) {
               return (
                 <Card
-                key={value.name}
-                  id={value.name}
-                  name={value.name}
-                  img={value.image}
-                  position={value.position}
-                  linkedIn={value.linkedIn}
+                key={value.Name}
+                  id={value.Name}
+                  name={value.Name}
+                  img={value.profile}
+                  position={value.por}
+                  linkedIn={value.linkedin}
                   email={value.email}
                   blurhash={value.blurhash}
                 />
