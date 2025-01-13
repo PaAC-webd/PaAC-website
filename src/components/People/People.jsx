@@ -24,20 +24,21 @@ export default function People() {
           },
           body: JSON.stringify({
             query: `query {
-              members {
-                info {
-                  Name
-                  profile{
+              membersCollection {
+                items {
+                  name
+                  profilePhoto {
                     url
                   }
                   por
                   year
-                  linkedin
+                  linkedIn
                   email
                   blurhash
                   }
               }
-            }`,
+            }`
+,
           }),
         })
         .then((response) => response.json())
@@ -45,7 +46,7 @@ export default function People() {
           if (errors) {
             console.error(errors);
           }
-          const all =  data.members.info ;
+          const all =  data.membersCollection.items ;
           const secys = all.filter((member) => member.por === ( "Secretary" | "Additional Secretary" | "Joint Secretary" )) ;
           const mem = all.filter((member) => member.por === "Member") ;
           const heds = all.filter((member) => member.por === "Head of Design" | "Head of Web Development" | "Head of Astrophotography") ;
@@ -98,12 +99,12 @@ export default function People() {
         <div className="members-secys">
           {secy.map((value) => (
             <Card
-            key={value.Name}
-              id={value.Name}
-              name={value.Name}
-              img={value.profile}
+            key={value.name}
+              id={value.name}
+              name={value.name}
+              img={value.profilePhoto}
               position={value.por}
-              linkedIn={value.linkedin}
+              linkedIn={value.linkedIn}
               email={value.email}
               blurhash={value.blurhash}
             />
@@ -115,12 +116,12 @@ export default function People() {
         <div className="members-heads">
           {head.map((value) => (
             <Card
-            key={value.Name}
-              id={value.Name}
-              name={value.Name}
-              img={value.profile}
+            key={value.name}
+              id={value.name}
+              name={value.name}
+              img={value.profilePhoto}
               position={value.por}
-              linkedIn={value.linkedin}
+              linkedIn={value.linkedIn}
               email={value.email}
               blurhash={value.blurhash}
             />
@@ -160,12 +161,12 @@ export default function People() {
             if (value.year === years) {
               return (
                 <Card
-                key={value.Name}
-                  id={value.Name}
-                  name={value.Name}
-                  img={value.profile}
+                key={value.name}
+                  id={value.name}
+                  name={value.name}
+                  img={value.profilePhoto}
                   position={value.por}
-                  linkedIn={value.linkedin}
+                  linkedIn={value.linkedIn}
                   email={value.email}
                   blurhash={value.blurhash}
                 />
