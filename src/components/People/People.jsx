@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./People.css";
 import Footer from "../Footer/Footer";
-// import { Secy, Head, Member } from "./Data.js"; 
 import Card from "./Card";
 import { useEffect } from "react";
 
@@ -11,9 +10,9 @@ const accessToken = import.meta.env.VITE_ACCESS_TOKEN;
 
 export default function People() {
   const [years , setYear] = useState(2);
-  const [secy , newsecy ] = useState([]) ;
-  const [head , newhead ] = useState([]) ;
-  const [member , newmember ] = useState([]) ;
+  const [secy , setsecy ] = useState([]) ;
+  const [head , sethead ] = useState([]) ;
+  const [member , setmember ] = useState([]) ;
 
   useEffect(() => {
       window
@@ -49,14 +48,14 @@ export default function People() {
           const all =  data.members.info ;
           const secys = all.filter((member) => member.por === ( "Secretary" | "Additional Secretary" | "Joint Secretary" )) ;
           const mem = all.filter((member) => member.por === "Member") ;
-          const heds = all.filter((member) => member.por === "Head") ;
-          newsecy(secys) ;
-          newmember(mem) ;
-          newhead(heds) ;
+          const heds = all.filter((member) => member.por === "Head of Design" | "Head of Web Development" | "Head of Astrophotography") ;
+          setsecy(secys) ;
+          setmember(mem) ;
+          sethead(heds) ;
         });
     }, []);
 
-
+    
 
   useEffect(() => {
     window.scrollTo({
