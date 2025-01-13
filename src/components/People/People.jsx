@@ -12,7 +12,7 @@ export default function People() {
   const [years , setYear] = useState(2);
   const [secy , setsecy ] = useState([]) ;
   const [head , sethead ] = useState([]) ;
-  const [member , setmember ] = useState([]) ;
+  const [members , setmember ] = useState([]) ;
 
   useEffect(() => {
       window
@@ -47,17 +47,27 @@ export default function People() {
             console.error(errors);
           }
           const all =  data.membersCollection.items ;
-          const secys = all.filter((member) => member.por === ( "Secretary" | "Additional Secretary" | "Joint Secretary" )) ;
-          const mem = all.filter((member) => member.por === "Member") ;
-          const heds = all.filter((member) => member.por === "Head of Design" | "Head of Web Development" | "Head of Astrophotography") ;
+          
+          const secys = all.filter(
+            (member) =>
+              member.por === "Secretary" ||
+              member.por === "Additional Secretary" ||
+              member.por === "Joint Secretary"
+          );
+
+      const mem = all.filter((member) => member.por === "Member");
+
+      const heds = all.filter(
+        (member) =>
+          member.por === "Head of Design" ||
+          member.por === "Head of Web Development" ||
+          member.por === "Head of Astrophotography"
+      );
           setsecy(secys) ;
           setmember(mem) ;
           sethead(heds) ;
         });
     }, []);
-
-    
-
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -102,7 +112,7 @@ export default function People() {
             key={value.name}
               id={value.name}
               name={value.name}
-              img={value.profilePhoto}
+              img={value.profilePhoto.url}
               position={value.por}
               linkedIn={value.linkedIn}
               email={value.email}
@@ -119,7 +129,7 @@ export default function People() {
             key={value.name}
               id={value.name}
               name={value.name}
-              img={value.profilePhoto}
+              img={value.profilePhoto.url}
               position={value.por}
               linkedIn={value.linkedIn}
               email={value.email}
@@ -157,14 +167,14 @@ export default function People() {
           </button>
         </div>
         <div className="members-members">
-          {member.map((value) => {
-            if (value.year === years) {
+          {members.map((value) => {
+            if (value.year == years) {
               return (
                 <Card
                 key={value.name}
                   id={value.name}
                   name={value.name}
-                  img={value.profilePhoto}
+                  img={value.profilePhoto.url}
                   position={value.por}
                   linkedIn={value.linkedIn}
                   email={value.email}
