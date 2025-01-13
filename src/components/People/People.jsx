@@ -75,6 +75,14 @@ export default function People() {
       behavior: "smooth"
     })
   }, [])
+
+  if (secy.length == 0 || members.length == 0 || head.length == 0) {
+    return (
+      <div>
+        Loading..
+      </div>
+    )
+  }
   return (
     <div className="about-container">
       {/* <div className="about-topbar">
