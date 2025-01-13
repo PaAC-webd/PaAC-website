@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Gallery.css";
 import { data } from "./Images.js";
-import "lightbox.js-react/dist/index.css";
+// import "lightbox.js-react/dist/index.css";
 import { SlideshowLightbox, initLightboxJS } from "lightbox.js-react";
 import Masonry from "react-responsive-masonry";
 
@@ -81,16 +81,23 @@ export default function Gallery() {
         </ResponsiveMasonry>
       </div> */}
 
-      <SlideshowLightbox showThumbnails={true} lightboxIdentifier="lbox1">
+      <SlideshowLightbox
+        showThumbnails={true}
+        images={data}
+        lightboxIdentifier="lbox1"
+      >
         <Masonry columnsCount={windowWidth > 600 ? 3 : 2} gutter="10px">
           {data.map((image, i) => (
-            <img
-              title="Click for slideshow"
-              key={i}
-              src={image.image}
-              data-lightboxjs="lbox1"
-              style={{ width: "100%", display: "block" }}
-            />
+            <div key={i}>
+              <img
+                title="Click for slideshow"
+                key={i}
+                src={image.image}
+                data-lightboxjs="lbox1"
+                style={{ width: "100%", display: "block" }}
+              />
+              <p>{image.caption}</p>
+            </div>
           ))}
         </Masonry>
       </SlideshowLightbox>

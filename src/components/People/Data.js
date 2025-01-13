@@ -13,6 +13,7 @@ import vansh from "../assets/members/VANSH_UPPAL.jpg";
 // 5Y
 import sumit from "../assets/members/sumit.png";
 import kriti from "../assets/members/kriti.png";
+import krish from "..//assets/members/Krish.jpeg";
 // 4Y
 import agrima from "../assets/members/agrima.png";
 import uddipt from "../assets/members/UDDIPT GUPTA.jpeg";
@@ -50,43 +51,27 @@ import mudit from "../assets/members/Mudit Tuteja.JPG";
 import sankar from "../assets/members/Sankar.jpeg";
 import keerthi from "../assets/members/KEERTHI.jpg";
 
-
 //new image data
 
-
-import anish from "../assets/members/anish_sharma.jpg" ;
-import ansh from "../assets/members/ansh.jpeg" ;
-import arpit from "../assets/members/arpit.jpg" ;
-import bipasha from "../assets/members/bipasha.jpeg" ;
-import devansh from "../assets/members/devansh.jpg" ;
-import dhyey from "../assets/members/dhyey_d.jpg" ;
-import harshita from "../assets/members/harshita.jpeg" ;
-import krishna from "../assets/members/krishna_p.jpg" ;
-import prakul from "../assets/members/prakul.jpg" ;
-import pranjay from "../assets/members/pranjay_saini.jpg" ;
-import pratham from "../assets/members/pratham.jpg" ;
-import sai from "../assets/members/sai_nihar.png" ;
-import sanjana from "../assets/members/sanjana.jpg" ;
-import sukrit from "../assets/members/sukrit_jindal.jpg" ;
-import swastika from "../assets/members/swastika.jpg" ;
-import tirthankar from "../assets/members/tirthankar_de.jpg" ;
-import vansh_a from "../assets/members/vansh_agrawal.jpg" ;
-import vedant from "../assets/members/vedant_patel.jpg" ;
-import vidhan from "../assets/members/vidhan_agrawal.jpg" ;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+import anish from "../assets/members/anish_sharma.jpg";
+import ansh from "../assets/members/ansh.jpeg";
+import arpit from "../assets/members/arpit.jpg";
+import bipasha from "../assets/members/bipasha.jpeg";
+import devansh from "../assets/members/devansh.jpg";
+import dhyey from "../assets/members/dhyey_d.jpg";
+import harshita from "../assets/members/harshita.jpeg";
+import krishna from "../assets/members/krishna_p.jpg";
+import prakul from "../assets/members/prakul.jpg";
+import pranjay from "../assets/members/pranjay_saini.jpg";
+import pratham from "../assets/members/pratham.jpg";
+import sai from "../assets/members/sai_nihar.png";
+import sanjana from "../assets/members/sanjana.jpg";
+import sukrit from "../assets/members/sukrit_jindal.jpg";
+import swastika from "../assets/members/swastika.jpg";
+import tirthankar from "../assets/members/tirthankar_de.jpg";
+import vansh_a from "../assets/members/vansh_agrawal.jpg";
+import vedant from "../assets/members/vedant_patel.jpg";
+import vidhan from "../assets/members/vidhan_agrawal.jpg";
 
 const Secys = [
   // {
@@ -305,6 +290,15 @@ const Members = [
     position: "Member",
     linkedIn: "",
     email: "mailto:rajnish_kj@ph.iitr.ac.in",
+    year: 5,
+  },
+  {
+    name: "Krish Shah",
+    blurhash: "LrLg@DtQ%JoL~Xj]WaayyDWBoxWB",
+    image: krish,
+    position: "Member",
+    linkedIn: "https://www.linkedin.com/in/k-shah",
+    email: "mailto:krish_s@ph.iitr.ac.in",
     year: 5,
   },
   {
@@ -706,6 +700,5 @@ const Members = [
     year: 4,
   },
 ];
-
 
 export { Secys as Secy, Heads as Head, Members as Member };
