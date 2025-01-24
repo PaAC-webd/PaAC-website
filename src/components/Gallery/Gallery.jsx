@@ -142,7 +142,7 @@ export default function Gallery() {
         open={astroLightbox.isOpen}
         startingSlideIndex={astroLightbox.slideIndex}
         onClose={() => setAstroLightbox({ ...astroLightbox, isOpen: false })}
-        rightSidebarComponent={<RightSidebarComponent slideIndex={slideIndex} />}
+        rightSidebarComponent={astro_data[slideIndex].captionQuote ? <RightSidebarComponent slideIndex={slideIndex} /> : <></>}
         onSelect={(index) => {
           setSlideIndex(index);
         }}
