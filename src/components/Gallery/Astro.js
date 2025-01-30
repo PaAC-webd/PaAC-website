@@ -1,5 +1,4 @@
 import comet from "../assets/gallery/comet.jpg";
-import moon_1 from "../assets/gallery/moon-1-min.jpg";
 import moon from "../assets/gallery/moon.jpg";
 import nebula from "../assets/gallery/nebula-min.jpg";
 import nebula_2 from "../assets/gallery/nebula-2-min.jpg";
@@ -45,9 +44,6 @@ export const astro_data = [
         ]
       }
     ]
-  },
-  {
-    src: moon_1,
   },
   {
     src: moon,
