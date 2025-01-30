@@ -23,7 +23,7 @@ const UpcomingEvent = () => {
         },
         body: JSON.stringify({
           query: `query {
-            newEventsCollection {
+            eventsCollection {
               items {
                 titleOfEvent
                 dateAndTimeOfEvent
@@ -39,7 +39,7 @@ const UpcomingEvent = () => {
         if (errors) {
           console.error(errors);
         }
-        setEvents(data.newEventsCollection.items);
+        setEvents(data.eventsCollection.items);
       });
   }, []);
 
