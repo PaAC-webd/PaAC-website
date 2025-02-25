@@ -19,7 +19,7 @@ const Recent = [
   {
     id: 2,
     title: "Journal Club",
-    date: "october 23, 2024",
+    date: "October 23, 2024",
     location: "PaAC Room, SAC",
     details: "Journal Club is a platform for students to discuss and analyze recent scientific papers in the field of physics. It provides an opportunity to delve deeper into various research topics and gain insights from peers.",
     image: jc,
