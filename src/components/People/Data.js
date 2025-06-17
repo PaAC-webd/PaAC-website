@@ -1,14 +1,15 @@
 // SECRETARIES
-import shivam from "../assets/members/Shivam.jpg";
-import parakhiya from "../assets/members/PRIYANSHU PARAKHIYA.jpg";
+/*import shivam from "../assets/members/Shivam.jpg";
+
 import roopa from "../assets/members/ROOPA PRAMODAN.jpg";
 import ashray from "../assets/members/ashray.png";
 import rajnish from "../assets/members/rajnish.png";
-import sudharsan from "../assets/members/sudharsan.png";
+import sudharsan from "../assets/members/sudharsan.png";*/
 // HEADS
+import parakhiya from "../assets/members/PRIYANSHU PARAKHIYA.jpg";
 import bondge from "../assets/members/Anand Bondge.jpeg";
 import gjeevika from "../assets/members/Jeevika_s photo - G JEEVIKA.png";
-import suraj from "../assets/members/SURAJ.jpg";
+/* import suraj from "../assets/members/SURAJ.jpg";
 import vansh from "../assets/members/VANSH_UPPAL.jpg";
 // 5Y
 import sumit from "../assets/members/sumit.png";
@@ -50,11 +51,11 @@ import sireesha from "../assets/members/SIREESHA.jpg";
 import mudit from "../assets/members/Mudit Tuteja.JPG";
 import sankar from "../assets/members/Sankar.jpeg";
 import keerthi from "../assets/members/KEERTHI.jpg";
-
+*/
 //new image data
 
 import anish from "../assets/members/anish_sharma.jpg";
-import ansh from "../assets/members/ansh.jpeg";
+/*import ansh from "../assets/members/ansh.jpeg";
 import arpit from "../assets/members/arpit.jpg";
 import bipasha from "../assets/members/bipasha.jpeg";
 import devansh from "../assets/members/devansh.jpg";
@@ -91,33 +92,6 @@ const Secys = [
     linkedIn:
       "https://www.linkedin.com/in/roopa-pramodan-117862229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     email: "mailto:r_pramodan@ph.iitr.ac.in",
-    year: 4,
-  },
-  {
-    name: "Anand Bondge",
-    blurhash: "L6Cs~G%w0cM_9:aL^-oi06oyzVRP",
-    image: bondge,
-    position: "Additional Secretary",
-    linkedIn: "https://www.linkedin.com/in/anandbondge",
-    email: "mailto:b_arajesh@bt.iitr.ac.in",
-    year: 4,
-  },
-  {
-    name: " Jeevika",
-    blurhash: "LAHw=A,n6TIU5u=^?a?F_LX8MeIV",
-    image: gjeevika,
-    position: "Additional Secretary",
-    linkedIn: "https://www.linkedin.com/in/jeevika-g/",
-    email: "mailto:g_jeevika@me.iitr.ac.in",
-    year: 4,
-  },
-  {
-    name: "Priyanshu Parakhiya",
-    blurhash: "LIC%pfW,9pxv4mj^-tWC%5aQRhoy",
-    image: parakhiya,
-    position: "Additional Secretary",
-    linkedIn: "https://www.linkedin.com/in/priyanshu-parakhiya",
-    email: "mailto:p_parakhiya@ph.iitr.ac.in",
     year: 4,
   },
   {
@@ -700,5 +674,45 @@ const Members = [
     year: 4,
   },
 ];
+*/
 
-export { Secys as Secy, Heads as Head, Members as Member };
+const Alumnis = [
+  {
+    name: "Anish Sharma",
+    blurhash: "LLJrmpTb6MkV44-V,@n%{OkCxGNH",
+    profilePhoto: anish,
+    position: "Alumni",
+    linkedIn: "https://www.linkedin.com/in/anish-sharma-b24927269/",
+    email: "mailto:anish_rs@ph.iitr.ac.in",
+    year: 3,
+  },
+  {
+    name: "Anand Bondge",
+    blurhash: "L6Cs~G%w0cM_9:aL^-oi06oyzVRP",
+    profilePhoto: bondge,
+    position: "Additional Secretary",
+    linkedIn: "https://www.linkedin.com/in/anandbondge",
+    email: "mailto:b_arajesh@bt.iitr.ac.in",
+    year: 4,
+  },
+  {
+    name: " Jeevika",
+    blurhash: "LAHw=A,n6TIU5u=^?a?F_LX8MeIV",
+    profilePhoto: gjeevika,
+    position: "Additional Secretary",
+    linkedIn: "https://www.linkedin.com/in/jeevika-g/",
+    email: "mailto:g_jeevika@me.iitr.ac.in",
+    year: 4,
+  },
+  {
+    name: "Priyanshu Parakhiya",
+    blurhash: "LIC%pfW,9pxv4mj^-tWC%5aQRhoy",
+    profilePhoto: parakhiya,
+    position: "Additional Secretary",
+    linkedIn: "https://www.linkedin.com/in/priyanshu-parakhiya",
+    email: "mailto:p_parakhiya@ph.iitr.ac.in",
+    year: 4,
+  }
+];
+
+export { Alumnis as Alumni };

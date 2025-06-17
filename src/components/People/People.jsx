@@ -4,7 +4,6 @@ import Footer from "../Footer/Footer";
 import Card from "./Card";
 import { useEffect } from "react";
 
-
 const spaceId = import.meta.env.VITE_SPACE_ID;
 const accessToken = import.meta.env.VITE_ACCESS_TOKEN;
 
@@ -172,6 +171,12 @@ export default function People() {
             onClick={() => setYear(5)}
           >
             5th Y
+          </button>
+          <button
+            className={"members-btn-year " + (years === 'alumni' ? "active-year" : "")}
+            onClick={() => setYear('alumni')}
+          >
+            Alumnis
           </button>
         </div>
         <div className="members-members">
