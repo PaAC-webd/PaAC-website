@@ -173,6 +173,13 @@ export default function People() {
           >
             5th Y
           </button>
+          
+          <button
+            className={"members-btn-year " + (years === "alumni" ? "active-year" : "")}
+            onClick={() => setYear('alumni')}
+          >
+            Alumni
+          </button>
         </div>
         <div className="members-members">
           {members.map((value) => {
