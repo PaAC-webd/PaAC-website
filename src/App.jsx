@@ -8,6 +8,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Library from "./components/Library/Library";
 import OpenProjects from "./components/OpenProjects/OpenProjects";
 import Layout from "./components/Layout";
+import Test from "./components/Test/Test" ;
 
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
         { path: "/gallery", element: <Gallery /> },
         { path: "/contact-us", element: <Contact /> },
         { path: "/library", element: <Library /> },
-        { path: "/open-projects", element: <OpenProjects /> },
+        { path: "/open-projects", element: <Test /> },
       ],
     },
   ]);
