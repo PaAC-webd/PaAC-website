@@ -1,8 +1,8 @@
 .project-container {
-  display: flex;
-  flex-direction: column;
-  background-image: url("/Frame_96.png");
-  background-position: center;
+ display: flex;
+ flex-direction: column;
+ background-image: url("/Frame_96.png");
+ background-position: center;
 }
 
 .project-form {
@@ -58,17 +58,29 @@
   cursor: pointer;
   box-shadow: 0 4px 15px rgba(236, 166, 116, 0.4);
 }
+
 @media screen and (max-width: 770px) {
- 
+
   .project-us-container {
     flex-direction: column;
-    padding: 3vw;
+    padding: 0 3vw; 
     align-items: center;
     margin-top: 4rem;
+    gap: 2rem;
   }
+
   .project-form {
-    width: 98%;
+    width: 90%;
     padding: 20px;
+    margin: 0; 
   }
- 
+
+  .project-desc{
+    width: 90%; 
+    margin: 0;
+    margin-bottom: 2rem; 
+    margin-top: 2rem; 
+    text-align: left; 
+  }
+
 }
