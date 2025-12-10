@@ -25,8 +25,10 @@ export default function Test() {
         <div className= "project-desc">
 
           <h2 className="project-text">
-            Hello Everyone!, this year's open projects are out, please fill the response sheet
+            Hello Everyone! this year's open projects are out, please fill the response sheet
             and complete the respective assignment.
+            <br />
+            You can only apply for one project.
             <br />
             <a className="doc_link" href={doc_link}>Click here for more info about the projects.</a>
           </h2>
