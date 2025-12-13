@@ -23,7 +23,7 @@ function App() {
         { path: "/gallery", element: <Gallery /> },
         { path: "/contact-us", element: <Contact /> },
         { path: "/library", element: <Library /> },
-        { path: "/open-projects", element: <Test /> },
+        { path: "/open-projects", element: <OpenProjects /> },
       ],
     },
   ]);
