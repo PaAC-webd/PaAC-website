@@ -2,3 +2,5 @@
 .env
 package-lock.json
 
+# Large assets
+src/components/assets/group_photo.webp

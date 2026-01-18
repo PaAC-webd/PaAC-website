@@ -8,7 +8,9 @@ const ProjectCard = ({
   compressedLink,
   duration,
   image,
+  status,
 }) => {
+        
   return (
     <a href={compressedLink} target="_blank" rel="noreferrer">
       <div className="project-card">
