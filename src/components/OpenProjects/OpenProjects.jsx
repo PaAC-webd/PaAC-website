@@ -26,6 +26,7 @@ export default function Events() {
                 date
                 compressedLink
                 duration
+                status
                 image {
                   url
                 }
@@ -55,6 +56,13 @@ export default function Events() {
     return "Loading...";
   }
 
+  const ongoingProjects = projects.filter(
+    (project) => project.status === "ongoing"
+  );
+
+  const pastProjects = projects.filter(
+    (project) => project.status === "past"
+  );
 
   return (
     <div className="projects-container">
@@ -62,16 +70,21 @@ export default function Events() {
         <Topbar />
       </div> */}
       <section className="open-projects">
-        <h1>Open Projects</h1>
-        <section className="faq">
-          {/* <h1>FAQ</h1> */}
-          <Faq />
-        </section>
-        <div className="projects">
-          {projects.map((project) => {
-            return <ProjectCard {...project} key={project.title} />;
-          })}
-        </div>
+        <h1>Ongoing Projects</h1>
+          <div className="projects">
+            {ongoingProjects.length === 0 && <p>No ongoing projects</p>}
+            {ongoingProjects.map((project) => (
+              <ProjectCard {...project} key={project.title} />
+            ))}
+          </div>
+
+          <h1>Previous Projects</h1>
+          <div className="projects">
+            {pastProjects.length === 0 && <p>No previous projects</p>}
+            {pastProjects.map((project) => (
+              <ProjectCard {...project} key={project.title} />
+            ))}
+          </div>
       </section>
 
       <div className="footer">
