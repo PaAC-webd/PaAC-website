@@ -48,21 +48,32 @@ export default function People() {
           }
           const all =  data.membersCollection.items ;
           
+          const secretaryOrder = [
+            "Secretary",
+            "Additional Secretary",
+            "Joint Secretary",
+          ];
           const secys = all.filter(
             (member) =>
               member.por === "Secretary" ||
               member.por === "Additional Secretary" ||
               member.por === "Joint Secretary"
+          ).sort(
+            (a, b) =>
+              secretaryOrder.indexOf(a.por) - secretaryOrder.indexOf(b.por)
           );
 
-      const mem = all.filter((member) => member.por === "Member");
+          const mem = [...all].sort((a, b) => a.name.localeCompare(b.name));
 
-      const heds = all.filter(
-        (member) =>
-          member.por === "Head of Design" ||
-          member.por === "Head of Web Development" ||
-          member.por === "Head of Astrophotography"
-      );
+          const heds = all.filter(
+            (member) =>
+              member.por === "Head of Design" ||
+              member.por === "Head of Web Development" ||
+              member.por === "Head of Astrophotography" ||
+              member.por === "Head of Physics" ||
+              member.por === "Head of Maths"
+          ).sort((a, b) => a.name.localeCompare(b.name));
+
           setsecy(secys) ;
           setmember(mem) ;
           sethead(heds) ;
